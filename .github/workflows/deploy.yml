@@ -41,7 +41,7 @@ jobs:
 
     - name: Change base-tag in index.html to match repository
       run: |
-        sed -i 's|<base href="[^"]*"|<base href="/LetterLoomWeb/"|g' release/wwwroot/index.html
+        sed -i 's|<base href="[^"]*"|<base href="/letterloom/"|g' release/wwwroot/index.html
         echo "--- base tag after replacement ---"
         grep -o '<base href="[^"]*"' release/wwwroot/index.html
 
