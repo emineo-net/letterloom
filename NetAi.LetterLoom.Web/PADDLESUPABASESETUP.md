@@ -1,6 +1,17 @@
 ﻿
 
-VID_20151203_155949.mp4
+letterloom
+default db password
+letterloom
+
+projectId:
+lvfvnmbigfzpgxsvqlzn
+
+
+region:
+eu-west-1
+
+
 
 
 
@@ -63,9 +74,9 @@ supabase/.branches/
 git remote add origin https://github.com/<USER>/LetterLoom.git
 git add .
 git commit -m "Initial commit: Solution scaffold"
-git branch -M main
-git push -u origin main
-# Erwartet: "branch 'main' set up to track 'origin/main'"
+git branch -M master
+git push -u origin master
+# Erwartet: "branch 'master' set up to track 'origin/master'"
 
 
 # ============================================================================
@@ -196,8 +207,7 @@ alter table public.licenses enable row level security;
 #      → Name: paddle-webhook
 
 # 4.4  Code einfügen
-#      → Den kompletten TypeScript-Code der paddle-webhook/index.ts
-#        aus der vorherigen Antwort in den Editor einfügen.
+#      → Den kompletten TypeScript-Code der supabaseEdgeFunc.ts einfügen
 
 # 4.5  WICHTIG: JWT-Verifikation deaktivieren
 #      → In den Function-Einstellungen (Zahnrad / Settings):
