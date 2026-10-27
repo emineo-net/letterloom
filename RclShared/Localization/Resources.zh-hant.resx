@@ -1,0 +1,1814 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="[yes] is enough for certificates and tools. For experience questions, details such as project, company, and year help.">
+		<value>[yes] 對證照與工具而言已足夠。對於經驗相關問題，提供專案、公司與年份等詳細資料會有幫助。</value>
+	</data>
+	<data name="{0} answered - {1} irrelevant">
+		<value>已回答 {0} 題 - {1} 題不相關</value>
+	</data>
+	<data name="{0} copied to clipboard.">
+		<value>已將 {0} 複製到剪貼簿。</value>
+	</data>
+	<data name="{0} could not be copied.">
+		<value>無法複製 {0}。</value>
+	</data>
+	<data name="{0} line(s) changed">
+		<value>已變更 {0} 行</value>
+	</data>
+	<data name="{0} open question(s) found ({1} redundant filtered).">
+		<value>找到 {0} 個待答問題 (已篩除 {1} 個重複問題)。</value>
+	</data>
+	<data name="{0} open question(s) found.">
+		<value>找到 {0} 個待答問題。</value>
+	</data>
+	<data name="{0} ready">
+		<value>{0} 已就緒</value>
+	</data>
+	<data name="{0} tag(s) confirmed, of which {1} were saved/updated in the skills table.">
+		<value>已確認 {0} 個標籤，其中 {1} 個已儲存/更新至技能資料表。</value>
+	</data>
+	<data name="{0} URL(s) added.">
+		<value>已新增 {0} 個 URL。</value>
+	</data>
+	<data name="{0}x API - {1} Tokens">
+		<value>{0}x API - {1} 個權杖</value>
+	</data>
+	<data name="{0} is still empty.">
+		<value>{0} 仍是空的。</value>
+	</data>
+	<data name="{0} ready.">
+		<value>{0} 已就緒。</value>
+	</data>
+	<data name="Add">
+		<value>新增</value>
+	</data>
+	<data name="Add new URLs">
+		<value>新增 URL</value>
+	</data>
+	<data name="Add new job ads below.">
+		<value>在下方新增職缺廣告。</value>
+	</data>
+	<data name="Add URLs">
+		<value>新增 URL</value>
+	</data>
+	<data name="All letters">
+		<value>所有求職信</value>
+	</data>
+	<data name="All remaining tags will be written to the skills table when you click OK.">
+		<value>按下 [確定] 時，所有剩餘標籤都會寫入技能資料表。</value>
+	</data>
+	<data name="Analysis failed: {0}">
+		<value>分析失敗：{0}</value>
+	</data>
+	<data name="Analysis finished - {0} OK, {1} skipped.">
+		<value>分析完成 - {0} 成功，{1} 略過。</value>
+	</data>
+	<data name="Analyze (Coder, all)">
+		<value>分析 (Coder，全部)</value>
+	</data>
+	<data name="Analyzing">
+		<value>分析中</value>
+	</data>
+	<data name="All files|*.*">
+		<value>所有檔案|*.*</value>
+	</data>
+	<data name="All of them are present in KnownSkills or the skills table.">
+		<value>它們全都存在於 KnownSkills 或技能資料表中。</value>
+	</data>
+	<data name="An error occurred during generation:">
+		<value>產生時發生錯誤：</value>
+	</data>
+	<data name="Analyzing CV against job ad...">
+		<value>正在根據職缺廣告分析 CV...</value>
+	</data>
+	<data name="ApiUrl is missing.">
+		<value>缺少 ApiUrl。</value>
+	</data>
+	<data name="API endpoint not reachable or configuration invalid.">
+		<value>無法連線到 API 端點，或設定無效。</value>
+	</data>
+	<data name="API: {0} - {1}">
+		<value>API：{0} - {1}</value>
+	</data>
+	<data name="Apply to CV">
+		<value>套用到 CV</value>
+	</data>
+	<data name="Automatically filtered ({0})">
+		<value>已自動篩選 ({0})</value>
+	</data>
+	<data name="Automatically tailor your CV to job ads.">
+		<value>自動依職缺廣告調整你的 CV。</value>
+	</data>
+	<data name="Browser will open with the job ad...">
+		<value>瀏覽器將開啟職缺廣告...</value>
+	</data>
+	<data name="Cancel">
+		<value>取消</value>
+	</data>
+	<data name="Click [Start gap analysis].">
+		<value>按一下 [開始落差分析]。</value>
+	</data>
+	<data name="Click: copy letter">
+		<value>按一下：複製求職信</value>
+	</data>
+	<data name="Click: copy Phase 1 prompt">
+		<value>按一下：複製階段 1 提示詞</value>
+	</data>
+	<data name="Click: copy Phase 2 prompt">
+		<value>按一下：複製階段 2 提示詞</value>
+	</data>
+	<data name="Coder">
+		<value>Coder</value>
+	</data>
+	<data name="Coder - {0}">
+		<value>Coder - {0}</value>
+	</data>
+	<data name="Copy cover letter and open in browser">
+		<value>複製求職信並在瀏覽器中開啟</value>
+	</data>
+	<data name="Cover letter">
+		<value>求職信</value>
+	</data>
+	<data name="Cover letter copied to clipboard.">
+		<value>求職信已複製到剪貼簿。</value>
+	</data>
+	<data name="Cover letters (General, all)">
+		<value>求職信 (一般，全部)</value>
+	</data>
+	<data name="Create cover letter">
+		<value>建立求職信</value>
+	</data>
+	<data name="Creating cover letter">
+		<value>正在建立求職信</value>
+	</data>
+	<data name="Current job ad">
+		<value>目前職缺廣告</value>
+	</data>
+	<data name="CV">
+		<value>CV</value>
+	</data>
+	<data name="CV extended successfully.">
+		<value>CV 擴充成功。</value>
+	</data>
+	<data name="CV is empty.">
+		<value>CV 是空的。</value>
+	</data>
+	<data name="CV saved.">
+		<value>CV 已儲存。</value>
+	</data>
+	<data name="Delete">
+		<value>刪除</value>
+	</data>
+	<data name="Delete it first (if necessary) to regenerate it.">
+		<value>請先刪除它 (如有需要) 再重新產生。</value>
+	</data>
+	<data name="Details see Setup -> API usage">
+		<value>詳細資料請參閱設定 -> API 用量</value>
+	</data>
+	<data name="Discard">
+		<value>捨棄</value>
+	</data>
+	<data name="Error">
+		<value>錯誤</value>
+	</data>
+	<data name="Error while executing:">
+		<value>執行時發生錯誤：</value>
+	</data>
+	<data name="Extend CV">
+		<value>擴充 CV</value>
+	</data>
+	<data name="Extend CV with answers">
+		<value>使用回答擴充 CV</value>
+	</data>
+	<data name="Extend failed: {0}">
+		<value>擴充失敗：{0}</value>
+	</data>
+	<data name="Extract">
+		<value>擷取</value>
+	</data>
+	<data name="Extracted text appears here.">
+		<value>擷取的文字會顯示在這裡。</value>
+	</data>
+	<data name="Extracting">
+		<value>正在擷取</value>
+	</data>
+	<data name="Extracting job ad...">
+		<value>正在擷取職缺廣告...</value>
+	</data>
+	<data name="Extraction failed: {0}">
+		<value>擷取失敗：{0}</value>
+	</data>
+	<data name="Extended CV">
+		<value>擴充後的 CV</value>
+	</data>
+	<data name="Extended CV applied and saved.">
+		<value>擴充後的 CV 已套用並儲存。</value>
+	</data>
+	<data name="Extending CV...">
+		<value>正在擴充 CV...</value>
+	</data>
+	<data name="Extended CV created - review and apply.">
+		<value>已建立擴充後的 CV - 請檢閱並套用。</value>
+	</data>
+	<data name="Final Letter">
+		<value>最終求職信</value>
+	</data>
+	<data name="GGUF model|*.gguf">
+		<value>GGUF 模型|*.gguf</value>
+	</data>
+	<data name="General">
+		<value>一般</value>
+	</data>
+	<data name="General - {0}">
+		<value>一般 - {0}</value>
+	</data>
+	<data name="Insert">
+		<value>插入</value>
+	</data>
+	<data name="Insert failed: {0}">
+		<value>插入失敗：{0}</value>
+	</data>
+	<data name="Insufficient match between CV and job ad.">
+		<value>CV 與職缺廣告的相符程度不足。</value>
+	</data>
+	<data name="Job ad">
+		<value>職缺廣告</value>
+	</data>
+	<data name="Job ad (DB)">
+		<value>職缺廣告 (DB)</value>
+	</data>
+	<data name="Job ad added.">
+		<value>已新增職缺廣告。</value>
+	</data>
+	<data name="Job ad does not match the profile.">
+		<value>職缺廣告與個人檔案不符。</value>
+	</data>
+	<data name="Job ad extracted.">
+		<value>已擷取職缺廣告。</value>
+	</data>
+	<data name="Job ad is empty.">
+		<value>職缺廣告是空的。</value>
+	</data>
+	<data name="No Windows ZIP found in llama-server release.">
+		<value>在 llama-server 版本中找不到 Windows ZIP。</value>
+	</data>
+	<data name="LanguageDescription">
+		<value>選擇應用程式介面使用的語言。</value>
+	</data>
+	<data name="LanguageRestartHint">
+		<value>重新啟動應用程式以套用語言變更。</value>
+	</data>
+	<data name="LanguageTitle">
+		<value>語言</value>
+	</data>
+	<data name="LLM Engine">
+		<value>LLM 引擎</value>
+	</data>
+	<data name="Letter">
+		<value>求職信</value>
+	</data>
+	<data name="Letters finished - {0} OK, {1} errors.">
+		<value>求職信處理完成 - {0} 成功，{1} 個錯誤。</value>
+	</data>
+	<data name="LLM server is not running. Please start it in the sidebar.">
+		<value>LLM 伺服器未執行。請在側邊欄中啟動。</value>
+	</data>
+	<data name="LLM server could not be started: {0}">
+		<value>無法啟動 LLM 伺服器：{0}</value>
+	</data>
+	<data name="llama-server not configured.">
+		<value>未設定 llama-server。</value>
+	</data>
+	<data name="llama-server.exe not found in ZIP.">
+		<value>在 ZIP 中找不到 llama-server.exe。</value>
+	</data>
+	<data name="Mark as done">
+		<value>標記為完成</value>
+	</data>
+	<data name="Mark as irrelevant">
+		<value>標記為不相關</value>
+	</data>
+	<data name="Marked as irrelevant - ignored when extending.">
+		<value>已標記為不相關 - 擴充時會忽略。</value>
+	</data>
+	<data name="Match your CV against job ads and extend it in a targeted way.">
+		<value>將你的 CV 與職缺廣告比對，並針對性地擴充。</value>
+	</data>
+	<data name="Missing skills - confirm">
+		<value>缺少技能 - 確認</value>
+	</data>
+	<data name="Missing skills:">
+		<value>缺少技能：</value>
+	</data>
+	<data name="Model {0} could not be started: {1}">
+		<value>無法啟動模型 {0}：{1}</value>
+	</data>
+	<data name="Model {0} is running.">
+		<value>模型 {0} 正在執行。</value>
+	</data>
+	<data name="Model {0} is not configured.">
+		<value>未設定模型 {0}。</value>
+	</data>
+	<data name="Model '{0}' is not configured.">
+		<value>未設定模型 '{0}'。</value>
+	</data>
+	<data name="Model not found.">
+		<value>找不到模型。</value>
+	</data>
+	<data name="Models">
+		<value>模型</value>
+	</data>
+	<data name="No analysis yet.">
+		<value>尚無分析。</value>
+	</data>
+	<data name="No changes">
+		<value>沒有變更</value>
+	</data>
+	<data name="No changes to apply.">
+		<value>沒有可套用的變更。</value>
+	</data>
+	<data name="No changes to the CV.">
+		<value>CV 沒有變更。</value>
+	</data>
+	<data name="No cover letter generated yet.">
+		<value>尚未產生求職信。</value>
+	</data>
+	<data name="No cover letter will be generated.">
+		<value>不會產生求職信。</value>
+	</data>
+	<data name="No cover letter yet. Please generate one first.">
+		<value>尚無求職信。請先產生一份。</value>
+	</data>
+	<data name="No entries with a Phase 2 prompt.">
+		<value>沒有包含階段 2 提示詞的項目。</value>
+	</data>
+	<data name="No gaps found.">
+		<value>找不到落差。</value>
+	</data>
+	<data name="No gaps found - your CV matches the ad.">
+		<value>找不到落差 - 你的 CV 與廣告相符。</value>
+	</data>
+	<data name="No pending entries for Phase 1.">
+		<value>階段 1 沒有待處理項目。</value>
+	</data>
+	<data name="No pending entries for analysis.">
+		<value>沒有待分析的項目。</value>
+	</data>
+	<data name="No questions will be asked - adapting the CV is not useful here.">
+		<value>不會詢問任何問題 - 在此調整 CV 沒有幫助。</value>
+	</data>
+	<data name="No substantive changes - the topics are already in the CV.">
+		<value>沒有實質變更 - 這些主題已在 CV 中。</value>
+	</data>
+	<data name="No text extracted.">
+		<value>未擷取到文字。</value>
+	</data>
+	<data name="No URLs in the queue yet.">
+		<value>佇列中尚無 URL。</value>
+	</data>
+	<data name="Not configured">
+		<value>未設定</value>
+	</data>
+	<data name="OK">
+		<value>確定</value>
+	</data>
+	<data name="One URL per line...">
+		<value>每行一個 URL...</value>
+	</data>
+	<data name="One URL per line. Multiple URLs will be added at once.">
+		<value>每行一個 URL。一次可新增多個 URL。</value>
+	</data>
+	<data name="Open in browser (letter in clipboard)">
+		<value>在瀏覽器中開啟 (求職信在剪貼簿中)</value>
+	</data>
+	<data name="Open questions">
+		<value>待答問題</value>
+	</data>
+	<data name="Operation cancelled.">
+		<value>操作已取消。</value>
+	</data>
+	<data name="Operation cancelled. No cover letter was created.">
+		<value>操作已取消。未建立求職信。</value>
+	</data>
+	<data name="Or paste the job ad here...">
+		<value>或在此貼上職缺廣告...</value>
+	</data>
+	<data name="Page not found.">
+		<value>找不到頁面。</value>
+	</data>
+	<data name="Partial match.">
+		<value>部分相符。</value>
+	</data>
+	<data name="Paste a job ad. It will be saved as a separate queue entry.">
+		<value>貼上職缺廣告。它會儲存為獨立的佇列項目。</value>
+	</data>
+	<data name="Paste job ad">
+		<value>貼上職缺廣告</value>
+	</data>
+	<data name="Paste job ad here...">
+		<value>在此貼上職缺廣告...</value>
+	</data>
+	<data name="Pasted job ad - no link available.">
+		<value>已貼上的職缺廣告 - 沒有可用連結。</value>
+	</data>
+	<data name="Phase 0 - Match check">
+		<value>階段 0 - 相符性檢查</value>
+	</data>
+	<data name="Phase 0 incorrectly reported the following skills as missing:">
+		<value>階段 0 誤將下列技能回報為缺少：</value>
+	</data>
+	<data name="Phase 1">
+		<value>階段 1</value>
+	</data>
+	<data name="Phase 1 (all)">
+		<value>階段 1 (全部)</value>
+	</data>
+	<data name="Phase 1 - Analysis">
+		<value>階段 1 - 分析</value>
+	</data>
+	<data name="Phase 1 finished - {0} OK, {1} skipped.">
+		<value>階段 1 完成 - {0} 成功，{1} 略過。</value>
+	</data>
+	<data name="Phase 2">
+		<value>階段 2</value>
+	</data>
+	<data name="Phase 2 - Prompt">
+		<value>階段 2 - 提示詞</value>
+	</data>
+	<data name="Please answer at least one relevant question.">
+		<value>請至少回答一個相關問題。</value>
+	</data>
+	<data name="Please enter at least one URL.">
+		<value>請至少輸入一個 URL。</value>
+	</data>
+	<data name="Please enter a URL.">
+		<value>請輸入 URL。</value>
+	</data>
+	<data name="Please enter or extract a job ad first.">
+		<value>請先輸入或擷取職缺廣告。</value>
+	</data>
+	<data name="Please paste a job ad.">
+		<value>請貼上職缺廣告。</value>
+	</data>
+	<data name="Press Ctrl+V to paste into the application form.">
+		<value>按 Ctrl+V 貼到申請表單中。</value>
+	</data>
+	<data name="Queue ({0})">
+		<value>佇列 ({0})</value>
+	</data>
+	<data name="Raw LLM response (debug)">
+		<value>原始 LLM 回應 (偵錯)</value>
+	</data>
+	<data name="Ready">
+		<value>就緒</value>
+	</data>
+	<data name="Really delete this URL?">
+		<value>確定要刪除此 URL？</value>
+	</data>
+	<data name="Remove">
+		<value>移除</value>
+	</data>
+	<data name="Remove tags with the x that you do not have.">
+		<value>移除你沒有的標籤 (按 x)。</value>
+	</data>
+	<data name="Restore relevance">
+		<value>恢復相關性</value>
+	</data>
+	<data name="Running - {0}">
+		<value>執行中 - {0}</value>
+	</data>
+	<data name="Save">
+		<value>儲存</value>
+	</data>
+	<data name="Save failed: {0}">
+		<value>儲存失敗：{0}</value>
+	</data>
+	<data name="ScrapeLabelBlocked">
+		<value>被 WAF 封鎖</value>
+	</data>
+	<data name="ScrapeLabelCaptcha">
+		<value>驗證碼挑戰</value>
+	</data>
+	<data name="ScrapeLabelEmpty">
+		<value>內容空白或過短</value>
+	</data>
+	<data name="ScrapeLabelGeo">
+		<value>地理封鎖</value>
+	</data>
+	<data name="ScrapeLabelJsRequired">
+		<value>需要 JavaScript</value>
+	</data>
+	<data name="ScrapeLabelNetwork">
+		<value>網路錯誤</value>
+	</data>
+	<data name="ScrapeLabelRateLimited">
+		<value>受到速率限制</value>
+	</data>
+	<data name="ScrapeLabelUnknown">
+		<value>未知錯誤</value>
+	</data>
+	<data name="Selected job">
+		<value>已選職缺</value>
+	</data>
+	<data name="Server terminated (ExitCode {0}).">
+		<value>伺服器已終止 (ExitCode {0})。</value>
+	</data>
+	<data name="Setup">
+		<value>設定</value>
+	</data>
+	<data name="SetupTitle">
+		<value>設定</value>
+	</data>
+	<data name="SetupSubtitle">
+		<value>設定 WpfTree Studio 的語言、模型與 API 用量。</value>
+	</data>
+	<data name="Setup incomplete. Please configure llama-server and models first.">
+		<value>設定未完成。請先設定 llama-server 與模型。</value>
+	</data>
+	<data name="Show details">
+		<value>顯示詳細資料</value>
+	</data>
+	<data name="Start">
+		<value>啟動</value>
+	</data>
+	<data name="Start failed: {0}">
+		<value>啟動失敗：{0}</value>
+	</data>
+	<data name="Start gap analysis">
+		<value>開始落差分析</value>
+	</data>
+	<data name="Starting {0}... (1-5 minutes)">
+		<value>正在啟動 {0}... (1-5 分鐘)</value>
+	</data>
+	<data name="Starting {0} model... (may take 1-2 minutes)">
+		<value>正在啟動 {0} 模型... (可能需要 1-2 分鐘)</value>
+	</data>
+	<data name="Starting {0}...">
+		<value>正在啟動 {0}...</value>
+	</data>
+	<data name="Starting LLM server...">
+		<value>正在啟動 LLM 伺服器...</value>
+	</data>
+	<data name="Starting...">
+		<value>正在啟動...</value>
+	</data>
+	<data name="Stop">
+		<value>停止</value>
+	</data>
+	<data name="Stopped">
+		<value>已停止</value>
+	</data>
+	<data name="Stopping...">
+		<value>正在停止...</value>
+	</data>
+	<data name="Studio">
+		<value>Studio</value>
+	</data>
+	<data name="Switch failed: {0}">
+		<value>切換失敗：{0}</value>
+	</data>
+	<data name="Switching to {0}...">
+		<value>正在切換至 {0}...</value>
+	</data>
+	<data name="The ad describes a different role than your CV covers.">
+		<value>此廣告描述的職務與你的 CV 涵蓋範圍不同。</value>
+	</data>
+	<data name="The answers did not add any new information. This happens when the topics are already in the CV. The original CV remains unchanged.">
+		<value>這些回答未新增任何資訊。當主題已在 CV 中時會發生這種情況。原始 CV 維持不變。</value>
+	</data>
+	<data name="The CV only partially matches the job ad.">
+		<value>CV 僅與職缺廣告部分相符。</value>
+	</data>
+	<data name="The job ad is too short ({0} words, at least {1} required).">
+		<value>職缺廣告太短 ({0} 個字，至少需要 {1} 個)。</value>
+	</data>
+	<data name="These questions were discarded because the skills they contain are already in the CV.">
+		<value>這些問題已捨棄，因為其中包含的技能已在 CV 中。</value>
+	</data>
+	<data name="Timeout during startup.">
+		<value>啟動時逾時。</value>
+	</data>
+	<data name="Tip: Open the ad in your browser, copy the text, and paste it via [Paste job ad].">
+		<value>提示：在瀏覽器中開啟廣告，複製文字，然後透過 [貼上職缺廣告] 貼上。</value>
+	</data>
+	<data name="Unknown match level: {0}">
+		<value>未知的相符程度：{0}</value>
+	</data>
+	<data name="Use [Add URLs] or [Job ad] above.">
+		<value>使用上方的 [新增 URL] 或 [職缺廣告]。</value>
+	</data>
+	<data name="Vacancies">
+		<value>職缺</value>
+	</data>
+	<data name="WpfTree">
+		<value>WpfTree</value>
+	</data>
+	<data name="WPF .NET 10 File Explorer">
+		<value>WPF .NET 10 檔案總管</value>
+	</data>
+	<data name="Your CV covers all requirements.">
+		<value>你的 CV 涵蓋所有要求。</value>
+	</data>
+	<data name="Your CV does not match the job ad">
+		<value>你的 CV 與職缺廣告不符</value>
+	</data>
+	<data name="Your answer... (any language is fine)">
+		<value>你的回答... (任何語言皆可)</value>
+	</data>
+	<data name="(no URL)">
+		<value>(無 URL)</value>
+	</data>
+	<data name="(pasted job ad)">
+		<value>(已貼上的職缺廣告)</value>
+	</data>
+	<data name="A cover letter already exists for this entry.">
+		<value>此項目已有求職信。</value>
+	</data>
+	<data name="Applied and saved.">
+		<value>已套用並儲存。</value>
+	</data>
+	<data name="Already in CV: {0}">
+		<value>已在 CV 中：{0}</value>
+	</data>
+	<data name="DownloadFailed">
+		<value>下載失敗</value>
+	</data>
+	<data name="filter by category (you must have tagged your pages to do this)">
+		<value>依類別篩選 (你必須先為頁面加上標籤才能這麼做)</value>
+	</data>
+	<data name="GeneralModelTitle">
+		<value>一般模型</value>
+	</data>
+	<data name="GeneralModelDescription">
+		<value>設定用於分析與寫作的一般用途模型。</value>
+	</data>
+	<data name="CoderModelTitle">
+		<value>程式碼模型</value>
+	</data>
+	<data name="CoderModelDescription">
+		<value>設定程式碼編寫模型。</value>
+	</data>
+	<data name="LlamaServerTitle">
+		<value>llama-server</value>
+	</data>
+	<data name="LlamaServerDescription">
+		<value>下載並設定 GGUF 模型所需的本機 llama-server。</value>
+	</data>
+	<data name="LlamaServerDownload">
+		<value>下載 llama-server</value>
+	</data>
+	<data name="PickExistingFile">
+		<value>選取現有檔案</value>
+	</data>
+	<data name="StatusReady">
+		<value>就緒</value>
+	</data>
+	<data name="StatusIncomplete">
+		<value>設定未完成</value>
+	</data>
+	<data name="StatusMissing">
+		<value>缺少</value>
+	</data>
+	<data name="RestartNow">
+		<value>立即重新啟動</value>
+	</data>
+	<data name="ModeLocalGguf">
+		<value>本機 (GGUF)</value>
+	</data>
+	<data name="ModeApi">
+		<value>API</value>
+	</data>
+	<data name="DownloadDefaultModel">
+		<value>下載預設模型 ({0})</value>
+	</data>
+	<data name="PickOwnGguf">
+		<value>選取自己的 GGUF 模型</value>
+	</data>
+	<data name="ApiBaseUrl">
+		<value>API 基底 URL</value>
+	</data>
+	<data name="ApiKeyOptional">
+		<value>API 金鑰 (選用)</value>
+	</data>
+	<data name="ApiModelName">
+		<value>API 模型名稱</value>
+	</data>
+	<data name="PrivacyLabel">
+		<value>隱私權：</value>
+	</data>
+	<data name="PrivacyWarningApi">
+		<value>請求與 CV/職缺廣告內容會傳送至 {0}。請檢閱該提供者的隱私權政策。</value>
+	</data>
+	<data name="PrivacyProviderFallback">
+		<value>已設定的 API 提供者</value>
+	</data>
+	<data name="ModelsDirectoryTitle">
+		<value>模型儲存位置</value>
+	</data>
+	<data name="Change">
+		<value>變更</value>
+	</data>
+	<data name="ModelsDirectoryCustom">
+		<value>自訂模型目錄</value>
+	</data>
+	<data name="ResetToDefault">
+		<value>重設為預設值</value>
+	</data>
+	<data name="DefaultLabel">
+		<value>預設：</value>
+	</data>
+	<data name="ApiUsageTitle">
+		<value>API 用量</value>
+	</data>
+	<data name="Reset">
+		<value>重設</value>
+	</data>
+	<data name="ApiUsageDescription">
+		<value>已記錄的 API 模型請求權杖用量。</value>
+	</data>
+	<data name="ApiUsageModel">
+		<value>模型</value>
+	</data>
+	<data name="ApiUsageRequests">
+		<value>請求數</value>
+	</data>
+	<data name="ApiUsagePrompt">
+		<value>提示權杖</value>
+	</data>
+	<data name="ApiUsageCompletion">
+		<value>完成權杖</value>
+	</data>
+	<data name="ApiUsageTotal">
+		<value>權杖總數</value>
+	</data>
+	<data name="ApiUsageSum">
+		<value>總計</value>
+	</data>
+	<data name="LlamaServerInstalled">
+		<value>llama-server 已安裝。</value>
+	</data>
+	<data name="LlamaServerPathSaved">
+		<value>llama-server 路徑已儲存。</value>
+	</data>
+	<data name="GeneralModelDownloaded">
+		<value>一般模型已下載。</value>
+	</data>
+	<data name="CoderModelDownloaded">
+		<value>程式碼模型已下載。</value>
+	</data>
+	<data name="ModelPathSaved">
+		<value>模型路徑已儲存。</value>
+	</data>
+	<data name="ModelsDirectoryChanged">
+		<value>模型目錄已變更為 {0}。</value>
+	</data>
+	<data name="ModelsDirectoryReset">
+		<value>模型目錄已重設為預設值。</value>
+	</data>
+	<data name="ApiUsageReset">
+		<value>API 用量已重設。</value>
+	</data>
+	<data name="Restart failed: {0}">
+		<value>重新啟動失敗：{0}</value>
+	</data>
+	<data name="LanguageChanged">
+		<value>語言已變更。重新啟動應用程式以套用。</value>
+	</data>
+	<data name="No relevant gaps - {0} redundant question(s) automatically filtered.">
+		<value>沒有相關落差 - 已自動篩選 {0} 個重複問題。</value>
+	</data>
+	<data name="Pricing">
+		<value>定價</value>
+	</data>
+	<data name="Help &amp; Info">
+		<value>說明與資訊</value>
+	</data>
+	<data name="Processes">
+		<value>處理程序</value>
+	</data>
+	<data name="No processes &gt; 3 GB RAM / 2 GB VRAM">
+		<value>沒有處理程序 &gt; 3 GB RAM / 2 GB VRAM</value>
+	</data>
+	<data name="End process">
+		<value>結束處理程序</value>
+	</data>
+	<data name="An error occurred">
+		<value>發生錯誤</value>
+	</data>
+	<data name="Retry">
+		<value>重試</value>
+	</data>
+	<data name="Report problem">
+		<value>回報問題</value>
+	</data>
+	<data name="Really end process {0}?">
+		<value>確定要結束處理程序 {0}？</value>
+	</data>
+	<data name="Process ended.">
+		<value>處理程序已結束。</value>
+	</data>
+	<data name="Process could not be ended.">
+		<value>無法結束處理程序。</value>
+	</data>
+	<data name="{0} of {1} answered">
+		<value>已回答 {0}/{1}</value>
+	</data>
+	<data name="Start setup wizard">
+		<value>啟動設定精靈</value>
+	</data>
+	<data name="Hardware">
+		<value>硬體</value>
+	</data>
+	<data name="CPU">
+		<value>CPU</value>
+	</data>
+	<data name="Threads">
+		<value>執行緒</value>
+	</data>
+	<data name="RAM">
+		<value>RAM</value>
+	</data>
+	<data name="free">
+		<value>可用</value>
+	</data>
+	<data name="VRAM">
+		<value>VRAM</value>
+	</data>
+	<data name="Unknown">
+		<value>未知</value>
+	</data>
+	<data name="Drives">
+		<value>磁碟機</value>
+	</data>
+	<data name="No drives detected.">
+		<value>未偵測到磁碟機。</value>
+	</data>
+	<data name="Your hardware meets Qwen3 30B requirements (32+ GB RAM, 40+ GB free storage). Recommendation: Local - Qwen3 30B.">
+		<value>你的硬體符合 Qwen3 30B 需求 (32+ GB RAM、40+ GB 可用儲存空間)。建議：本機 - Qwen3 30B。</value>
+	</data>
+	<data name="Qwen3 30B is too large, but Qwen2.5 14B fits (16+ GB RAM, 18+ GB free storage). Recommendation: Local - Qwen2.5 14B.">
+		<value>Qwen3 30B 太大，但 Qwen2.5 14B 符合需求 (16+ GB RAM、18+ GB 可用儲存空間)。建議：本機 - Qwen2.5 14B。</value>
+	</data>
+	<data name="Local models lack RAM or free storage. Recommendation: Own API model.">
+		<value>本機模型缺少 RAM 或可用儲存空間。建議：自己的 API 模型。</value>
+	</data>
+	<data name="Quick start">
+		<value>快速開始</value>
+	</data>
+	<data name="Choose a preconfigured variant. The wizard guides you through setup.">
+		<value>選擇預先設定的版本。精靈會引導你完成設定。</value>
+	</data>
+	<data name="Active">
+		<value>使用中</value>
+	</data>
+	<data name="Recommended">
+		<value>建議</value>
+	</data>
+	<data name="Local - Qwen3 30B">
+		<value>本機 - Qwen3 30B</value>
+	</data>
+	<data name="Better quality, more RAM/VRAM. Recommended for strong hardware.">
+		<value>品質更好，需要更多 RAM/VRAM。建議用於效能強大的硬體。</value>
+	</data>
+	<data name="Best local results - no token costs - privacy">
+		<value>最佳本機結果 - 無權杖費用 - 隱私</value>
+	</data>
+	<data name="40 GB disk - 32+ GB RAM - slower than API">
+		<value>40 GB 磁碟 - 32+ GB RAM - 比 API 慢</value>
+	</data>
+	<data name="Hardware suitable">
+		<value>硬體合適</value>
+	</data>
+	<data name="Hardware too weak">
+		<value>硬體效能不足</value>
+	</data>
+	<data name="Check again">
+		<value>再次檢查</value>
+	</data>
+	<data name="Select">
+		<value>選取</value>
+	</data>
+	<data name="Local - Qwen2.5 14B">
+		<value>本機 - Qwen2.5 14B</value>
+	</data>
+	<data name="Faster, less memory. Recommended for mid-range hardware.">
+		<value>更快、記憶體需求更低。建議用於中階硬體。</value>
+	</data>
+	<data name="Like Qwen3 local - no token costs - privacy - smaller &amp; faster">
+		<value>與 Qwen3 本機類似 - 無權杖費用 - 隱私 - 更小且更快</value>
+	</data>
+	<data name="Not quite as perfect cover letters - 18 GB disk - 16+ GB RAM">
+		<value>求職信不那麼完美 - 18 GB 磁碟 - 16+ GB RAM</value>
+	</data>
+	<data name="Own API model">
+		<value>自己的 API 模型</value>
+	</data>
+	<data name="Bring your own: OpenAI-compatible endpoint.">
+		<value>自備：OpenAI 相容端點。</value>
+	</data>
+	<data name="No download - key + URL required">
+		<value>無需下載 - 需要金鑰 + URL</value>
+	</data>
+	<data name="Fastest responses - no download - no local hardware required">
+		<value>最快回應 - 無需下載 - 無需本機硬體</value>
+	</data>
+	<data name="No privacy - costs money - internet/API key required">
+		<value>無隱私 - 需付費 - 需要網際網路/API 金鑰</value>
+	</data>
+	<data name="Always available">
+		<value>永遠可用</value>
+	</data>
+	<data name="Reconfigure">
+		<value>重新設定</value>
+	</data>
+	<data name="Advanced settings">
+		<value>進階設定</value>
+	</data>
+	<data name="Setup Wizard">
+		<value>設定精靈</value>
+	</data>
+	<data name="How do you want to run your LLM?">
+		<value>你想如何執行 LLM？</value>
+	</data>
+	<data name="Local means: models run on this PC. API means: an external provider performs the calculation.">
+		<value>本機表示：模型在這台電腦上執行。API 表示：由外部提供者執行運算。</value>
+	</data>
+	<data name="Local">
+		<value>本機</value>
+	</data>
+	<data name="Models run on your PC. Full privacy. Requires strong hardware.">
+		<value>模型在你的電腦上執行。完整隱私。需要效能強大的硬體。</value>
+	</data>
+	<data name="Bring your own API">
+		<value>自備 API</value>
+	</data>
+	<data name="OpenAI-compatible endpoint (OpenAI, Azure, OpenRouter, Ollama, vLLM ...).">
+		<value>OpenAI 相容端點 (OpenAI、Azure、OpenRouter、Ollama、vLLM ...)。</value>
+	</data>
+	<data name="Which model size?">
+		<value>哪種模型大小？</value>
+	</data>
+	<data name="Both variants run locally. Larger = better quality, more RAM/VRAM required.">
+		<value>兩種版本都在本機執行。較大 = 品質更好，需要更多 RAM/VRAM。</value>
+	</data>
+	<data name="Large - Qwen3 30B">
+		<value>大型 - Qwen3 30B</value>
+	</data>
+	<data name="Better quality. Requires about 40 GB storage, 32+ GB RAM.">
+		<value>品質更好。需要約 40 GB 儲存空間、32+ GB RAM。</value>
+	</data>
+	<data name="Small - Qwen2.5 14B">
+		<value>小型 - Qwen2.5 14B</value>
+	</data>
+	<data name="Faster, less memory. Requires about 18 GB storage, 16+ GB RAM.">
+		<value>更快、記憶體需求更低。需要約 18 GB 儲存空間、16+ GB RAM。</value>
+	</data>
+	<data name="API access">
+		<value>API 存取</value>
+	</data>
+	<data name="OpenAI-compatible endpoints. The key is stored locally and only sent to this endpoint.">
+		<value>OpenAI 相容端點。金鑰會儲存在本機，且只會傳送至此端點。</value>
+	</data>
+	<data name="Base URL">
+		<value>基底 URL</value>
+	</data>
+	<data name="Must end with /. Examples: api.openai.com/v1/, openrouter.ai/api/v1/, localhost:11434/v1/">
+		<value>結尾必須是 /。範例：api.openai.com/v1/、openrouter.ai/api/v1/、localhost:11434/v1/</value>
+	</data>
+	<data name="Optional for local endpoints.">
+		<value>本機端點為選用。</value>
+	</data>
+	<data name="Model name">
+		<value>模型名稱</value>
+	</data>
+	<data name="Privacy:">
+		<value>隱私權：</value>
+	</data>
+	<data name="CV and job ad content are sent to the specified provider.">
+		<value>CV 與職缺廣告內容會傳送至指定的提供者。</value>
+	</data>
+	<data name="Summary">
+		<value>摘要</value>
+	</data>
+	<data name="Local configuration">
+		<value>本機設定</value>
+	</data>
+	<data name="Variant">
+		<value>版本</value>
+	</data>
+	<data name="available">
+		<value>可用</value>
+	</data>
+	<data name="will be downloaded">
+		<value>將予以下載</value>
+	</data>
+	<data name="Storage location">
+		<value>儲存位置</value>
+	</data>
+	<data name="The download can be 20-40 GB depending on the model and may take several minutes. You can continue using the app meanwhile.">
+		<value>下載大小可能依模型為 20-40 GB，且可能需要數分鐘。你可以同時繼續使用應用程式。</value>
+	</data>
+	<data name="API configuration">
+		<value>API 設定</value>
+	</data>
+	<data name="(not set)">
+		<value>(未設定)</value>
+	</data>
+	<data name="Model">
+		<value>模型</value>
+	</data>
+	<data name="During setup the endpoint is tested. If it fails, you can correct the details.">
+		<value>設定期間會測試端點。若失敗，你可以更正詳細資料。</value>
+	</data>
+	<data name="Setup in progress...">
+		<value>設定進行中...</value>
+	</data>
+	<data name="You can close the window - the download continues in the background and resumes when reopened.">
+		<value>你可以關閉視窗 - 下載會在背景繼續，並在重新開啟時繼續。</value>
+	</data>
+	<data name="Done!">
+		<value>完成！</value>
+	</data>
+	<data name="The local models are set up. You can start them from the sidebar.">
+		<value>本機模型已設定完成。你可以從側邊欄啟動它們。</value>
+	</data>
+	<data name="The API is set up. The endpoint was tested successfully.">
+		<value>API 已設定完成。端點測試成功。</value>
+	</data>
+	<data name="Next">
+		<value>下一步</value>
+	</data>
+	<data name="Back">
+		<value>上一步</value>
+	</data>
+	<data name="Download &amp; set up">
+		<value>下載並設定</value>
+	</data>
+	<data name="Test &amp; save">
+		<value>測試並儲存</value>
+	</data>
+	<data name="Continue in background">
+		<value>在背景繼續</value>
+	</data>
+	<data name="Done">
+		<value>完成</value>
+	</data>
+	<data name="Preparing...">
+		<value>正在準備...</value>
+	</data>
+	<data name="Setup failed: {0}">
+		<value>設定失敗：{0}</value>
+	</data>
+	<data name="Downloading llama-server...">
+		<value>正在下載 llama-server...</value>
+	</data>
+	<data name="Downloading general model...">
+		<value>正在下載一般模型...</value>
+	</data>
+	<data name="Downloading coder model...">
+		<value>正在下載程式碼模型...</value>
+	</data>
+	<data name="Testing API endpoint...">
+		<value>正在測試 API 端點...</value>
+	</data>
+	<data name="Endpoint not reachable. Check URL, key, and model name.">
+		<value>無法連線到端點。請檢查 URL、金鑰與模型名稱。</value>
+	</data>
+	<data name="About">
+		<value>關於</value>
+	</data>
+	<data name="About LetterLoom">
+		<value>關於 LetterLoom</value>
+	</data>
+	<data name="Cover letters that convince. One-time EUR 39, no subscription trap.">
+		<value>令人信服的求職信。一次性 EUR 39，沒有訂閱陷阱。</value>
+	</data>
+	<data name="Product">
+		<value>產品</value>
+	</data>
+	<data name="Legal">
+		<value>法律</value>
+	</data>
+	<data name="Contact">
+		<value>聯絡</value>
+	</data>
+	<data name="Contact form">
+		<value>聯絡表單</value>
+	</data>
+	<data name="Toggle light / dark">
+		<value>切換淺色/深色</value>
+	</data>
+	<data name="Switch color scheme">
+		<value>切換色彩配置</value>
+	</data>
+	<data name="LetterLoom is a Windows application that creates cover letters that really match the job ad - without cliches, without copy-paste, without monthly costs.">
+		<value>LetterLoom 是一款 Windows 應用程式，可建立真正符合職缺廣告的求職信 - 沒有老套用語、沒有複製貼上、沒有每月費用。</value>
+	</data>
+	<data name="Who is LetterLoom for?">
+		<value>LetterLoom 適合誰？</value>
+	</data>
+	<data name="For applicants who don't want to spend their time writing the same cover letters over and over. LetterLoom compares the job ad with your CV, identifies missing qualifications, and formulates an individual cover letter.">
+		<value>適合不想一再花時間撰寫相同求職信的求職者。LetterLoom 會將職缺廣告與你的 CV 比對，找出缺少的資格，並撰寫個人化的求職信。</value>
+	</data>
+	<data name="Local or API - you decide">
+		<value>本機或 API - 由你決定</value>
+	</data>
+	<data name="LetterLoom can run entirely locally with models such as Qwen3 30B or Qwen2.5 14B on your own computer - without application data leaving the device. Alternatively, you can connect any OpenAI-compatible endpoint.">
+		<value>LetterLoom 可以在你自己的電腦上，以 Qwen3 30B 或 Qwen2.5 14B 等模型完全本機執行 - 應用程式資料不會離開裝置。或者，你也可以連接任何 OpenAI 相容端點。</value>
+	</data>
+	<data name="Technology">
+		<value>技術</value>
+	</data>
+	<data name="Local LLMs via llama.cpp (llama-server)">
+		<value>透過 llama.cpp (llama-server) 使用本機 LLM</value>
+	</data>
+	<data name="SQLite for local data">
+		<value>使用 SQLite 儲存本機資料</value>
+	</data>
+	<data name="Questions, feedback, or a problem? Write to us at">
+		<value>有問題、意見或遇到困難？請寫信至</value>
+	</data>
+	<data name="Page not found - LetterLoom">
+		<value>找不到頁面 - LetterLoom</value>
+	</data>
+	<data name="The requested page does not exist.">
+		<value>要求的頁面不存在。</value>
+	</data>
+	<data name="Back to home">
+		<value>返回首頁</value>
+	</data>
+	<data name="cover letters that really fit">
+		<value>真正契合的求職信</value>
+	</data>
+	<data name="AI-powered applications">
+		<value>AI 驅動的應用程式</value>
+	</data>
+	<data name="Cover letters that">
+		<value>求職信</value>
+	</data>
+	<data name="really fit">
+		<value>真正契合</value>
+	</data>
+	<data name="LetterLoom analyzes the job ad, compares it with your CV, and creates an individual, professional cover letter - locally on your PC or via your own API.">
+		<value>LetterLoom 會分析職缺廣告、與你的 CV 比對，並建立個人化、專業的求職信 - 可在你的電腦上本機執行，或透過你自己的 API。</value>
+	</data>
+	<data name="Download for free">
+		<value>免費下載</value>
+	</data>
+	<data name="View price - EUR 39">
+		<value>查看價格 - EUR 39</value>
+	</data>
+	<data name="Windows 10/11 - try 5 cover letters for free - no registration required">
+		<value>Windows 10/11 - 免費試用 5 封求職信 - 無需註冊</value>
+	</data>
+	<data name="Watch demo video">
+		<value>觀看示範影片</value>
+	</data>
+	<data name="Sample cover letter">
+		<value>求職信範例</value>
+	</data>
+	<data name="Watch demo">
+		<value>觀看示範</value>
+	</data>
+	<data name="LetterLoom at a glance">
+		<value>LetterLoom 一覽</value>
+	</data>
+	<data name="5 cover letters free">
+		<value>5 封免費求職信</value>
+	</data>
+	<data name="full length, no restrictions">
+		<value>完整長度，沒有限制</value>
+	</data>
+	<data name="EUR 39 one-time">
+		<value>一次性 EUR 39</value>
+	</data>
+	<data name="no subscription, no hidden costs">
+		<value>無訂閱、無隱藏費用</value>
+	</data>
+	<data name="8 GB VRAM is enough">
+		<value>8 GB VRAM 就足夠</value>
+	</data>
+	<data name="or even without a GPU">
+		<value>或甚至不需要 GPU</value>
+	</data>
+	<data name="4 languages">
+		<value>4 種語言</value>
+	</data>
+	<data name="Cover letters in the job's language">
+		<value>以職缺所用語言撰寫求職信</value>
+	</data>
+	<data name="Page navigation">
+		<value>頁面導覽</value>
+	</data>
+	<data name="Features">
+		<value>功能</value>
+	</data>
+	<data name="Try for free">
+		<value>免費試用</value>
+	</data>
+	<data name="How it works">
+		<value>運作方式</value>
+	</data>
+	<data name="Insights">
+		<value>深入解析</value>
+	</data>
+	<data name="Local vs. API">
+		<value>本機 vs. API</value>
+	</data>
+	<data name="Everything you need for a convincing application">
+		<value>說服力十足的申請所需的一切</value>
+	</data>
+	<data name="No more copy-paste. LetterLoom does the matching and writes the cover letter.">
+		<value>不再複製貼上。LetterLoom 會進行比對並撰寫求職信。</value>
+	</data>
+	<data name="Insert job ad">
+		<value>插入職缺廣告</value>
+	</data>
+	<data name="Paste a URL or the ad text - LetterLoom automatically extracts the requirements.">
+		<value>貼上 URL 或廣告文字 - LetterLoom 會自動擷取要求。</value>
+	</data>
+	<data name="Match CV">
+		<value>比對 CV</value>
+	</data>
+	<data name="The CV is checked against the job. Missing skills are identified and can be added.">
+		<value>會將 CV 與職缺進行檢查。缺少的技能會被找出並可新增。</value>
+	</data>
+	<data name="Generate cover letter">
+		<value>產生求職信</value>
+	</data>
+	<data name="In the language of the job ad, without cliches, with the most relevant projects.">
+		<value>以職缺廣告的語言撰寫，沒有老套用語，並納入最相關的專案。</value>
+	</data>
+	<data name="Local or API">
+		<value>本機或 API</value>
+	</data>
+	<data name="Full control: local models on your PC or your own OpenAI-compatible endpoint.">
+		<value>完全掌控：在你的電腦上使用本機模型，或使用你自己的 OpenAI 相容端點。</value>
+	</data>
+	<data name="Try first, then decide">
+		<value>先試用，再決定</value>
+	</data>
+	<data name="Download LetterLoom and create your first">
+		<value>下載 LetterLoom 並建立你的第一批</value>
+	</data>
+	<data name="5 cover letters for free and in full length">
+		<value>5 封免費且完整長度的求職信</value>
+	</data>
+	<data name="The app remains fully usable afterwards - from the 6th cover letter onwards, the result is only displayed as a">
+		<value>之後應用程式仍可完整使用 - 從第 6 封求職信起，結果僅會顯示為</value>
+	</data>
+	<data name="shortened preview image with watermark">
+		<value>帶浮水印的縮短預覽圖片</value>
+	</data>
+	<data name="This way you can see at your leisure what LetterLoom can do and then decide whether you want to unlock the full version for a one-time EUR 39.">
+		<value>這樣你就能從容了解 LetterLoom 的功能，再決定是否要以一次性 EUR 39 解鎖完整版。</value>
+	</data>
+	<data name="Download now">
+		<value>立即下載</value>
+	</data>
+	<data name="From job ad to finished cover letter - in under a minute.">
+		<value>從職缺廣告到完成求職信 - 不到一分鐘。</value>
+	</data>
+	<data name="Your browser cannot play this video.">
+		<value>你的瀏覽器無法播放此影片。</value>
+	</data>
+	<data name="Download video">
+		<value>下載影片</value>
+	</data>
+	<data name="Click the video to see the complete process - including the practical “Open URL” feature that puts the cover letter directly into your clipboard.">
+		<value>按一下影片以查看完整流程 - 包括實用的「Open URL」功能，可將求職信直接放入剪貼簿。</value>
+	</data>
+	<data name="Paste a URL or ad text. LetterLoom extracts the relevant content.">
+		<value>貼上 URL 或廣告文字。LetterLoom 會擷取相關內容。</value>
+	</data>
+	<data name="LetterLoom checks which requirements your CV meets - and which are missing.">
+		<value>LetterLoom 會檢查你的 CV 符合哪些要求 - 以及缺少哪些。</value>
+	</data>
+	<data name="Get cover letter">
+		<value>取得求職信</value>
+	</data>
+	<data name="In the language of the job, with your strongest projects - copyable directly into the application form.">
+		<value>以職缺所用語言撰寫，納入你最強的專案 - 可直接複製到申請表單。</value>
+	</data>
+	<data name="A look into the app">
+		<value>一窺應用程式</value>
+	</data>
+	<data name="This is what the workflow in LetterLoom looks like - from job ad to finished cover letter.">
+		<value>這就是 LetterLoom 的工作流程 - 從職缺廣告到完成求職信。</value>
+	</data>
+	<data name="Vacancy view">
+		<value>職缺檢視</value>
+	</data>
+	<data name="Vacancy view with job ad, phases 1 and 2, and generated cover letter">
+		<value>包含職缺廣告、階段 1 與 2，以及已產生求職信的職缺檢視</value>
+	</data>
+	<data name="Job ad &amp; cover letter">
+		<value>職缺廣告與求職信</value>
+	</data>
+	<data name="Paste a URL or ad text - LetterLoom detects phases and generates the cover letter.">
+		<value>貼上 URL 或廣告文字 - LetterLoom 會偵測階段並產生求職信。</value>
+	</data>
+	<data name="CV gap analysis">
+		<value>CV 落差分析</value>
+	</data>
+	<data name="CV gap analysis with missing skills and open questions">
+		<value>包含缺少技能與待答問題的 CV 落差分析</value>
+	</data>
+	<data name="CV matching with open questions">
+		<value>包含待答問題的 CV 比對</value>
+	</data>
+	<data name="Missing skills are identified and can be added in one step.">
+		<value>缺少的技能會被找出，並可一步新增。</value>
+	</data>
+	<data name="Setup wizard with hardware check and preset selection">
+		<value>包含硬體檢查與預設集選擇的設定精靈</value>
+	</data>
+	<data name="Hardware check, preset selection, and model download - in a guided process.">
+		<value>硬體檢查、預設集選擇與模型下載 - 在引導式流程中完成。</value>
+	</data>
+	<data name="The screenshots are from the current version 1.0. Real images coming soon - until then, the tiles show placeholders.">
+		<value>螢幕擷取畫面來自目前版本 1.0。實際圖片即將推出 - 在那之前，圖磚會顯示預留位置。</value>
+	</data>
+	<data name="Local AI or your own API - you decide">
+		<value>本機 AI 或你自己的 API - 由你決定</value>
+	</data>
+	<data name="LetterLoom supports both paths. Both have strengths and weaknesses - the setup wizard helps you make the right choice.">
+		<value>LetterLoom 支援這兩種方式。兩者各有優缺點 - 設定精靈可協助你做出正確選擇。</value>
+	</data>
+	<data name="Local AI">
+		<value>本機 AI</value>
+	</data>
+	<data name="Models run directly on your PC. Full privacy.">
+		<value>模型直接在你的電腦上執行。完整隱私。</value>
+	</data>
+	<data name="Maximum privacy">
+		<value>最高隱私</value>
+	</data>
+	<data name="Your CV and job ad never leave your computer. No data transfer to third parties.">
+		<value>你的 CV 與職缺廣告絕不會離開你的電腦。不會將資料傳輸給第三方。</value>
+	</data>
+	<data name="No ongoing costs">
+		<value>無持續費用</value>
+	</data>
+	<data name="No token fees. Unlimited use after purchase.">
+		<value>無權杖費用。購買後可無限使用。</value>
+	</data>
+	<data name="Works offline">
+		<value>可離線運作</value>
+	</data>
+	<data name="No internet, no API key, no sign-up required.">
+		<value>無需網際網路、API 金鑰或註冊。</value>
+	</data>
+	<data name="Some hardware required">
+		<value>需要一些硬體</value>
+	</data>
+	<data name="The local models run smoothly with just 8 GB VRAM and 16 GB RAM - it also works without a GPU, just slower.">
+		<value>本機模型僅需 8 GB VRAM 與 16 GB RAM 即可順暢執行 - 沒有 GPU 也能運作，只是較慢。</value>
+	</data>
+	<data name="Slower">
+		<value>較慢</value>
+	</data>
+	<data name="A cover letter takes 1-5 minutes depending on hardware.">
+		<value>視硬體而定，求職信需要 1-5 分鐘。</value>
+	</data>
+	<data name="Your own API">
+		<value>你自己的 API</value>
+	</data>
+	<data name="OpenAI-compatible endpoint. Bring your own.">
+		<value>OpenAI 相容端點。自備。</value>
+	</data>
+	<data name="Very fast">
+		<value>非常快</value>
+	</data>
+	<data name="Cover letter in seconds instead of minutes.">
+		<value>求職信只需幾秒鐘，而非幾分鐘。</value>
+	</data>
+	<data name="No hardware required">
+		<value>無需硬體</value>
+	</data>
+	<data name="Runs on any PC with an internet connection.">
+		<value>可在任何有網際網路連線的電腦上執行。</value>
+	</data>
+	<data name="Highest quality possible">
+		<value>盡可能最高的品質</value>
+	</data>
+	<data name="GPT-4, Claude, or other strong models.">
+		<value>GPT-4、Claude 或其他強大模型。</value>
+	</data>
+	<data name="Token costs">
+		<value>權杖費用</value>
+	</data>
+	<data name="Depending on the provider, cents to euros per cover letter.">
+		<value>依提供者而定，每封求職信從幾美分到幾歐元不等。</value>
+	</data>
+	<data name="Data goes to provider">
+		<value>資料會傳送至提供者</value>
+	</data>
+	<data name="CV and ad are sent to the API endpoint.">
+		<value>CV 與廣告會傳送至 API 端點。</value>
+	</data>
+	<data name="Internet + API key required">
+		<value>需要網際網路 + API 金鑰</value>
+	</data>
+	<data name="No connection, no generation.">
+		<value>沒有連線，就無法產生。</value>
+	</data>
+	<data name="Our recommendation:">
+		<value>我們的建議：</value>
+	</data>
+	<data name="Local AI runs with just">
+		<value>本機 AI 僅需</value>
+	</data>
+	<data name="(or even without a GPU, just slower) and">
+		<value>(或甚至不需要 GPU，只是較慢) 以及</value>
+	</data>
+	<data name="Those with 32 GB RAM and 44 GB free storage can use the larger Qwen3 30B and get even better cover letters. For maximum speed without your own hardware, an API endpoint is suitable (e.g. OpenAI, OpenRouter, Azure OpenAI, or a local Ollama). The setup wizard automatically detects your hardware and suggests the right preset.">
+		<value>擁有 32 GB RAM 與 44 GB 可用儲存空間的人可以使用較大的 Qwen3 30B，獲得更優質的求職信。若要在沒有自有硬體的情況下達到最高速度，適合使用 API 端點 (例如 OpenAI、OpenRouter、Azure OpenAI 或本機 Ollama)。設定精靈會自動偵測你的硬體並建議正確的預設集。</value>
+	</data>
+	<data name="Why not just ChatGPT?">
+		<value>為什麼不直接用 ChatGPT？</value>
+	</data>
+	<data name="Writing manually, using ChatGPT, or LetterLoom - an honest comparison.">
+		<value>手動撰寫、使用 ChatGPT 或 LetterLoom - 誠實比較。</value>
+	</data>
+	<data name="Manual">
+		<value>手動</value>
+	</data>
+	<data name="Time per cover letter">
+		<value>每封求職信所需時間</value>
+	</data>
+	<data name="30-60 min">
+		<value>30-60 分鐘</value>
+	</data>
+	<data name="5-15 min">
+		<value>5-15 分鐘</value>
+	</data>
+	<data name="1-3 min">
+		<value>1-3 分鐘</value>
+	</data>
+	<data name="Automatic CV matching">
+		<value>自動 CV 比對</value>
+	</data>
+	<data name="Detection of missing skills">
+		<value>偵測缺少的技能</value>
+	</data>
+	<data name="Cover letters without cliches">
+		<value>沒有老套用語的求職信</value>
+	</data>
+	<data name="hard">
+		<value>困難</value>
+	</data>
+	<data name="varies">
+		<value>不一定</value>
+	</data>
+	<data name="Data stays local">
+		<value>資料留在本機</value>
+	</data>
+	<data name="no (server)">
+		<value>否 (伺服器)</value>
+	</data>
+	<data name="optional">
+		<value>選用</value>
+	</data>
+	<data name="Costs">
+		<value>費用</value>
+	</data>
+	<data name="EUR 0">
+		<value>EUR 0</value>
+	</data>
+	<data name="EUR 0-20/month">
+		<value>EUR 0-20/月</value>
+	</data>
+	<data name="Try before">
+		<value>先試用</value>
+	</data>
+	<data name="Build the prompt yourself">
+		<value>自行建構提示詞</value>
+	</data>
+	<data name="ChatGPT can deliver good cover letters - if you write the right prompts. LetterLoom handles the entire workflow: insert ad, match CV, write cover letter. Fully local if desired, without your data ever hitting a server.">
+		<value>只要寫對提示詞，ChatGPT 也能提供不錯的求職信。LetterLoom 會處理整個工作流程：插入廣告、比對 CV、撰寫求職信。可完全在本機執行，你的資料絕不會傳到伺服器。</value>
+	</data>
+	<data name="Installation &amp; setup">
+		<value>安裝與設定</value>
+	</data>
+	<data name="Ready to use in a few minutes. Runs with just 8 GB VRAM (or without GPU). The setup wizard guides you step by step through the configuration - including hardware check and model download.">
+		<value>幾分鐘內即可使用。僅需 8 GB VRAM (或無 GPU) 即可執行。設定精靈會逐步引導你完成設定 - 包括硬體檢查與模型下載。</value>
+	</data>
+	<data name="Download &amp; start">
+		<value>下載並啟動</value>
+	</data>
+	<data name="Run the Windows installer. LetterLoom requires .NET 10 (installed automatically if needed).">
+		<value>執行 Windows 安裝程式。LetterLoom 需要 .NET 10 (如有需要會自動安裝)。</value>
+	</data>
+	<data name="Run setup wizard">
+		<value>執行設定精靈</value>
+	</data>
+	<data name="The wizard detects your hardware (CPU, RAM, VRAM, storage) and suggests the right preset.">
+		<value>精靈會偵測你的硬體 (CPU、RAM、VRAM、儲存空間) 並建議正確的預設集。</value>
+	</data>
+	<data name="Configure models">
+		<value>設定模型</value>
+	</data>
+	<data name="Local models are downloaded automatically - or you provide your API endpoint.">
+		<value>本機模型會自動下載 - 或者你提供自己的 API 端點。</value>
+	</data>
+	<data name="Get started">
+		<value>開始使用</value>
+	</data>
+	<data name="Insert CV, insert job ad, generate cover letter. Done.">
+		<value>插入 CV、插入職缺廣告、產生求職信。完成。</value>
+	</data>
+	<data name="The three setup variants">
+		<value>三種設定版本</value>
+	</data>
+	<data name="Recommended for strong PCs">
+		<value>建議用於效能強大的電腦</value>
+	</data>
+	<data name="Best local quality. Also runs with 8 GB VRAM - slower, but fully functional.">
+		<value>最佳本機品質。8 GB VRAM 也能執行 - 較慢，但功能完整。</value>
+	</data>
+	<data name="For mid-range hardware">
+		<value>適用於中階硬體</value>
+	</data>
+	<data name="Faster and less demanding. Good quality for most applications.">
+		<value>更快且需求更低。對大多數申請而言品質良好。</value>
+	</data>
+	<data name="For weaker PCs">
+		<value>適用於效能較弱的電腦</value>
+	</data>
+	<data name="Bring your own: OpenAI-compatible endpoint. No local hardware required.">
+		<value>自備：OpenAI 相容端點。無需本機硬體。</value>
+	</data>
+	<data name="Internet connection">
+		<value>網際網路連線</value>
+	</data>
+	<data name="API key">
+		<value>API 金鑰</value>
+	</data>
+	<data name="Maximum speed">
+		<value>最高速度</value>
+	</data>
+	<data name="System requirements">
+		<value>系統需求</value>
+	</data>
+	<data name="Minimum">
+		<value>最低</value>
+	</data>
+	<data name="Windows 10 (64-bit) or newer">
+		<value>Windows 10 (64 位元) 或更新版本</value>
+	</data>
+	<data name="4 CPU cores">
+		<value>4 個 CPU 核心</value>
+	</data>
+	<data name="18 GB free disk space">
+		<value>18 GB 可用磁碟空間</value>
+	</data>
+	<data name="Internet (for download &amp; API mode)">
+		<value>網際網路 (用於下載與 API 模式)</value>
+	</data>
+	<data name="Windows 11 (64-bit)">
+		<value>Windows 11 (64 位元)</value>
+	</data>
+	<data name="8+ CPU cores">
+		<value>8+ 個 CPU 核心</value>
+	</data>
+	<data name="44 GB free disk space (for Qwen3 30B)">
+		<value>44 GB 可用磁碟空間 (用於 Qwen3 30B)</value>
+	</data>
+	<data name=".NET 10 is installed automatically if needed. Without a dedicated GPU, the local models run too - just slower. For maximum speed, an API endpoint also works on weaker hardware.">
+		<value>.NET 10 會視需要自動安裝。沒有獨立 GPU 時，本機模型也能執行 - 只是較慢。若要達到最高速度，API 端點在效能較弱的硬體上也能運作。</value>
+	</data>
+	<data name="Local storage">
+		<value>本機儲存</value>
+	</data>
+	<data name="All data (CV, cover letters, settings) is stored in a local SQLite database on your PC.">
+		<value>所有資料 (CV、求職信、設定) 都會儲存在你電腦上的本機 SQLite 資料庫中。</value>
+	</data>
+	<data name="Switch anytime">
+		<value>隨時切換</value>
+	</data>
+	<data name="You can switch between local and API without reinstalling the app.">
+		<value>你可以在本機與 API 之間切換，無需重新安裝應用程式。</value>
+	</data>
+	<data name="Frequently asked questions">
+		<value>常見問題</value>
+	</data>
+	<data name="Everything you want to know before buying.">
+		<value>購買前你想知道的一切。</value>
+	</data>
+	<data name="Is LetterLoom really free to try?">
+		<value>LetterLoom 真的可以免費試用嗎？</value>
+	</data>
+	<data name="Yes. You can download LetterLoom and create the first">
+		<value>是的。你可以下載 LetterLoom 並建立第一批</value>
+	</data>
+	<data name="completely and without restrictions">
+		<value>完全且不受限制</value>
+	</data>
+	<data name=". From the 6th cover letter onwards, the result is displayed as a shortened preview image with watermark - but the app remains fully usable. This way you can calmly check whether LetterLoom is right for you.">
+		<value>。從第 6 封求職信起，結果會顯示為帶浮水印的縮短預覽圖片 - 但應用程式仍可完整使用。這樣你就能從容確認 LetterLoom 是否適合你。</value>
+	</data>
+	<data name="Do I need a strong graphics card?">
+		<value>我需要強大的顯示卡嗎？</value>
+	</data>
+	<data name="No. The local models run smoothly with">
+		<value>不需要。本機模型只需</value>
+	</data>
+	<data name=". It also works entirely without a dedicated GPU - then a cover letter takes a bit longer. If you want maximum speed, you can connect your own API (OpenAI, OpenRouter, Ollama ...) instead and don't need any local computing power at all.">
+		<value>即可順暢執行。完全沒有獨立 GPU 也能運作 - 只是求職信會多花一點時間。如果你想要最高速度，可以改為連接自己的 API (OpenAI、OpenRouter、Ollama ...)，完全不需要本機運算能力。</value>
+	</data>
+	<data name="Where does my data go (CV, job ad, cover letter)?">
+		<value>我的資料會去哪裡 (CV、職缺廣告、求職信)？</value>
+	</data>
+	<data name="With local use, your data">
+		<value>在本機使用時，你的資料</value>
+	</data>
+	<data name="never leaves your PC">
+		<value>絕不會離開你的電腦</value>
+	</data>
+	<data name=". CV, job ads, and cover letters are stored in a local SQLite database on your hard drive. There is no cloud connection, no registration, and no telemetry. Only if you voluntarily connect an API are the contents sent to the endpoint of your choice.">
+		<value>。CV、職缺廣告與求職信會儲存在你硬碟上的本機 SQLite 資料庫中。沒有雲端連線、沒有註冊，也沒有遙測。只有在你自願連接 API 時，內容才會傳送至你選擇的端點。</value>
+	</data>
+	<data name="What is the difference from ChatGPT?">
+		<value>與 ChatGPT 有何不同？</value>
+	</data>
+	<data name="LetterLoom is">
+		<value>LetterLoom 是</value>
+	</data>
+	<data name="built specifically for applications">
+		<value>專為求職申請打造</value>
+	</data>
+	<data name=": It automatically compares your CV with the job ad, identifies missing qualifications, filters out redundant skills, and formulates the cover letter according to fixed anti-cliche rules. With ChatGPT, you have to orchestrate these steps yourself each time and write the prompt yourself. LetterLoom does this in one workflow - and optionally locally, without data transfer. A direct comparison can be found in the section above.">
+		<value>：它會自動將你的 CV 與職缺廣告比對、找出缺少的資格、篩除重複技能，並依據固定的反老套規則撰寫求職信。使用 ChatGPT 時，你每次都必須自行協調這些步驟並撰寫提示詞。LetterLoom 會在一個工作流程中完成 - 且可選擇在本機執行，不傳輸資料。直接比較請參閱上一節。</value>
+	</data>
+	<data name="In which languages does LetterLoom work?">
+		<value>LetterLoom 支援哪些語言？</value>
+	</data>
+	<data name="The user interface is available in">
+		<value>使用者介面提供以下語言：</value>
+	</data>
+	<data name="German, English, Italian, and Russian">
+		<value>德文、英文、義大利文與俄文</value>
+	</data>
+	<data name=". The generated cover letter automatically uses the language of the job ad - regardless of which UI language is set.">
+		<value>。產生的求職信會自動使用職缺廣告的語言 - 無論設定的 UI 語言為何。</value>
+	</data>
+	<data name="Can I use the license on multiple PCs?">
+		<value>我可以在多台電腦上使用授權嗎？</value>
+	</data>
+	<data name="A license is valid for">
+		<value>一個授權適用於</value>
+	</data>
+	<data name="one computer">
+		<value>一台電腦</value>
+	</data>
+	<data name=". If you want to install LetterLoom on a new PC, write to us via">
+		<value>。如果你想在新電腦上安裝 LetterLoom，請透過以下方式寫信給我們：</value>
+	</data>
+	<data name="- we'll help with the transfer.">
+		<value>- 我們會協助轉移。</value>
+	</data>
+	<data name="Is there a refund?">
+		<value>可以退款嗎？</value>
+	</data>
+	<data name="The purchase is processed via Paddle (Merchant of Record). Statutory withdrawal rules apply - details can be found in our">
+		<value>購買會透過 Paddle (Merchant of Record) 處理。法定撤回規則適用 - 詳細資料請參閱我們的</value>
+	</data>
+	<data name="withdrawal policy">
+		<value>撤回政策</value>
+	</data>
+	<data name=". For consumers, the 14-day right of withdrawal applies. Since you can test LetterLoom with 5 cover letters for free beforehand, we recommend using the trial before purchasing.">
+		<value>。對消費者而言，適用 14 天撤回權。由於你可以先免費使用 5 封求職信測試 LetterLoom，我們建議在購買前先試用。</value>
+	</data>
+	<data name="Do I get updates for free?">
+		<value>我可以免費獲得更新嗎？</value>
+	</data>
+	<data name="Yes. Updates within the current major version (1.x) are">
+		<value>是的。目前主要版本 (1.x) 內的更新</value>
+	</data>
+	<data name="Free">
+		<value>免費</value>
+	</data>
+	<data name=". Should a new major version ever appear, we will inform you in advance by email.">
+		<value>。如果未來推出新的主要版本，我們會事先以電子郵件通知你。</value>
+	</data>
+	<data name="Your question isn't listed?">
+		<value>你的問題未列出？</value>
+	</data>
+	<data name="- we usually respond within 1-2 business days.">
+		<value>- 我們通常會在 1-2 個工作天內回覆。</value>
+	</data>
+	<data name="One-time EUR 39. No subscription.">
+		<value>一次性 EUR 39。無訂閱。</value>
+	</data>
+	<data name="After the first 5 free cover letters, you can unlock LetterLoom at any time with a one-time payment - including all updates within the major version. No monthly costs, no contract commitment.">
+		<value>在首 5 封免費求職信之後，你可以隨時以一次性付款解鎖 LetterLoom - 包含主要版本內的所有更新。沒有每月費用，也沒有合約承諾。</value>
+	</data>
+	<data name="Price details">
+		<value>價格詳細資料</value>
+	</data>
+	<data name="Ready to try it out?">
+		<value>準備好試用了嗎？</value>
+	</data>
+	<data name="Download LetterLoom and create your first 5 cover letters for free.">
+		<value>下載 LetterLoom，免費建立你的首 5 封求職信。</value>
+	</data>
+</root>

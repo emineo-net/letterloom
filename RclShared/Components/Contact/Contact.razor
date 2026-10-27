@@ -1,0 +1,125 @@
+﻿@page "/contact"
+@using RclShared.Services
+@inject IContactFormService ContactService
+
+<PageTitle>Kontakt - LetterLoom</PageTitle>
+
+<section class="web-section">
+    <div class="web-container web-narrow">
+
+        <h1 class="web-page-title">Kontakt</h1>
+        <p class="web-lead">
+            Fragen, Feedback oder ein Problem? Schreiben Sie uns - wir antworten
+            in der Regel innerhalb von 1-2 Werktagen.
+        </p>
+
+        @if (sent)
+        {
+            <div class="alert alert-success" role="status">
+                <i class="bi bi-check-circle"></i>
+                Vielen Dank! Ihre Nachricht wurde übermittelt.
+            </div>
+        }
+        else
+        {
+            <EditForm Model="@model" OnValidSubmit="SubmitAsync" FormName="contact">
+                <DataAnnotationsValidator/>
+                <ValidationSummary/>
+
+                @* Honeypot - für Menschen unsichtbar, Bots füllen es aus *@
+                <div style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;"
+                     aria-hidden="true">
+                    <label for="website">Website (bitte leer lassen)</label>
+                    <InputText id="website" @bind-Value="model.Website"
+                               tabindex="-1" autocomplete="off"/>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="name">Name</label>
+                    <InputText id="name" class="form-control"
+                               @bind-Value="model.Name" autocomplete="name"/>
+                    <ValidationMessage For="@(() => model.Name)"/>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="email">E-Mail</label>
+                    <InputText id="email" type="email" class="form-control"
+                               @bind-Value="model.Email" autocomplete="email"/>
+                    <ValidationMessage For="@(() => model.Email)"/>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="subject">Betreff</label>
+                    <InputText id="subject" class="form-control" @bind-Value="model.Subject"/>
+                    <ValidationMessage For="@(() => model.Subject)"/>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="message">Nachricht</label>
+                    <InputTextArea id="message" class="form-control" rows="6"
+                                   @bind-Value="model.Message"/>
+                    <ValidationMessage For="@(() => model.Message)"/>
+                </div>
+
+                @if (!string.IsNullOrWhiteSpace(error))
+                {
+                    <div class="alert alert-danger" role="alert">
+                        <i class="bi bi-exclamation-triangle"></i>
+                        @error
+                    </div>
+                }
+
+                <button type="submit" class="btn btn-primary btn-icon" disabled="@busy">
+                    <i class="bi bi-envelope-paper"></i>
+                    <span>@(busy ? "Wird gesendet ..." : "Nachricht senden")</span>
+                </button>
+            </EditForm>
+        }
+    </div>
+</section>
+
+@code {
+    private readonly ContactRequest model = new();
+    private bool busy;
+    private bool sent;
+    private string? error;
+
+    private async Task SubmitAsync()
+    {
+        error = null;
+
+        // Honeypot gefüllt -> Bot. Stillschweigend „Erfolg" zurückgeben,
+        // damit der Bot nicht merkt, dass er gefiltert wurde.
+        if (!string.IsNullOrWhiteSpace(model.Website))
+        {
+            sent = true;
+            return;
+        }
+
+        // Zeitprüfung: Absenden < 3 s nach Öffnen ist praktisch immer ein Bot.
+        if (DateTimeOffset.UtcNow - model.OpenedAt < TimeSpan.FromSeconds(3))
+        {
+            error = "Bitte warten Sie einen Moment und versuchen Sie es erneut.";
+            return;
+        }
+
+        busy = true;
+        try
+        {
+            var result = await ContactService.SendAsync(model);
+            if (result.Success)
+                sent = true;
+            else
+                error = result.ErrorMessage ?? "Die Nachricht konnte nicht gesendet werden.";
+        }
+        catch (Exception ex)
+        {
+            error = "Die Nachricht konnte nicht gesendet werden: " + ex.Message;
+        }
+        finally
+        {
+            busy = false;
+        }
+    }
+
+}

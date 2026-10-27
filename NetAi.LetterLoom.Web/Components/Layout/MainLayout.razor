@@ -1,0 +1,13 @@
+﻿@inherits LayoutComponentBase
+
+<div class="web-shell">
+    <MainHeader/>
+    <main class="web-main">
+        @Body
+    </main>
+    <MainFooter/>
+</div>
+
+@* Nur in DEBUG-Builds sichtbar - rendert in Release nichts. *@
+<LocaleExplorer/>
+<DevLanguageSwitcher/>

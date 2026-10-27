@@ -1,0 +1,1755 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="[yes] is enough for certificates and tools. For experience questions, details such as project, company, and year help.">
+		<value>[yes] يكفي للشهادات والأدوات. أما أسئلة الخبرة، فتفيد التفاصيل مثل المشروع والشركة والسنة.</value>
+	</data>
+	<data name="{0} answered - {1} irrelevant">
+		<value>تمت الإجابة عن {0} - {1} غير ذي صلة</value>
+	</data>
+	<data name="{0} copied to clipboard.">
+		<value>تم نسخ {0} إلى الحافظة.</value>
+	</data>
+	<data name="{0} could not be copied.">
+		<value>تعذر نسخ {0}.</value>
+	</data>
+	<data name="{0} line(s) changed">
+		<value>تم تغيير {0} سطر/أسطر</value>
+	</data>
+	<data name="{0} open question(s) found ({1} redundant filtered).">
+		<value>تم العثور على {0} سؤال/أسئلة مفتوحة (تمت تصفية {1} مكرر).</value>
+	</data>
+	<data name="{0} open question(s) found.">
+		<value>تم العثور على {0} سؤال/أسئلة مفتوحة.</value>
+	</data>
+	<data name="{0} ready">
+		<value>{0} جاهز</value>
+	</data>
+	<data name="{0} tag(s) confirmed, of which {1} were saved/updated in the skills table.">
+		<value>تم تأكيد {0} وسم/وسوم، منها {1} تم حفظها/تحديثها في جدول المهارات.</value>
+	</data>
+	<data name="{0} URL(s) added.">
+		<value>تمت إضافة {0} URL.</value>
+	</data>
+	<data name="{0}x API - {1} Tokens">
+		<value>{0}x API - {1} رموز</value>
+	</data>
+	<data name="{0} is still empty.">
+		<value>{0} لا يزال فارغًا.</value>
+	</data>
+	<data name="{0} ready.">
+		<value>{0} جاهز.</value>
+	</data>
+	<data name="Add">
+		<value>إضافة</value>
+	</data>
+	<data name="Add new URLs">
+		<value>إضافة عناوين URL جديدة</value>
+	</data>
+	<data name="Add new job ads below.">
+		<value>أضف إعلانات وظائف جديدة أدناه.</value>
+	</data>
+	<data name="Add URLs">
+		<value>إضافة عناوين URL</value>
+	</data>
+	<data name="All letters">
+		<value>كل الخطابات</value>
+	</data>
+	<data name="All remaining tags will be written to the skills table when you click OK.">
+		<value>ستُكتب كل الوسوم المتبقية في جدول المهارات عند النقر على موافق.</value>
+	</data>
+	<data name="Analysis failed: {0}">
+		<value>فشل التحليل: {0}</value>
+	</data>
+	<data name="Analysis finished - {0} OK, {1} skipped.">
+		<value>انتهى التحليل - {0} ناجح، {1} تم تخطيه.</value>
+	</data>
+	<data name="Analyze (Coder, all)">
+		<value>تحليل (Coder، الكل)</value>
+	</data>
+	<data name="Analyzing">
+		<value>جارٍ التحليل</value>
+	</data>
+	<data name="All files|*.*">
+		<value>كل الملفات|*.*</value>
+	</data>
+	<data name="All of them are present in KnownSkills or the skills table.">
+		<value>كلها موجودة في KnownSkills أو جدول المهارات.</value>
+	</data>
+	<data name="An error occurred during generation:">
+		<value>حدث خطأ أثناء الإنشاء:</value>
+	</data>
+	<data name="Analyzing CV against job ad...">
+		<value>تحليل السيرة الذاتية مقابل إعلان الوظيفة...</value>
+	</data>
+	<data name="ApiUrl is missing.">
+		<value>ApiUrl مفقود.</value>
+	</data>
+	<data name="API endpoint not reachable or configuration invalid.">
+		<value>نقطة نهاية API غير قابلة للوصول أو التهيئة غير صالحة.</value>
+	</data>
+	<data name="API: {0} - {1}">
+		<value>API: {0} - {1}</value>
+	</data>
+	<data name="Apply to CV">
+		<value>تطبيق على السيرة الذاتية</value>
+	</data>
+	<data name="Automatically filtered ({0})">
+		<value>تمت التصفية تلقائيًا ({0})</value>
+	</data>
+	<data name="Automatically tailor your CV to job ads.">
+		<value>خصص سيرتك الذاتية تلقائيًا لإعلانات الوظائف.</value>
+	</data>
+	<data name="Browser will open with the job ad...">
+		<value>سيفتح المتصفح مع إعلان الوظيفة...</value>
+	</data>
+	<data name="Cancel">
+		<value>إلغاء</value>
+	</data>
+	<data name="Click [Start gap analysis].">
+		<value>انقر [بدء تحليل الفجوات].</value>
+	</data>
+	<data name="Click: copy letter">
+		<value>انقر: نسخ الخطاب</value>
+	</data>
+	<data name="Click: copy Phase 1 prompt">
+		<value>انقر: نسخ مطالبة المرحلة 1</value>
+	</data>
+	<data name="Click: copy Phase 2 prompt">
+		<value>انقر: نسخ مطالبة المرحلة 2</value>
+	</data>
+	<data name="Coder">
+		<value>Coder</value>
+	</data>
+	<data name="Coder - {0}">
+		<value>Coder - {0}</value>
+	</data>
+	<data name="Copy cover letter and open in browser">
+		<value>نسخ خطاب التقديم وفتحه في المتصفح</value>
+	</data>
+	<data name="Cover letter">
+		<value>خطاب تقديم</value>
+	</data>
+	<data name="Cover letter copied to clipboard.">
+		<value>تم نسخ خطاب التقديم إلى الحافظة.</value>
+	</data>
+	<data name="Cover letters (General, all)">
+		<value>خطابات التقديم (عام، الكل)</value>
+	</data>
+	<data name="Create cover letter">
+		<value>إنشاء خطاب تقديم</value>
+	</data>
+	<data name="Creating cover letter">
+		<value>جارٍ إنشاء خطاب تقديم</value>
+	</data>
+	<data name="Current job ad">
+		<value>إعلان الوظيفة الحالي</value>
+	</data>
+	<data name="CV">
+		<value>السيرة الذاتية</value>
+	</data>
+	<data name="CV extended successfully.">
+		<value>تم تمديد السيرة الذاتية بنجاح.</value>
+	</data>
+	<data name="CV is empty.">
+		<value>السيرة الذاتية فارغة.</value>
+	</data>
+	<data name="CV saved.">
+		<value>تم حفظ السيرة الذاتية.</value>
+	</data>
+	<data name="Delete">
+		<value>حذف</value>
+	</data>
+	<data name="Delete it first (if necessary) to regenerate it.">
+		<value>احذفه أولًا (إذا لزم الأمر) لإعادة إنشائه.</value>
+	</data>
+	<data name="Details see Setup -&gt; API usage">
+		<value>التفاصيل انظر الإعداد -&gt; استخدام API</value>
+	</data>
+	<data name="Discard">
+		<value>تجاهل</value>
+	</data>
+	<data name="Error">
+		<value>خطأ</value>
+	</data>
+	<data name="Error while executing:">
+		<value>خطأ أثناء التنفيذ:</value>
+	</data>
+	<data name="Extend CV">
+		<value>تمديد السيرة الذاتية</value>
+	</data>
+	<data name="Extend CV with answers">
+		<value>تمديد السيرة الذاتية بالإجابات</value>
+	</data>
+	<data name="Extend failed: {0}">
+		<value>فشل التمديد: {0}</value>
+	</data>
+	<data name="Extract">
+		<value>استخراج</value>
+	</data>
+	<data name="Extracted text appears here.">
+		<value>يظهر النص المستخرج هنا.</value>
+	</data>
+	<data name="Extracting">
+		<value>جارٍ الاستخراج</value>
+	</data>
+	<data name="Extracting job ad...">
+		<value>استخراج إعلان الوظيفة...</value>
+	</data>
+	<data name="Extraction failed: {0}">
+		<value>فشل الاستخراج: {0}</value>
+	</data>
+	<data name="Extended CV">
+		<value>السيرة الذاتية الممتدة</value>
+	</data>
+	<data name="Extended CV applied and saved.">
+		<value>تم تطبيق السيرة الذاتية الممتدة وحفظها.</value>
+	</data>
+	<data name="Extending CV...">
+		<value>تمديد السيرة الذاتية...</value>
+	</data>
+	<data name="Extended CV created - review and apply.">
+		<value>تم إنشاء السيرة الذاتية الممتدة - راجعها وطبقها.</value>
+	</data>
+	<data name="Final Letter">
+		<value>الخطاب النهائي</value>
+	</data>
+	<data name="GGUF model|*.gguf">
+		<value>نموذج GGUF|*.gguf</value>
+	</data>
+	<data name="General">
+		<value>عام</value>
+	</data>
+	<data name="General - {0}">
+		<value>عام - {0}</value>
+	</data>
+	<data name="Insert">
+		<value>إدراج</value>
+	</data>
+	<data name="Insert failed: {0}">
+		<value>فشل الإدراج: {0}</value>
+	</data>
+	<data name="Insufficient match between CV and job ad.">
+		<value>تطابق غير كافٍ بين السيرة الذاتية وإعلان الوظيفة.</value>
+	</data>
+	<data name="Job ad">
+		<value>إعلان وظيفة</value>
+	</data>
+	<data name="Job ad (DB)">
+		<value>إعلان وظيفة (قاعدة البيانات)</value>
+	</data>
+	<data name="Job ad added.">
+		<value>تمت إضافة إعلان الوظيفة.</value>
+	</data>
+	<data name="Job ad does not match the profile.">
+		<value>إعلان الوظيفة لا يطابق الملف الشخصي.</value>
+	</data>
+	<data name="Job ad extracted.">
+		<value>تم استخراج إعلان الوظيفة.</value>
+	</data>
+	<data name="Job ad is empty.">
+		<value>إعلان الوظيفة فارغ.</value>
+	</data>
+	<data name="No Windows ZIP found in llama-server release.">
+		<value>لم يتم العثور على ZIP لنظام Windows في إصدار llama-server.</value>
+	</data>
+	<data name="LanguageDescription">
+		<value>اختر اللغة المستخدمة لواجهة التطبيق.</value>
+	</data>
+	<data name="LanguageRestartHint">
+		<value>أعد تشغيل التطبيق لتطبيق تغيير اللغة.</value>
+	</data>
+	<data name="LanguageTitle">
+		<value>اللغة</value>
+	</data>
+	<data name="LLM Engine">
+		<value>محرك LLM</value>
+	</data>
+	<data name="Letter">
+		<value>خطاب</value>
+	</data>
+	<data name="Letters finished - {0} OK, {1} errors.">
+		<value>انتهت الخطابات - {0} ناجح، {1} أخطاء.</value>
+	</data>
+	<data name="LLM server is not running. Please start it in the sidebar.">
+		<value>خادم LLM لا يعمل. يرجى تشغيله من الشريط الجانبي.</value>
+	</data>
+	<data name="LLM server could not be started: {0}">
+		<value>تعذر تشغيل خادم LLM: {0}</value>
+	</data>
+	<data name="llama-server not configured.">
+		<value>llama-server غير مُهيأ.</value>
+	</data>
+	<data name="llama-server.exe not found in ZIP.">
+		<value>لم يتم العثور على llama-server.exe في ZIP.</value>
+	</data>
+	<data name="Mark as done">
+		<value>وضع علامة كمنجز</value>
+	</data>
+	<data name="Mark as irrelevant">
+		<value>وضع علامة كغير ذي صلة</value>
+	</data>
+	<data name="Marked as irrelevant - ignored when extending.">
+		<value>تم وضع علامة كغير ذي صلة - يتم تجاهله عند التمديد.</value>
+	</data>
+	<data name="Match your CV against job ads and extend it in a targeted way.">
+		<value>طابق سيرتك الذاتية مع إعلانات الوظائف ومددها بطريقة موجهة.</value>
+	</data>
+	<data name="Missing skills - confirm">
+		<value>مهارات مفقودة - تأكيد</value>
+	</data>
+	<data name="Missing skills:">
+		<value>المهارات المفقودة:</value>
+	</data>
+	<data name="Model {0} could not be started: {1}">
+		<value>تعذر تشغيل النموذج {0}: {1}</value>
+	</data>
+	<data name="Model {0} is running.">
+		<value>النموذج {0} قيد التشغيل.</value>
+	</data>
+	<data name="Model {0} is not configured.">
+		<value>النموذج {0} غير مُهيأ.</value>
+	</data>
+	<data name="Model '{0}' is not configured.">
+		<value>النموذج '{0}' غير مُهيأ.</value>
+	</data>
+	<data name="Model not found.">
+		<value>لم يتم العثور على النموذج.</value>
+	</data>
+	<data name="Models">
+		<value>النماذج</value>
+	</data>
+	<data name="No analysis yet.">
+		<value>لا يوجد تحليل بعد.</value>
+	</data>
+	<data name="No changes">
+		<value>لا توجد تغييرات</value>
+	</data>
+	<data name="No changes to apply.">
+		<value>لا توجد تغييرات لتطبيقها.</value>
+	</data>
+	<data name="No changes to the CV.">
+		<value>لا توجد تغييرات على السيرة الذاتية.</value>
+	</data>
+	<data name="No cover letter generated yet.">
+		<value>لم يتم إنشاء خطاب تقديم بعد.</value>
+	</data>
+	<data name="No cover letter will be generated.">
+		<value>لن يتم إنشاء خطاب تقديم.</value>
+	</data>
+	<data name="No cover letter yet. Please generate one first.">
+		<value>لا يوجد خطاب تقديم بعد. يرجى إنشاء واحد أولًا.</value>
+	</data>
+	<data name="No entries with a Phase 2 prompt.">
+		<value>لا توجد إدخالات تحتوي على مطالبة المرحلة 2.</value>
+	</data>
+	<data name="No gaps found.">
+		<value>لم يتم العثور على فجوات.</value>
+	</data>
+	<data name="No gaps found - your CV matches the ad.">
+		<value>لم يتم العثور على فجوات - سيرتك الذاتية تطابق الإعلان.</value>
+	</data>
+	<data name="No pending entries for Phase 1.">
+		<value>لا توجد إدخالات معلقة للمرحلة 1.</value>
+	</data>
+	<data name="No pending entries for analysis.">
+		<value>لا توجد إدخالات معلقة للتحليل.</value>
+	</data>
+	<data name="No questions will be asked - adapting the CV is not useful here.">
+		<value>لن تُطرح أسئلة - تكييف السيرة الذاتية غير مفيد هنا.</value>
+	</data>
+	<data name="No substantive changes - the topics are already in the CV.">
+		<value>لا توجد تغييرات جوهرية - الموضوعات موجودة بالفعل في السيرة الذاتية.</value>
+	</data>
+	<data name="No text extracted.">
+		<value>لم يتم استخراج نص.</value>
+	</data>
+	<data name="No URLs in the queue yet.">
+		<value>لا توجد عناوين URL في قائمة الانتظار بعد.</value>
+	</data>
+	<data name="Not configured">
+		<value>غير مُهيأ</value>
+	</data>
+	<data name="OK">
+		<value>موافق</value>
+	</data>
+	<data name="One URL per line...">
+		<value>عنوان URL واحد لكل سطر...</value>
+	</data>
+	<data name="One URL per line. Multiple URLs will be added at once.">
+		<value>عنوان URL واحد لكل سطر. ستتم إضافة عناوين URL متعددة دفعة واحدة.</value>
+	</data>
+	<data name="Open in browser (letter in clipboard)">
+		<value>فتح في المتصفح (الخطاب في الحافظة)</value>
+	</data>
+	<data name="Open questions">
+		<value>أسئلة مفتوحة</value>
+	</data>
+	<data name="Operation cancelled.">
+		<value>تم إلغاء العملية.</value>
+	</data>
+	<data name="Operation cancelled. No cover letter was created.">
+		<value>تم إلغاء العملية. لم يتم إنشاء خطاب تقديم.</value>
+	</data>
+	<data name="Or paste the job ad here...">
+		<value>أو الصق إعلان الوظيفة هنا...</value>
+	</data>
+	<data name="Page not found.">
+		<value>الصفحة غير موجودة.</value>
+	</data>
+	<data name="Partial match.">
+		<value>تطابق جزئي.</value>
+	</data>
+	<data name="Paste a job ad. It will be saved as a separate queue entry.">
+		<value>الصق إعلان وظيفة. سيتم حفظه كإدخال منفصل في قائمة الانتظار.</value>
+	</data>
+	<data name="Paste job ad">
+		<value>لصق إعلان وظيفة</value>
+	</data>
+	<data name="Paste job ad here...">
+		<value>الصق إعلان الوظيفة هنا...</value>
+	</data>
+	<data name="Pasted job ad - no link available.">
+		<value>إعلان وظيفة ملصق - لا يوجد رابط متاح.</value>
+	</data>
+	<data name="Phase 0 - Match check">
+		<value>المرحلة 0 - فحص التطابق</value>
+	</data>
+	<data name="Phase 0 incorrectly reported the following skills as missing:">
+		<value>أبلغت المرحلة 0 خطأً عن المهارات التالية باعتبارها مفقودة:</value>
+	</data>
+	<data name="Phase 1">
+		<value>المرحلة 1</value>
+	</data>
+	<data name="Phase 1 (all)">
+		<value>المرحلة 1 (الكل)</value>
+	</data>
+	<data name="Phase 1 - Analysis">
+		<value>المرحلة 1 - التحليل</value>
+	</data>
+	<data name="Phase 1 finished - {0} OK, {1} skipped.">
+		<value>انتهت المرحلة 1 - {0} ناجح، {1} تم تخطيه.</value>
+	</data>
+	<data name="Phase 2">
+		<value>المرحلة 2</value>
+	</data>
+	<data name="Phase 2 - Prompt">
+		<value>المرحلة 2 - المطالبة</value>
+	</data>
+	<data name="Please answer at least one relevant question.">
+		<value>يرجى الإجابة عن سؤال واحد ذي صلة على الأقل.</value>
+	</data>
+	<data name="Please enter at least one URL.">
+		<value>يرجى إدخال عنوان URL واحد على الأقل.</value>
+	</data>
+	<data name="Please enter a URL.">
+		<value>يرجى إدخال عنوان URL.</value>
+	</data>
+	<data name="Please enter or extract a job ad first.">
+		<value>يرجى إدخال أو استخراج إعلان وظيفة أولًا.</value>
+	</data>
+	<data name="Please paste a job ad.">
+		<value>يرجى لصق إعلان وظيفة.</value>
+	</data>
+	<data name="Press Ctrl+V to paste into the application form.">
+		<value>اضغط Ctrl+V للصق في نموذج الطلب.</value>
+	</data>
+	<data name="Queue ({0})">
+		<value>قائمة الانتظار ({0})</value>
+	</data>
+	<data name="Raw LLM response (debug)">
+		<value>استجابة LLM الخام (تصحيح)</value>
+	</data>
+	<data name="Ready">
+		<value>جاهز</value>
+	</data>
+	<data name="Really delete this URL?">
+		<value>هل تريد حقًا حذف عنوان URL هذا؟</value>
+	</data>
+	<data name="Remove">
+		<value>إزالة</value>
+	</data>
+	<data name="Remove tags with the x that you do not have.">
+		<value>أزل الوسوم التي لا تملكها بالنقر على x.</value>
+	</data>
+	<data name="Restore relevance">
+		<value>استعادة الصلة</value>
+	</data>
+	<data name="Running - {0}">
+		<value>قيد التشغيل - {0}</value>
+	</data>
+	<data name="Save">
+		<value>حفظ</value>
+	</data>
+	<data name="Save failed: {0}">
+		<value>فشل الحفظ: {0}</value>
+	</data>
+	<data name="ScrapeLabelBlocked">
+		<value>محظور بواسطة WAF</value>
+	</data>
+	<data name="ScrapeLabelCaptcha">
+		<value>تحدي CAPTCHA</value>
+	</data>
+	<data name="ScrapeLabelEmpty">
+		<value>محتوى فارغ أو قصير</value>
+	</data>
+	<data name="ScrapeLabelGeo">
+		<value>محظور جغرافيًا</value>
+	</data>
+	<data name="ScrapeLabelJsRequired">
+		<value>JavaScript مطلوب</value>
+	</data>
+	<data name="ScrapeLabelNetwork">
+		<value>خطأ في الشبكة</value>
+	</data>
+	<data name="ScrapeLabelRateLimited">
+		<value>تم تقييد الطلبات</value>
+	</data>
+	<data name="ScrapeLabelUnknown">
+		<value>خطأ غير معروف</value>
+	</data>
+	<data name="Selected job">
+		<value>الوظيفة المحددة</value>
+	</data>
+	<data name="Server terminated (ExitCode {0}).">
+		<value>تم إنهاء الخادم (ExitCode {0}).</value>
+	</data>
+	<data name="Setup">
+		<value>الإعداد</value>
+	</data>
+	<data name="SetupTitle">
+		<value>الإعداد</value>
+	</data>
+	<data name="SetupSubtitle">
+		<value>هيئ اللغة والنماذج واستخدام API لتطبيق WpfTree Studio.</value>
+	</data>
+	<data name="Setup incomplete. Please configure llama-server and models first.">
+		<value>الإعداد غير مكتمل. يرجى تهيئة llama-server والنماذج أولًا.</value>
+	</data>
+	<data name="Show details">
+		<value>عرض التفاصيل</value>
+	</data>
+	<data name="Start">
+		<value>بدء</value>
+	</data>
+	<data name="Start failed: {0}">
+		<value>فشل البدء: {0}</value>
+	</data>
+	<data name="Start gap analysis">
+		<value>بدء تحليل الفجوات</value>
+	</data>
+	<data name="Starting {0}... (1-5 minutes)">
+		<value>جارٍ بدء {0}... (1-5 دقائق)</value>
+	</data>
+	<data name="Starting {0} model... (may take 1-2 minutes)">
+		<value>جارٍ بدء نموذج {0}... (قد يستغرق 1-2 دقيقة)</value>
+	</data>
+	<data name="Starting {0}...">
+		<value>جارٍ بدء {0}...</value>
+	</data>
+	<data name="Starting LLM server...">
+		<value>جارٍ بدء خادم LLM...</value>
+	</data>
+	<data name="Starting...">
+		<value>جارٍ البدء...</value>
+	</data>
+	<data name="Stop">
+		<value>إيقاف</value>
+	</data>
+	<data name="Stopped">
+		<value>متوقف</value>
+	</data>
+	<data name="Stopping...">
+		<value>جارٍ الإيقاف...</value>
+	</data>
+	<data name="Studio">
+		<value>Studio</value>
+	</data>
+	<data name="Switch failed: {0}">
+		<value>فشل التبديل: {0}</value>
+	</data>
+	<data name="Switching to {0}...">
+		<value>جارٍ التبديل إلى {0}...</value>
+	</data>
+	<data name="The ad describes a different role than your CV covers.">
+		<value>يصف الإعلان دورًا مختلفًا عما تغطيه سيرتك الذاتية.</value>
+	</data>
+	<data name="The answers did not add any new information. This happens when the topics are already in the CV. The original CV remains unchanged.">
+		<value>لم تضف الإجابات أي معلومات جديدة. يحدث هذا عندما تكون الموضوعات موجودة بالفعل في السيرة الذاتية. تبقى السيرة الذاتية الأصلية دون تغيير.</value>
+	</data>
+	<data name="The CV only partially matches the job ad.">
+		<value>السيرة الذاتية تطابق إعلان الوظيفة جزئيًا فقط.</value>
+	</data>
+	<data name="The job ad is too short ({0} words, at least {1} required).">
+		<value>إعلان الوظيفة قصير جدًا ({0} كلمة، مطلوب {1} على الأقل).</value>
+	</data>
+	<data name="These questions were discarded because the skills they contain are already in the CV.">
+		<value>تم تجاهل هذه الأسئلة لأن المهارات التي تتضمنها موجودة بالفعل في السيرة الذاتية.</value>
+	</data>
+	<data name="Timeout during startup.">
+		<value>انتهت المهلة أثناء بدء التشغيل.</value>
+	</data>
+	<data name="Tip: Open the ad in your browser, copy the text, and paste it via [Paste job ad].">
+		<value>نصيحة: افتح الإعلان في متصفحك، وانسخ النص، والصقه عبر [لصق إعلان وظيفة].</value>
+	</data>
+	<data name="Unknown match level: {0}">
+		<value>مستوى تطابق غير معروف: {0}</value>
+	</data>
+	<data name="Use [Add URLs] or [Job ad] above.">
+		<value>استخدم [إضافة عناوين URL] أو [إعلان وظيفة] أعلاه.</value>
+	</data>
+	<data name="Vacancies">
+		<value>الوظائف الشاغرة</value>
+	</data>
+	<data name="WpfTree">
+		<value>WpfTree</value>
+	</data>
+	<data name="WPF .NET 10 File Explorer">
+		<value>مستكشف ملفات WPF .NET 10</value>
+	</data>
+	<data name="Your CV covers all requirements.">
+		<value>سيرتك الذاتية تغطي جميع المتطلبات.</value>
+	</data>
+	<data name="Your CV does not match the job ad">
+		<value>سيرتك الذاتية لا تطابق إعلان الوظيفة</value>
+	</data>
+	<data name="Your answer... (any language is fine)">
+		<value>إجابتك... (أي لغة مقبولة)</value>
+	</data>
+	<data name="(no URL)">
+		<value>(لا يوجد URL)</value>
+	</data>
+	<data name="(pasted job ad)">
+		<value>(إعلان وظيفة ملصق)</value>
+	</data>
+	<data name="A cover letter already exists for this entry.">
+		<value>يوجد خطاب تقديم بالفعل لهذا الإدخال.</value>
+	</data>
+	<data name="Applied and saved.">
+		<value>تم التطبيق والحفظ.</value>
+	</data>
+	<data name="Already in CV: {0}">
+		<value>موجود بالفعل في السيرة الذاتية: {0}</value>
+	</data>
+	<data name="DownloadFailed">
+		<value>فشل التنزيل</value>
+	</data>
+	<data name="filter by category (you must have tagged your pages to do this)">
+		<value>تصفية حسب الفئة (يجب أن تكون قد وضعت وسومًا على صفحاتك للقيام بذلك)</value>
+	</data>
+	<data name="GeneralModelTitle">
+		<value>النموذج العام</value>
+	</data>
+	<data name="GeneralModelDescription">
+		<value>هيئ النموذج العام المستخدم للتحليل والكتابة.</value>
+	</data>
+	<data name="CoderModelTitle">
+		<value>نموذج Coder</value>
+	</data>
+	<data name="CoderModelDescription">
+		<value>هيئ نموذج البرمجة.</value>
+	</data>
+	<data name="LlamaServerTitle">
+		<value>llama-server</value>
+	</data>
+	<data name="LlamaServerDescription">
+		<value>نزّل وهيئ خادم llama-server المحلي المطلوب لنماذج GGUF.</value>
+	</data>
+	<data name="LlamaServerDownload">
+		<value>تنزيل llama-server</value>
+	</data>
+	<data name="PickExistingFile">
+		<value>اختيار ملف موجود</value>
+	</data>
+	<data name="StatusReady">
+		<value>جاهز</value>
+	</data>
+	<data name="StatusIncomplete">
+		<value>الإعداد غير مكتمل</value>
+	</data>
+	<data name="StatusMissing">
+		<value>مفقود</value>
+	</data>
+	<data name="RestartNow">
+		<value>إعادة التشغيل الآن</value>
+	</data>
+	<data name="ModeLocalGguf">
+		<value>محلي (GGUF)</value>
+	</data>
+	<data name="ModeApi">
+		<value>API</value>
+	</data>
+	<data name="DownloadDefaultModel">
+		<value>تنزيل النموذج الافتراضي ({0})</value>
+	</data>
+	<data name="PickOwnGguf">
+		<value>اختيار نموذج GGUF خاص</value>
+	</data>
+	<data name="ApiBaseUrl">
+		<value>عنوان URL الأساسي لواجهة API</value>
+	</data>
+	<data name="ApiKeyOptional">
+		<value>مفتاح API (اختياري)</value>
+	</data>
+	<data name="ApiModelName">
+		<value>اسم نموذج API</value>
+	</data>
+	<data name="PrivacyLabel">
+		<value>الخصوصية:</value>
+	</data>
+	<data name="PrivacyWarningApi">
+		<value>تُرسل الطلبات ومحتوى السيرة الذاتية/إعلان الوظيفة إلى {0}. راجع سياسة الخصوصية لدى ذلك المزود.</value>
+	</data>
+	<data name="PrivacyProviderFallback">
+		<value>مزود API المُهيأ</value>
+	</data>
+	<data name="ModelsDirectoryTitle">
+		<value>موقع تخزين النماذج</value>
+	</data>
+	<data name="Change">
+		<value>تغيير</value>
+	</data>
+	<data name="ModelsDirectoryCustom">
+		<value>دليل نماذج مخصص</value>
+	</data>
+	<data name="ResetToDefault">
+		<value>إعادة التعيين إلى الافتراضي</value>
+	</data>
+	<data name="DefaultLabel">
+		<value>الافتراضي:</value>
+	</data>
+	<data name="ApiUsageTitle">
+		<value>استخدام API</value>
+	</data>
+	<data name="Reset">
+		<value>إعادة تعيين</value>
+	</data>
+	<data name="ApiUsageDescription">
+		<value>استخدام الرموز المسجل لطلبات نموذج API.</value>
+	</data>
+	<data name="ApiUsageModel">
+		<value>النموذج</value>
+	</data>
+	<data name="ApiUsageRequests">
+		<value>الطلبات</value>
+	</data>
+	<data name="ApiUsagePrompt">
+		<value>رموز الطلب</value>
+	</data>
+	<data name="ApiUsageCompletion">
+		<value>رموز الإكمال</value>
+	</data>
+	<data name="ApiUsageTotal">
+		<value>إجمالي الرموز</value>
+	</data>
+	<data name="ApiUsageSum">
+		<value>الإجمالي</value>
+	</data>
+	<data name="LlamaServerInstalled">
+		<value>تم تثبيت llama-server.</value>
+	</data>
+	<data name="LlamaServerPathSaved">
+		<value>تم حفظ مسار llama-server.</value>
+	</data>
+	<data name="GeneralModelDownloaded">
+		<value>تم تنزيل النموذج العام.</value>
+	</data>
+	<data name="CoderModelDownloaded">
+		<value>تم تنزيل نموذج Coder.</value>
+	</data>
+	<data name="ModelPathSaved">
+		<value>تم حفظ مسار النموذج.</value>
+	</data>
+	<data name="ModelsDirectoryChanged">
+		<value>تم تغيير دليل النماذج إلى {0}.</value>
+	</data>
+	<data name="ModelsDirectoryReset">
+		<value>تمت إعادة تعيين دليل النماذج إلى الافتراضي.</value>
+	</data>
+	<data name="ApiUsageReset">
+		<value>تمت إعادة تعيين استخدام API.</value>
+	</data>
+	<data name="Restart failed: {0}">
+		<value>فشلت إعادة التشغيل: {0}</value>
+	</data>
+	<data name="LanguageChanged">
+		<value>تم تغيير اللغة. أعد تشغيل التطبيق لتطبيقها.</value>
+	</data>
+	<data name="No relevant gaps - {0} redundant question(s) automatically filtered.">
+		<value>لا توجد فجوات ذات صلة - تمت تصفية {0} سؤال/أسئلة مكررة تلقائيًا.</value>
+	</data>
+	<data name="Pricing">
+		<value>التسعير</value>
+	</data>
+	<data name="Help &amp; Info">
+		<value>المساعدة &amp; المعلومات</value>
+	</data>
+	<data name="Processes">
+		<value>العمليات</value>
+	</data>
+	<data name="No processes &gt; 3 GB RAM / 2 GB VRAM">
+		<value>لا توجد عمليات &gt; 3 GB RAM / 2 GB VRAM</value>
+	</data>
+	<data name="End process">
+		<value>إنهاء العملية</value>
+	</data>
+	<data name="An error occurred">
+		<value>حدث خطأ</value>
+	</data>
+	<data name="Retry">
+		<value>إعادة المحاولة</value>
+	</data>
+	<data name="Report problem">
+		<value>الإبلاغ عن مشكلة</value>
+	</data>
+	<data name="Really end process {0}?">
+		<value>هل تريد حقًا إنهاء العملية {0}؟</value>
+	</data>
+	<data name="Process ended.">
+		<value>تم إنهاء العملية.</value>
+	</data>
+	<data name="Process could not be ended.">
+		<value>تعذر إنهاء العملية.</value>
+	</data>
+	<data name="{0} of {1} answered">
+		<value>تمت الإجابة عن {0} من {1}</value>
+	</data>
+	<data name="Start setup wizard">
+		<value>بدء معالج الإعداد</value>
+	</data>
+	<data name="Hardware">
+		<value>الأجهزة</value>
+	</data>
+	<data name="CPU">
+		<value>CPU</value>
+	</data>
+	<data name="Threads">
+		<value>الخيوط</value>
+	</data>
+	<data name="RAM">
+		<value>RAM</value>
+	</data>
+	<data name="free">
+		<value>متاح</value>
+	</data>
+	<data name="VRAM">
+		<value>VRAM</value>
+	</data>
+	<data name="Unknown">
+		<value>غير معروف</value>
+	</data>
+	<data name="Drives">
+		<value>محركات الأقراص</value>
+	</data>
+	<data name="No drives detected.">
+		<value>لم يتم اكتشاف محركات أقراص.</value>
+	</data>
+	<data name="Your hardware meets Qwen3 30B requirements (32+ GB RAM, 40+ GB free storage). Recommendation: Local - Qwen3 30B.">
+		<value>أجهزتك تلبي متطلبات Qwen3 30B (ذاكرة RAM بسعة 32+ GB، مساحة تخزين متاحة 40+ GB). التوصية: محلي - Qwen3 30B.</value>
+	</data>
+	<data name="Qwen3 30B is too large, but Qwen2.5 14B fits (16+ GB RAM, 18+ GB free storage). Recommendation: Local - Qwen2.5 14B.">
+		<value>Qwen3 30B كبير جدًا، لكن Qwen2.5 14B مناسب (ذاكرة RAM بسعة 16+ GB، مساحة تخزين متاحة 18+ GB). التوصية: محلي - Qwen2.5 14B.</value>
+	</data>
+	<data name="Local models lack RAM or free storage. Recommendation: Own API model.">
+		<value>النماذج المحلية تفتقر إلى RAM أو مساحة تخزين متاحة. التوصية: نموذج API خاص.</value>
+	</data>
+	<data name="Quick start">
+		<value>بدء سريع</value>
+	</data>
+	<data name="Choose a preconfigured variant. The wizard guides you through setup.">
+		<value>اختر نسخة مُهيأة مسبقًا. يرشدك المعالج خلال الإعداد.</value>
+	</data>
+	<data name="Active">
+		<value>نشط</value>
+	</data>
+	<data name="Recommended">
+		<value>موصى به</value>
+	</data>
+	<data name="Local - Qwen3 30B">
+		<value>محلي - Qwen3 30B</value>
+	</data>
+	<data name="Better quality, more RAM/VRAM. Recommended for strong hardware.">
+		<value>جودة أفضل، RAM/VRAM أكثر. موصى به للأجهزة القوية.</value>
+	</data>
+	<data name="Best local results - no token costs - privacy">
+		<value>أفضل النتائج المحلية - بلا تكاليف رموز - خصوصية</value>
+	</data>
+	<data name="40 GB disk - 32+ GB RAM - slower than API">
+		<value>قرص 40 GB - RAM 32+ GB - أبطأ من API</value>
+	</data>
+	<data name="Hardware suitable">
+		<value>الأجهزة مناسبة</value>
+	</data>
+	<data name="Hardware too weak">
+		<value>الأجهزة ضعيفة جدًا</value>
+	</data>
+	<data name="Check again">
+		<value>التحقق مرة أخرى</value>
+	</data>
+	<data name="Select">
+		<value>تحديد</value>
+	</data>
+	<data name="Local - Qwen2.5 14B">
+		<value>محلي - Qwen2.5 14B</value>
+	</data>
+	<data name="Faster, less memory. Recommended for mid-range hardware.">
+		<value>أسرع، ذاكرة أقل. موصى به للأجهزة المتوسطة.</value>
+	</data>
+	<data name="Like Qwen3 local - no token costs - privacy - smaller &amp; faster">
+		<value>مثل Qwen3 المحلي - بلا تكاليف رموز - خصوصية - أصغر &amp; أسرع</value>
+	</data>
+	<data name="Not quite as perfect cover letters - 18 GB disk - 16+ GB RAM">
+		<value>خطابات تقديم ليست مثالية تمامًا - قرص 18 GB - RAM 16+ GB</value>
+	</data>
+	<data name="Own API model">
+		<value>نموذج API خاص</value>
+	</data>
+	<data name="Bring your own: OpenAI-compatible endpoint.">
+		<value>أحضر خاصتك: نقطة نهاية متوافقة مع OpenAI.</value>
+	</data>
+	<data name="No download - key + URL required">
+		<value>بلا تنزيل - يلزم مفتاح + URL</value>
+	</data>
+	<data name="Fastest responses - no download - no local hardware required">
+		<value>أسرع الاستجابات - بلا تنزيل - لا يلزم جهاز محلي</value>
+	</data>
+	<data name="No privacy - costs money - internet/API key required">
+		<value>بلا خصوصية - يكالّف مالًا - يلزم إنترنت/مفتاح API</value>
+	</data>
+	<data name="Always available">
+		<value>متاح دائمًا</value>
+	</data>
+	<data name="Reconfigure">
+		<value>إعادة التهيئة</value>
+	</data>
+	<data name="Advanced settings">
+		<value>إعدادات متقدمة</value>
+	</data>
+	<data name="Setup Wizard">
+		<value>معالج الإعداد</value>
+	</data>
+	<data name="How do you want to run your LLM?">
+		<value>كيف تريد تشغيل LLM الخاص بك؟</value>
+	</data>
+	<data name="Local means: models run on this PC. API means: an external provider performs the calculation.">
+		<value>محلي يعني: تعمل النماذج على هذا الكمبيوتر. API يعني: يقوم مزود خارجي بالحساب.</value>
+	</data>
+	<data name="Local">
+		<value>محلي</value>
+	</data>
+	<data name="Models run on your PC. Full privacy. Requires strong hardware.">
+		<value>تعمل النماذج على جهازك. خصوصية كاملة. يتطلب أجهزة قوية.</value>
+	</data>
+	<data name="Bring your own API">
+		<value>أحضر API الخاص بك</value>
+	</data>
+	<data name="OpenAI-compatible endpoint (OpenAI, Azure, OpenRouter, Ollama, vLLM ...).">
+		<value>نقطة نهاية متوافقة مع OpenAI (OpenAI، Azure، OpenRouter، Ollama، vLLM ...).</value>
+	</data>
+	<data name="Which model size?">
+		<value>أي حجم للنموذج؟</value>
+	</data>
+	<data name="Both variants run locally. Larger = better quality, more RAM/VRAM required.">
+		<value>تعمل النسختان محليًا. الأكبر = جودة أفضل، ويتطلب RAM/VRAM أكثر.</value>
+	</data>
+	<data name="Large - Qwen3 30B">
+		<value>كبير - Qwen3 30B</value>
+	</data>
+	<data name="Better quality. Requires about 40 GB storage, 32+ GB RAM.">
+		<value>جودة أفضل. يتطلب نحو 40 GB تخزين، وRAM 32+ GB.</value>
+	</data>
+	<data name="Small - Qwen2.5 14B">
+		<value>صغير - Qwen2.5 14B</value>
+	</data>
+	<data name="Faster, less memory. Requires about 18 GB storage, 16+ GB RAM.">
+		<value>أسرع، ذاكرة أقل. يتطلب نحو 18 GB تخزين، وRAM 16+ GB.</value>
+	</data>
+	<data name="API access">
+		<value>الوصول إلى API</value>
+	</data>
+	<data name="OpenAI-compatible endpoints. The key is stored locally and only sent to this endpoint.">
+		<value>نقاط نهاية متوافقة مع OpenAI. يُخزن المفتاح محليًا ويُرسل فقط إلى نقطة النهاية هذه.</value>
+	</data>
+	<data name="Base URL">
+		<value>عنوان URL الأساسي</value>
+	</data>
+	<data name="Must end with /. Examples: api.openai.com/v1/, openrouter.ai/api/v1/, localhost:11434/v1/">
+		<value>يجب أن ينتهي بـ /. أمثلة: api.openai.com/v1/, openrouter.ai/api/v1/, localhost:11434/v1/</value>
+	</data>
+	<data name="Optional for local endpoints.">
+		<value>اختياري لنقاط النهاية المحلية.</value>
+	</data>
+	<data name="Model name">
+		<value>اسم النموذج</value>
+	</data>
+	<data name="Privacy:">
+		<value>الخصوصية:</value>
+	</data>
+	<data name="CV and job ad content are sent to the specified provider.">
+		<value>يُرسل محتوى السيرة الذاتية وإعلان الوظيفة إلى المزود المحدد.</value>
+	</data>
+	<data name="Summary">
+		<value>الملخص</value>
+	</data>
+	<data name="Local configuration">
+		<value>التهيئة المحلية</value>
+	</data>
+	<data name="Variant">
+		<value>النسخة</value>
+	</data>
+	<data name="available">
+		<value>متاح</value>
+	</data>
+	<data name="will be downloaded">
+		<value>سيتم تنزيله</value>
+	</data>
+	<data name="Storage location">
+		<value>موقع التخزين</value>
+	</data>
+	<data name="The download can be 20-40 GB depending on the model and may take several minutes. You can continue using the app meanwhile.">
+		<value>قد يبلغ التنزيل 20-40 GB حسب النموذج وقد يستغرق عدة دقائق. يمكنك متابعة استخدام التطبيق أثناء ذلك.</value>
+	</data>
+	<data name="API configuration">
+		<value>تهيئة API</value>
+	</data>
+	<data name="(not set)">
+		<value>(غير محدد)</value>
+	</data>
+	<data name="Model">
+		<value>النموذج</value>
+	</data>
+	<data name="During setup the endpoint is tested. If it fails, you can correct the details.">
+		<value>أثناء الإعداد يتم اختبار نقطة النهاية. إذا فشل، يمكنك تصحيح التفاصيل.</value>
+	</data>
+	<data name="Setup in progress...">
+		<value>الإعداد قيد التنفيذ...</value>
+	</data>
+	<data name="You can close the window - the download continues in the background and resumes when reopened.">
+		<value>يمكنك إغلاق النافذة - يستمر التنزيل في الخلفية ويُستأنف عند إعادة الفتح.</value>
+	</data>
+	<data name="Done!">
+		<value>تم!</value>
+	</data>
+	<data name="The local models are set up. You can start them from the sidebar.">
+		<value>تم إعداد النماذج المحلية. يمكنك تشغيلها من الشريط الجانبي.</value>
+	</data>
+	<data name="The API is set up. The endpoint was tested successfully.">
+		<value>تم إعداد API. تم اختبار نقطة النهاية بنجاح.</value>
+	</data>
+	<data name="Next">
+		<value>التالي</value>
+	</data>
+	<data name="Back">
+		<value>رجوع</value>
+	</data>
+	<data name="Download &amp; set up">
+		<value>تنزيل &amp; إعداد</value>
+	</data>
+	<data name="Test &amp; save">
+		<value>اختبار &amp; حفظ</value>
+	</data>
+	<data name="Continue in background">
+		<value>المتابعة في الخلفية</value>
+	</data>
+	<data name="Done">
+		<value>تم</value>
+	</data>
+	<data name="Preparing...">
+		<value>جارٍ التحضير...</value>
+	</data>
+	<data name="Setup failed: {0}">
+		<value>فشل الإعداد: {0}</value>
+	</data>
+	<data name="Downloading llama-server...">
+		<value>تنزيل llama-server...</value>
+	</data>
+	<data name="Downloading general model...">
+		<value>تنزيل النموذج العام...</value>
+	</data>
+	<data name="Downloading coder model...">
+		<value>تنزيل نموذج Coder...</value>
+	</data>
+	<data name="Testing API endpoint...">
+		<value>اختبار نقطة نهاية API...</value>
+	</data>
+	<data name="Endpoint not reachable. Check URL, key, and model name.">
+		<value>نقطة النهاية غير قابلة للوصول. تحقق من URL والمفتاح واسم النموذج.</value>
+	</data>
+	<data name="About">
+		<value>حول</value>
+	</data>
+	<data name="About LetterLoom">
+		<value>حول LetterLoom</value>
+	</data>
+	<data name="Cover letters that convince. One-time EUR 39, no subscription trap.">
+		<value>خطابات تقديم مقنعة. دفعة واحدة EUR 39، بلا فخ اشتراكات.</value>
+	</data>
+	<data name="Product">
+		<value>المنتج</value>
+	</data>
+	<data name="Legal">
+		<value>قانوني</value>
+	</data>
+	<data name="Contact">
+		<value>اتصل بنا</value>
+	</data>
+	<data name="Contact form">
+		<value>نموذج الاتصال</value>
+	</data>
+	<data name="Toggle light / dark">
+		<value>تبديل الفاتح / الداكن</value>
+	</data>
+	<data name="Switch color scheme">
+		<value>تبديل نظام الألوان</value>
+	</data>
+	<data name="LetterLoom is a Windows application that creates cover letters that really match the job ad - without cliches, without copy-paste, without monthly costs.">
+		<value>LetterLoom تطبيق Windows ينشئ خطابات تقديم تطابق إعلان الوظيفة حقًا - بلا عبارات مبتذلة، بلا نسخ ولصق، بلا تكاليف شهرية.</value>
+	</data>
+	<data name="Who is LetterLoom for?">
+		<value>لمن LetterLoom؟</value>
+	</data>
+	<data name="For applicants who don't want to spend their time writing the same cover letters over and over. LetterLoom compares the job ad with your CV, identifies missing qualifications, and formulates an individual cover letter.">
+		<value>للمتقدمين الذين لا يريدون قضاء وقتهم في كتابة خطابات التقديم نفسها مرارًا وتكرارًا. يقارن LetterLoom إعلان الوظيفة بسيرتك الذاتية، ويحدد المؤهلات المفقودة، ويصوغ خطاب تقديم فرديًا.</value>
+	</data>
+	<data name="Local or API - you decide">
+		<value>محلي أو API - القرار لك</value>
+	</data>
+	<data name="LetterLoom can run entirely locally with models such as Qwen3 30B or Qwen2.5 14B on your own computer - without application data leaving the device. Alternatively, you can connect any OpenAI-compatible endpoint.">
+		<value>يمكن تشغيل LetterLoom محليًا بالكامل بنماذج مثل Qwen3 30B أو Qwen2.5 14B على جهازك - دون مغادرة بيانات التطبيق للجهاز. بدلًا من ذلك، يمكنك توصيل أي نقطة نهاية متوافقة مع OpenAI.</value>
+	</data>
+	<data name="Technology">
+		<value>التقنية</value>
+	</data>
+	<data name="Local LLMs via llama.cpp (llama-server)">
+		<value>نماذج LLM محلية عبر llama.cpp (llama-server)</value>
+	</data>
+	<data name="SQLite for local data">
+		<value>SQLite للبيانات المحلية</value>
+	</data>
+	<data name="Questions, feedback, or a problem? Write to us at">
+		<value>أسئلة أو ملاحظات أو مشكلة؟ راسلنا على</value>
+	</data>
+	<data name="Page not found - LetterLoom">
+		<value>الصفحة غير موجودة - LetterLoom</value>
+	</data>
+	<data name="The requested page does not exist.">
+		<value>الصفحة المطلوبة غير موجودة.</value>
+	</data>
+	<data name="Back to home">
+		<value>العودة إلى الرئيسية</value>
+	</data>
+	<data name="cover letters that really fit">
+		<value>خطابات تقديم تطابق حقًا</value>
+	</data>
+	<data name="AI-powered applications">
+		<value>تطبيقات مدعومة بالذكاء الاصطناعي</value>
+	</data>
+	<data name="Cover letters that">
+		<value>خطابات تقديم</value>
+	</data>
+	<data name="really fit">
+		<value>تطابق حقًا</value>
+	</data>
+	<data name="LetterLoom analyzes the job ad, compares it with your CV, and creates an individual, professional cover letter - locally on your PC or via your own API.">
+		<value>يحلل LetterLoom إعلان الوظيفة، ويقارنه بسيرتك الذاتية، وينشئ خطاب تقديم فرديًا واحترافيًا - محليًا على جهازك أو عبر API الخاص بك.</value>
+	</data>
+	<data name="Download for free">
+		<value>تنزيل مجانًا</value>
+	</data>
+	<data name="View price - EUR 39">
+		<value>عرض السعر - EUR 39</value>
+	</data>
+	<data name="Windows 10/11 - try 5 cover letters for free - no registration required">
+		<value>Windows 10/11 - جرّب 5 خطابات تقديم مجانًا - لا يلزم التسجيل</value>
+	</data>
+	<data name="Watch demo video">
+		<value>مشاهدة فيديو العرض</value>
+	</data>
+	<data name="Sample cover letter">
+		<value>نموذج خطاب تقديم</value>
+	</data>
+	<data name="Watch demo">
+		<value>مشاهدة العرض</value>
+	</data>
+	<data name="LetterLoom at a glance">
+		<value>LetterLoom في لمحة</value>
+	</data>
+	<data name="5 cover letters free">
+		<value>5 خطابات تقديم مجانًا</value>
+	</data>
+	<data name="full length, no restrictions">
+		<value>بالطول الكامل، بلا قيود</value>
+	</data>
+	<data name="EUR 39 one-time">
+		<value>EUR 39 دفعة واحدة</value>
+	</data>
+	<data name="no subscription, no hidden costs">
+		<value>بلا اشتراك، بلا تكاليف خفية</value>
+	</data>
+	<data name="8 GB VRAM is enough">
+		<value>8 GB VRAM كافية</value>
+	</data>
+	<data name="or even without a GPU">
+		<value>أو حتى بدون GPU</value>
+	</data>
+	<data name="4 languages">
+		<value>4 لغات</value>
+	</data>
+	<data name="Cover letters in the job's language">
+		<value>خطابات تقديم بلغة الوظيفة</value>
+	</data>
+	<data name="Page navigation">
+		<value>تنقل الصفحة</value>
+	</data>
+	<data name="Features">
+		<value>الميزات</value>
+	</data>
+	<data name="Try for free">
+		<value>جرّب مجانًا</value>
+	</data>
+	<data name="How it works">
+		<value>كيف يعمل</value>
+	</data>
+	<data name="Insights">
+		<value>رؤى</value>
+	</data>
+	<data name="Local vs. API">
+		<value>محلي مقابل API</value>
+	</data>
+	<data name="Everything you need for a convincing application">
+		<value>كل ما تحتاجه لتقديم طلب مقنع</value>
+	</data>
+	<data name="No more copy-paste. LetterLoom does the matching and writes the cover letter.">
+		<value>لا مزيد من النسخ واللصق. يقوم LetterLoom بالمطابقة ويكتب خطاب التقديم.</value>
+	</data>
+	<data name="Insert job ad">
+		<value>إدراج إعلان وظيفة</value>
+	</data>
+	<data name="Paste a URL or the ad text - LetterLoom automatically extracts the requirements.">
+		<value>الصق URL أو نص الإعلان - يستخرج LetterLoom المتطلبات تلقائيًا.</value>
+	</data>
+	<data name="Match CV">
+		<value>مطابقة السيرة الذاتية</value>
+	</data>
+	<data name="The CV is checked against the job. Missing skills are identified and can be added.">
+		<value>يتم فحص السيرة الذاتية مقابل الوظيفة. تُحدد المهارات المفقودة ويمكن إضافتها.</value>
+	</data>
+	<data name="Generate cover letter">
+		<value>إنشاء خطاب تقديم</value>
+	</data>
+	<data name="In the language of the job ad, without cliches, with the most relevant projects.">
+		<value>بلغة إعلان الوظيفة، بلا عبارات مبتذلة، وبأكثر المشاريع صلة.</value>
+	</data>
+	<data name="Local or API">
+		<value>محلي أو API</value>
+	</data>
+	<data name="Full control: local models on your PC or your own OpenAI-compatible endpoint.">
+		<value>تحكم كامل: نماذج محلية على جهازك أو نقطة نهاية خاصة متوافقة مع OpenAI.</value>
+	</data>
+	<data name="Try first, then decide">
+		<value>جرّب أولًا ثم قرر</value>
+	</data>
+	<data name="Download LetterLoom and create your first">
+		<value>نزّل LetterLoom وأنشئ أول</value>
+	</data>
+	<data name="5 cover letters for free and in full length">
+		<value>5 خطابات تقديم مجانًا وبالطول الكامل</value>
+	</data>
+	<data name="The app remains fully usable afterwards - from the 6th cover letter onwards, the result is only displayed as a">
+		<value>يبقى التطبيق قابلًا للاستخدام بالكامل بعد ذلك - بدءًا من خطاب التقديم السادس، تُعرض النتيجة فقط كـ</value>
+	</data>
+	<data name="shortened preview image with watermark">
+		<value>صورة معاينة مختصرة بعلامة مائية</value>
+	</data>
+	<data name="This way you can see at your leisure what LetterLoom can do and then decide whether you want to unlock the full version for a one-time EUR 39.">
+		<value>بهذه الطريقة يمكنك أن ترى في وقت فراغك ما يمكن أن يفعله LetterLoom ثم تقرر ما إذا كنت تريد فتح النسخة الكاملة مقابل دفعة واحدة EUR 39.</value>
+	</data>
+	<data name="Download now">
+		<value>تنزيل الآن</value>
+	</data>
+	<data name="From job ad to finished cover letter - in under a minute.">
+		<value>من إعلان الوظيفة إلى خطاب تقديم جاهز - في أقل من دقيقة.</value>
+	</data>
+	<data name="Your browser cannot play this video.">
+		<value>متصفحك لا يستطيع تشغيل هذا الفيديو.</value>
+	</data>
+	<data name="Download video">
+		<value>تنزيل الفيديو</value>
+	</data>
+	<data name="Click the video to see the complete process - including the practical “Open URL” feature that puts the cover letter directly into your clipboard.">
+		<value>انقر على الفيديو لمشاهدة العملية الكاملة - بما في ذلك ميزة “فتح URL” العملية التي تضع خطاب التقديم مباشرة في الحافظة.</value>
+	</data>
+	<data name="Paste a URL or ad text. LetterLoom extracts the relevant content.">
+		<value>الصق URL أو نص الإعلان. يستخرج LetterLoom المحتوى ذي الصلة.</value>
+	</data>
+	<data name="LetterLoom checks which requirements your CV meets - and which are missing.">
+		<value>يفحص LetterLoom المتطلبات التي تلبيها سيرتك الذاتية - والمفقودة منها.</value>
+	</data>
+	<data name="Get cover letter">
+		<value>الحصول على خطاب تقديم</value>
+	</data>
+	<data name="In the language of the job, with your strongest projects - copyable directly into the application form.">
+		<value>بلغة الوظيفة، مع أقوى مشاريعك - قابل للنسخ مباشرة إلى نموذج الطلب.</value>
+	</data>
+	<data name="A look into the app">
+		<value>نظرة داخل التطبيق</value>
+	</data>
+	<data name="This is what the workflow in LetterLoom looks like - from job ad to finished cover letter.">
+		<value>هكذا تبدو سير العمل في LetterLoom - من إعلان الوظيفة إلى خطاب التقديم الجاهز.</value>
+	</data>
+	<data name="Vacancy view">
+		<value>عرض الوظيفة الشاغرة</value>
+	</data>
+	<data name="Vacancy view with job ad, phases 1 and 2, and generated cover letter">
+		<value>عرض الوظيفة الشاغرة مع إعلان الوظيفة والمرحلتين 1 و2 وخطاب التقديم المُنشأ</value>
+	</data>
+	<data name="Job ad &amp; cover letter">
+		<value>إعلان وظيفة &amp; خطاب تقديم</value>
+	</data>
+	<data name="Paste a URL or ad text - LetterLoom detects phases and generates the cover letter.">
+		<value>الصق URL أو نص الإعلان - يكتشف LetterLoom المراحل وينشئ خطاب التقديم.</value>
+	</data>
+	<data name="CV gap analysis">
+		<value>تحليل فجوات السيرة الذاتية</value>
+	</data>
+	<data name="CV gap analysis with missing skills and open questions">
+		<value>تحليل فجوات السيرة الذاتية مع المهارات المفقودة والأسئلة المفتوحة</value>
+	</data>
+	<data name="CV matching with open questions">
+		<value>مطابقة السيرة الذاتية مع الأسئلة المفتوحة</value>
+	</data>
+	<data name="Missing skills are identified and can be added in one step.">
+		<value>تُحدد المهارات المفقودة ويمكن إضافتها في خطوة واحدة.</value>
+	</data>
+	<data name="Setup wizard with hardware check and preset selection">
+		<value>معالج الإعداد مع فحص الأجهزة واختيار الإعداد المسبق</value>
+	</data>
+	<data name="Hardware check, preset selection, and model download - in a guided process.">
+		<value>فحص الأجهزة واختيار الإعداد المسبق وتنزيل النموذج - في عملية موجهة.</value>
+	</data>
+	<data name="The screenshots are from the current version 1.0. Real images coming soon - until then, the tiles show placeholders.">
+		<value>لقطات الشاشة من الإصدار الحالي 1.0. الصور الحقيقية قادمة قريبًا - حتى ذلك الحين، تعرض البلاطات عناصر نائبة.</value>
+	</data>
+	<data name="Local AI or your own API - you decide">
+		<value>ذكاء اصطناعي محلي أو API خاص بك - القرار لك</value>
+	</data>
+	<data name="LetterLoom supports both paths. Both have strengths and weaknesses - the setup wizard helps you make the right choice.">
+		<value>يدعم LetterLoom كلا المسارين. لكل منهما نقاط قوة وضعف - يساعدك معالج الإعداد على اتخاذ الخيار الصحيح.</value>
+	</data>
+	<data name="Local AI">
+		<value>ذكاء اصطناعي محلي</value>
+	</data>
+	<data name="Models run directly on your PC. Full privacy.">
+		<value>تعمل النماذج مباشرة على جهازك. خصوصية كاملة.</value>
+	</data>
+	<data name="Maximum privacy">
+		<value>أقصى خصوصية</value>
+	</data>
+	<data name="Your CV and job ad never leave your computer. No data transfer to third parties.">
+		<value>لا تغادر سيرتك الذاتية وإعلان الوظيفة جهازك أبدًا. لا نقل بيانات إلى أطراف ثالثة.</value>
+	</data>
+	<data name="No ongoing costs">
+		<value>بلا تكاليف مستمرة</value>
+	</data>
+	<data name="No token fees. Unlimited use after purchase.">
+		<value>بلا رسوم رموز. استخدام غير محدود بعد الشراء.</value>
+	</data>
+	<data name="Works offline">
+		<value>يعمل دون اتصال</value>
+	</data>
+	<data name="No internet, no API key, no sign-up required.">
+		<value>لا يلزم إنترنت، ولا مفتاح API، ولا تسجيل.</value>
+	</data>
+	<data name="Some hardware required">
+		<value>يلزم بعض الأجهزة</value>
+	</data>
+	<data name="The local models run smoothly with just 8 GB VRAM and 16 GB RAM - it also works without a GPU, just slower.">
+		<value>تعمل النماذج المحلية بسلاسة مع 8 GB VRAM و16 GB RAM فقط - وتعمل أيضًا بدون GPU، لكن بشكل أبطأ.</value>
+	</data>
+	<data name="Slower">
+		<value>أبطأ</value>
+	</data>
+	<data name="A cover letter takes 1-5 minutes depending on hardware.">
+		<value>يستغرق خطاب التقديم 1-5 دقائق حسب الأجهزة.</value>
+	</data>
+	<data name="Your own API">
+		<value>API الخاص بك</value>
+	</data>
+	<data name="OpenAI-compatible endpoint. Bring your own.">
+		<value>نقطة نهاية متوافقة مع OpenAI. أحضر خاصتك.</value>
+	</data>
+	<data name="Very fast">
+		<value>سريع جدًا</value>
+	</data>
+	<data name="Cover letter in seconds instead of minutes.">
+		<value>خطاب تقديم في ثوانٍ بدلًا من دقائق.</value>
+	</data>
+	<data name="No hardware required">
+		<value>لا يلزم جهاز</value>
+	</data>
+	<data name="Runs on any PC with an internet connection.">
+		<value>يعمل على أي كمبيوتر متصل بالإنترنت.</value>
+	</data>
+	<data name="Highest quality possible">
+		<value>أعلى جودة ممكنة</value>
+	</data>
+	<data name="GPT-4, Claude, or other strong models.">
+		<value>GPT-4 أو Claude أو نماذج قوية أخرى.</value>
+	</data>
+	<data name="Token costs">
+		<value>تكاليف الرموز</value>
+	</data>
+	<data name="Depending on the provider, cents to euros per cover letter.">
+		<value>حسب المزود، من سنتات إلى يوروات لكل خطاب تقديم.</value>
+	</data>
+	<data name="Data goes to provider">
+		<value>تذهب البيانات إلى المزود</value>
+	</data>
+	<data name="CV and ad are sent to the API endpoint.">
+		<value>تُرسل السيرة الذاتية والإعلان إلى نقطة نهاية API.</value>
+	</data>
+	<data name="Internet + API key required">
+		<value>يلزم إنترنت + مفتاح API</value>
+	</data>
+	<data name="No connection, no generation.">
+		<value>لا اتصال، لا إنشاء.</value>
+	</data>
+	<data name="Our recommendation:">
+		<value>توصيتنا:</value>
+	</data>
+	<data name="Local AI runs with just">
+		<value>يعمل الذكاء الاصطناعي المحلي بـ</value>
+	</data>
+	<data name="(or even without a GPU, just slower) and">
+		<value>(أو حتى بدون GPU، لكن بشكل أبطأ) و</value>
+	</data>
+	<data name="Those with 32 GB RAM and 44 GB free storage can use the larger Qwen3 30B and get even better cover letters. For maximum speed without your own hardware, an API endpoint is suitable (e.g. OpenAI, OpenRouter, Azure OpenAI, or a local Ollama). The setup wizard automatically detects your hardware and suggests the right preset.">
+		<value>يمكن لمن لديه 32 GB RAM و44 GB مساحة تخزين متاحة استخدام Qwen3 30B الأكبر والحصول على خطابات تقديم أفضل. للحصول على أقصى سرعة دون أجهزة خاصة، تناسب نقطة نهاية API (مثل OpenAI أو OpenRouter أو Azure OpenAI أو Ollama محلي). يكتشف معالج الإعداد أجهزتك تلقائيًا ويقترح الإعداد المسبق المناسب.</value>
+	</data>
+	<data name="Why not just ChatGPT?">
+		<value>لماذا لا تستخدم ChatGPT فقط؟</value>
+	</data>
+	<data name="Writing manually, using ChatGPT, or LetterLoom - an honest comparison.">
+		<value>الكتابة يدويًا، أو استخدام ChatGPT، أو LetterLoom - مقارنة صادقة.</value>
+	</data>
+	<data name="Manual">
+		<value>يدوي</value>
+	</data>
+	<data name="Time per cover letter">
+		<value>الوقت لكل خطاب تقديم</value>
+	</data>
+	<data name="30-60 min">
+		<value>30-60 دقيقة</value>
+	</data>
+	<data name="5-15 min">
+		<value>5-15 دقيقة</value>
+	</data>
+	<data name="1-3 min">
+		<value>1-3 دقيقة</value>
+	</data>
+	<data name="Automatic CV matching">
+		<value>مطابقة تلقائية للسيرة الذاتية</value>
+	</data>
+	<data name="Detection of missing skills">
+		<value>اكتشاف المهارات المفقودة</value>
+	</data>
+	<data name="Cover letters without cliches">
+		<value>خطابات تقديم بلا عبارات مبتذلة</value>
+	</data>
+	<data name="hard">
+		<value>صعب</value>
+	</data>
+	<data name="varies">
+		<value>متفاوت</value>
+	</data>
+	<data name="Data stays local">
+		<value>تبقى البيانات محلية</value>
+	</data>
+	<data name="no (server)">
+		<value>لا (خادم)</value>
+	</data>
+	<data name="optional">
+		<value>اختياري</value>
+	</data>
+	<data name="Costs">
+		<value>التكاليف</value>
+	</data>
+	<data name="EUR 0">
+		<value>EUR 0</value>
+	</data>
+	<data name="EUR 0-20/month">
+		<value>EUR 0-20/شهر</value>
+	</data>
+	<data name="Try before">
+		<value>جرّب قبل</value>
+	</data>
+	<data name="Build the prompt yourself">
+		<value>ابنِ المطالبة بنفسك</value>
+	</data>
+	<data name="ChatGPT can deliver good cover letters - if you write the right prompts. LetterLoom handles the entire workflow: insert ad, match CV, write cover letter. Fully local if desired, without your data ever hitting a server.">
+		<value>يمكن لـ ChatGPT تقديم خطابات تقديم جيدة - إذا كتبت المطالبات الصحيحة. يتولى LetterLoom سير العمل بالكامل: إدراج الإعلان، مطابقة السيرة الذاتية، كتابة خطاب التقديم. محلي بالكامل إذا رغبت، دون أن تصل بياناتك إلى خادم أبدًا.</value>
+	</data>
+	<data name="Installation &amp; setup">
+		<value>التثبيت &amp; الإعداد</value>
+	</data>
+	<data name="Ready to use in a few minutes. Runs with just 8 GB VRAM (or without GPU). The setup wizard guides you step by step through the configuration - including hardware check and model download.">
+		<value>جاهز للاستخدام في بضع دقائق. يعمل مع 8 GB VRAM فقط (أو بدون GPU). يرشدك معالج الإعداد خطوة بخطوة خلال التهيئة - بما في ذلك فحص الأجهزة وتنزيل النموذج.</value>
+	</data>
+	<data name="Download &amp; start">
+		<value>تنزيل &amp; بدء</value>
+	</data>
+	<data name="Run the Windows installer. LetterLoom requires .NET 10 (installed automatically if needed).">
+		<value>شغّل مثبت Windows. يتطلب LetterLoom الإصدار .NET 10 (يُثبت تلقائيًا عند الحاجة).</value>
+	</data>
+	<data name="Run setup wizard">
+		<value>تشغيل معالج الإعداد</value>
+	</data>
+	<data name="The wizard detects your hardware (CPU, RAM, VRAM, storage) and suggests the right preset.">
+		<value>يكتشف المعالج أجهزتك (CPU، RAM، VRAM، التخزين) ويقترح الإعداد المسبق المناسب.</value>
+	</data>
+	<data name="Configure models">
+		<value>تهيئة النماذج</value>
+	</data>
+	<data name="Local models are downloaded automatically - or you provide your API endpoint.">
+		<value>تُنزّل النماذج المحلية تلقائيًا - أو توفر نقطة نهاية API الخاصة بك.</value>
+	</data>
+	<data name="Get started">
+		<value>ابدأ</value>
+	</data>
+	<data name="Insert CV, insert job ad, generate cover letter. Done.">
+		<value>أدرج السيرة الذاتية، أدرج إعلان الوظيفة، أنشئ خطاب التقديم. تم.</value>
+	</data>
+	<data name="The three setup variants">
+		<value>نسخ الإعداد الثلاث</value>
+	</data>
+	<data name="Recommended for strong PCs">
+		<value>موصى به لأجهزة الكمبيوتر القوية</value>
+	</data>
+	<data name="Best local quality. Also runs with 8 GB VRAM - slower, but fully functional.">
+		<value>أفضل جودة محلية. يعمل أيضًا مع 8 GB VRAM - أبطأ، لكنه فعّال بالكامل.</value>
+	</data>
+	<data name="For mid-range hardware">
+		<value>للأجهزة المتوسطة</value>
+	</data>
+	<data name="Faster and less demanding. Good quality for most applications.">
+		<value>أسرع وأقل تطلبًا. جودة جيدة لمعظم الطلبات.</value>
+	</data>
+	<data name="For weaker PCs">
+		<value>لأجهزة الكمبيوتر الأضعف</value>
+	</data>
+	<data name="Bring your own: OpenAI-compatible endpoint. No local hardware required.">
+		<value>أحضر خاصتك: نقطة نهاية متوافقة مع OpenAI. لا يلزم جهاز محلي.</value>
+	</data>
+	<data name="Internet connection">
+		<value>اتصال بالإنترنت</value>
+	</data>
+	<data name="API key">
+		<value>مفتاح API</value>
+	</data>
+	<data name="Maximum speed">
+		<value>أقصى سرعة</value>
+	</data>
+	<data name="System requirements">
+		<value>متطلبات النظام</value>
+	</data>
+	<data name="Minimum">
+		<value>الحد الأدنى</value>
+	</data>
+	<data name="Windows 10 (64-bit) or newer">
+		<value>Windows 10 (64 بت) أو أحدث</value>
+	</data>
+	<data name="4 CPU cores">
+		<value>4 أنوية CPU</value>
+	</data>
+	<data name="18 GB free disk space">
+		<value>18 GB مساحة قرص متاحة</value>
+	</data>
+	<data name="Internet (for download &amp; API mode)">
+		<value>إنترنت (للتنزيل &amp; وضع API)</value>
+	</data>
+	<data name="Windows 11 (64-bit)">
+		<value>Windows 11 (64 بت)</value>
+	</data>
+	<data name="8+ CPU cores">
+		<value>8+ أنوية CPU</value>
+	</data>
+	<data name="44 GB free disk space (for Qwen3 30B)">
+		<value>44 GB مساحة قرص متاحة (لـ Qwen3 30B)</value>
+	</data>
+	<data name=".NET 10 is installed automatically if needed. Without a dedicated GPU, the local models run too - just slower. For maximum speed, an API endpoint also works on weaker hardware.">
+		<value>يُثبت .NET 10 تلقائيًا عند الحاجة. بدون GPU مخصص، تعمل النماذج المحلية أيضًا - لكن بشكل أبطأ. للحصول على أقصى سرعة، تعمل نقطة نهاية API أيضًا على أجهزة أضعف.</value>
+	</data>
+	<data name="Local storage">
+		<value>التخزين المحلي</value>
+	</data>
+	<data name="All data (CV, cover letters, settings) is stored in a local SQLite database on your PC.">
+		<value>تُخزن كل البيانات (السيرة الذاتية، خطابات التقديم، الإعدادات) في قاعدة بيانات SQLite محلية على جهازك.</value>
+	</data>
+	<data name="Switch anytime">
+		<value>التبديل في أي وقت</value>
+	</data>
+	<data name="You can switch between local and API without reinstalling the app.">
+		<value>يمكنك التبديل بين المحلي وAPI دون إعادة تثبيت التطبيق.</value>
+	</data>
+	<data name="Frequently asked questions">
+		<value>الأسئلة الشائعة</value>
+	</data>
+	<data name="Everything you want to know before buying.">
+		<value>كل ما تريد معرفته قبل الشراء.</value>
+	</data>
+	<data name="Is LetterLoom really free to try?">
+		<value>هل تجربة LetterLoom مجانية حقًا؟</value>
+	</data>
+	<data name="Yes. You can download LetterLoom and create the first">
+		<value>نعم. يمكنك تنزيل LetterLoom وإنشاء أول</value>
+	</data>
+	<data name="completely and without restrictions">
+		<value>بالكامل ودون قيود</value>
+	</data>
+	<data name=". From the 6th cover letter onwards, the result is displayed as a shortened preview image with watermark - but the app remains fully usable. This way you can calmly check whether LetterLoom is right for you.">
+		<value>. بدءًا من خطاب التقديم السادس، تُعرض النتيجة كصورة معاينة مختصرة بعلامة مائية - لكن يبقى التطبيق قابلًا للاستخدام بالكامل. بهذه الطريقة يمكنك التحقق بهدوء مما إذا كان LetterLoom مناسبًا لك.</value>
+	</data>
+	<data name="Do I need a strong graphics card?">
+		<value>هل أحتاج إلى بطاقة رسومات قوية؟</value>
+	</data>
+	<data name="No. The local models run smoothly with">
+		<value>لا. تعمل النماذج المحلية بسلاسة مع</value>
+	</data>
+	<data name=". It also works entirely without a dedicated GPU - then a cover letter takes a bit longer. If you want maximum speed, you can connect your own API (OpenAI, OpenRouter, Ollama ...) instead and don't need any local computing power at all.">
+		<value>. كما يعمل بالكامل بدون GPU مخصص - حينها يستغرق خطاب التقديم وقتًا أطول قليلًا. إذا كنت تريد أقصى سرعة، يمكنك توصيل API الخاص بك (OpenAI، OpenRouter، Ollama ...) بدلًا من ذلك ولن تحتاج إلى أي قدرة حوسبة محلية على الإطلاق.</value>
+	</data>
+	<data name="Where does my data go (CV, job ad, cover letter)?">
+		<value>إلى أين تذهب بياناتي (السيرة الذاتية، إعلان الوظيفة، خطاب التقديم)؟</value>
+	</data>
+	<data name="With local use, your data">
+		<value>مع الاستخدام المحلي، بياناتك</value>
+	</data>
+	<data name="never leaves your PC">
+		<value>لا تغادر جهازك أبدًا</value>
+	</data>
+	<data name=". CV, job ads, and cover letters are stored in a local SQLite database on your hard drive. There is no cloud connection, no registration, and no telemetry. Only if you voluntarily connect an API are the contents sent to the endpoint of your choice.">
+		<value>. تُخزن السيرة الذاتية وإعلانات الوظائف وخطابات التقديم في قاعدة بيانات SQLite محلية على قرصك. لا يوجد اتصال سحابي، ولا تسجيل، ولا قياس عن بُعد. فقط إذا قمت بتوصيل API طوعًا تُرسل المحتويات إلى نقطة النهاية التي تختارها.</value>
+	</data>
+	<data name="What is the difference from ChatGPT?">
+		<value>ما الفرق عن ChatGPT؟</value>
+	</data>
+	<data name="LetterLoom is">
+		<value>LetterLoom</value>
+	</data>
+	<data name="built specifically for applications">
+		<value>مصمم خصيصًا للطلبات</value>
+	</data>
+	<data name=": It automatically compares your CV with the job ad, identifies missing qualifications, filters out redundant skills, and formulates the cover letter according to fixed anti-cliche rules. With ChatGPT, you have to orchestrate these steps yourself each time and write the prompt yourself. LetterLoom does this in one workflow - and optionally locally, without data transfer. A direct comparison can be found in the section above.">
+		<value>: يقارن سيرتك الذاتية تلقائيًا بإعلان الوظيفة، ويحدد المؤهلات المفقودة، ويصفّي المهارات الزائدة، ويصوغ خطاب التقديم وفق قواعد ثابتة لمكافحة العبارات المبتذلة. مع ChatGPT، عليك تنسيق هذه الخطوات بنفسك في كل مرة وكتابة المطالبة بنفسك. يقوم LetterLoom بذلك في سير عمل واحد - واختياريًا محليًا، دون نقل بيانات. يمكن العثور على مقارنة مباشرة في القسم أعلاه.</value>
+	</data>
+	<data name="In which languages does LetterLoom work?">
+		<value>بأي لغات يعمل LetterLoom؟</value>
+	</data>
+	<data name="The user interface is available in">
+		<value>واجهة المستخدم متاحة بـ</value>
+	</data>
+	<data name="German, English, Italian, and Russian">
+		<value>الألمانية والإنجليزية والإيطالية والروسية</value>
+	</data>
+	<data name=". The generated cover letter automatically uses the language of the job ad - regardless of which UI language is set.">
+		<value>. يستخدم خطاب التقديم المُنشأ تلقائيًا لغة إعلان الوظيفة - بغض النظر عن لغة واجهة المستخدم المحددة.</value>
+	</data>
+	<data name="Can I use the license on multiple PCs?">
+		<value>هل يمكنني استخدام الترخيص على عدة أجهزة؟</value>
+	</data>
+	<data name="A license is valid for">
+		<value>الترخيص صالح لـ</value>
+	</data>
+	<data name="one computer">
+		<value>كمبيوتر واحد</value>
+	</data>
+	<data name=". If you want to install LetterLoom on a new PC, write to us via">
+		<value>. إذا كنت تريد تثبيت LetterLoom على كمبيوتر جديد، راسلنا عبر</value>
+	</data>
+	<data name="- we'll help with the transfer.">
+		<value>- وسنساعدك في النقل.</value>
+	</data>
+	<data name="Is there a refund?">
+		<value>هل يوجد استرداد؟</value>
+	</data>
+	<data name="The purchase is processed via Paddle (Merchant of Record). Statutory withdrawal rules apply - details can be found in our">
+		<value>تتم معالجة الشراء عبر Paddle (Merchant of Record). تنطبق قواعد الانسحاب القانونية - التفاصيل موجودة في</value>
+	</data>
+	<data name="withdrawal policy">
+		<value>سياسة الانسحاب</value>
+	</data>
+	<data name=". For consumers, the 14-day right of withdrawal applies. Since you can test LetterLoom with 5 cover letters for free beforehand, we recommend using the trial before purchasing.">
+		<value>. للمستهلكين، ينطبق حق الانسحاب لمدة 14 يومًا. بما أنه يمكنك اختبار LetterLoom بـ 5 خطابات تقديم مجانًا مسبقًا، نوصي باستخدام النسخة التجريبية قبل الشراء.</value>
+	</data>
+	<data name="Do I get updates for free?">
+		<value>هل أحصل على التحديثات مجانًا؟</value>
+	</data>
+	<data name="Yes. Updates within the current major version (1.x) are">
+		<value>نعم. التحديثات ضمن الإصدار الرئيسي الحالي (1.x)</value>
+	</data>
+	<data name="Free">
+		<value>مجانية</value>
+	</data>
+	<data name=". Should a new major version ever appear, we will inform you in advance by email.">
+		<value>. إذا ظهر إصدار رئيسي جديد، فسنبلغك مسبقًا عبر البريد الإلكتروني.</value>
+	</data>
+	<data name="Your question isn't listed?">
+		<value>سؤالك غير مدرج؟</value>
+	</data>
+	<data name="- we usually respond within 1-2 business days.">
+		<value>- نرد عادةً خلال 1-2 يوم عمل.</value>
+	</data>
+	<data name="One-time EUR 39. No subscription.">
+		<value>دفعة واحدة EUR 39. بلا اشتراك.</value>
+	</data>
+	<data name="After the first 5 free cover letters, you can unlock LetterLoom at any time with a one-time payment - including all updates within the major version. No monthly costs, no contract commitment.">
+		<value>بعد أول 5 خطابات تقديم مجانية، يمكنك فتح LetterLoom في أي وقت بدفعة واحدة - بما في ذلك جميع التحديثات ضمن الإصدار الرئيسي. بلا تكاليف شهرية، وبلا التزام تعاقدي.</value>
+	</data>
+	<data name="Price details">
+		<value>تفاصيل السعر</value>
+	</data>
+	<data name="Ready to try it out?">
+		<value>مستعد لتجربته؟</value>
+	</data>
+	<data name="Download LetterLoom and create your first 5 cover letters for free.">
+		<value>نزّل LetterLoom وأنشئ أول 5 خطابات تقديم مجانًا.</value>
+	</data>
+</root>

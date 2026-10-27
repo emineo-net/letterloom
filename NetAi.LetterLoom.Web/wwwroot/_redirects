@@ -1,0 +1,7 @@
+﻿# Verhindert, dass PWA-Core-Dateien umgeleitet werden
+/service-worker.js /service-worker.js 200
+/service-worker-assets.js /service-worker-assets.js 200
+/manifest.json /manifest.json 200
+
+# Standard-Fallback für das SPA-Routing (muss ganz unten stehen)
+/* /index.html 200

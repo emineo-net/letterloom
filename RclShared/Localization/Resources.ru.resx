@@ -1,0 +1,1755 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="[yes] is enough for certificates and tools. For experience questions, details such as project, company, and year help.">
+		<value>[да] достаточно для сертификатов и инструментов. Для вопросов об опыте помогают такие детали, как проект, компания и год.</value>
+	</data>
+	<data name="{0} answered - {1} irrelevant">
+		<value>Отвечено: {0} — нерелевантных: {1}</value>
+	</data>
+	<data name="{0} copied to clipboard.">
+		<value>{0} скопировано в буфер обмена.</value>
+	</data>
+	<data name="{0} could not be copied.">
+		<value>Не удалось скопировать {0}.</value>
+	</data>
+	<data name="{0} line(s) changed">
+		<value>Изменено строк: {0}</value>
+	</data>
+	<data name="{0} open question(s) found ({1} redundant filtered).">
+		<value>Найдено открытых вопросов: {0} (отфильтровано избыточных: {1}).</value>
+	</data>
+	<data name="{0} open question(s) found.">
+		<value>Найдено открытых вопросов: {0}.</value>
+	</data>
+	<data name="{0} ready">
+		<value>{0} готово</value>
+	</data>
+	<data name="{0} tag(s) confirmed, of which {1} were saved/updated in the skills table.">
+		<value>Подтверждено тегов: {0}, из них {1} сохранено/обновлено в таблице навыков.</value>
+	</data>
+	<data name="{0} URL(s) added.">
+		<value>Добавлено URL: {0}.</value>
+	</data>
+	<data name="{0}x API - {1} Tokens">
+		<value>{0}x API — токенов: {1}</value>
+	</data>
+	<data name="{0} is still empty.">
+		<value>{0} всё ещё пусто.</value>
+	</data>
+	<data name="{0} ready.">
+		<value>{0} готово.</value>
+	</data>
+	<data name="Add">
+		<value>Добавить</value>
+	</data>
+	<data name="Add new URLs">
+		<value>Добавить новые URL</value>
+	</data>
+	<data name="Add new job ads below.">
+		<value>Добавьте новые вакансии ниже.</value>
+	</data>
+	<data name="Add URLs">
+		<value>Добавить URL</value>
+	</data>
+	<data name="All letters">
+		<value>Все письма</value>
+	</data>
+	<data name="All remaining tags will be written to the skills table when you click OK.">
+		<value>Все оставшиеся теги будут записаны в таблицу навыков при нажатии «ОК».</value>
+	</data>
+	<data name="Analysis failed: {0}">
+		<value>Не удалось выполнить анализ: {0}</value>
+	</data>
+	<data name="Analysis finished - {0} OK, {1} skipped.">
+		<value>Анализ завершён — успешно: {0}, пропущено: {1}.</value>
+	</data>
+	<data name="Analyze (Coder, all)">
+		<value>Анализировать (Coder, все)</value>
+	</data>
+	<data name="Analyzing">
+		<value>Анализ</value>
+	</data>
+	<data name="All files|*.*">
+		<value>Все файлы|*.*</value>
+	</data>
+	<data name="All of them are present in KnownSkills or the skills table.">
+		<value>Все они присутствуют в KnownSkills или в таблице навыков.</value>
+	</data>
+	<data name="An error occurred during generation:">
+		<value>Во время создания произошла ошибка:</value>
+	</data>
+	<data name="Analyzing CV against job ad...">
+		<value>Анализ резюме на соответствие вакансии...</value>
+	</data>
+	<data name="ApiUrl is missing.">
+		<value>ApiUrl отсутствует.</value>
+	</data>
+	<data name="API endpoint not reachable or configuration invalid.">
+		<value>Конечная точка API недоступна или конфигурация неверна.</value>
+	</data>
+	<data name="API: {0} - {1}">
+		<value>API: {0} — {1}</value>
+	</data>
+	<data name="Apply to CV">
+		<value>Применить к резюме</value>
+	</data>
+	<data name="Automatically filtered ({0})">
+		<value>Автоматически отфильтровано ({0})</value>
+	</data>
+	<data name="Automatically tailor your CV to job ads.">
+		<value>Автоматически адаптируйте резюме под вакансии.</value>
+	</data>
+	<data name="Browser will open with the job ad...">
+		<value>Браузер откроется с вакансией...</value>
+	</data>
+	<data name="Cancel">
+		<value>Отмена</value>
+	</data>
+	<data name="Click [Start gap analysis].">
+		<value>Нажмите [Начать анализ пробелов].</value>
+	</data>
+	<data name="Click: copy letter">
+		<value>Нажмите: скопировать письмо</value>
+	</data>
+	<data name="Click: copy Phase 1 prompt">
+		<value>Нажмите: скопировать промпт этапа 1</value>
+	</data>
+	<data name="Click: copy Phase 2 prompt">
+		<value>Нажмите: скопировать промпт этапа 2</value>
+	</data>
+	<data name="Coder">
+		<value>Coder</value>
+	</data>
+	<data name="Coder - {0}">
+		<value>Coder — {0}</value>
+	</data>
+	<data name="Copy cover letter and open in browser">
+		<value>Скопировать сопроводительное письмо и открыть в браузере</value>
+	</data>
+	<data name="Cover letter">
+		<value>Сопроводительное письмо</value>
+	</data>
+	<data name="Cover letter copied to clipboard.">
+		<value>Сопроводительное письмо скопировано в буфер обмена.</value>
+	</data>
+	<data name="Cover letters (General, all)">
+		<value>Сопроводительные письма (General, все)</value>
+	</data>
+	<data name="Create cover letter">
+		<value>Создать сопроводительное письмо</value>
+	</data>
+	<data name="Creating cover letter">
+		<value>Создание сопроводительного письма</value>
+	</data>
+	<data name="Current job ad">
+		<value>Текущая вакансия</value>
+	</data>
+	<data name="CV">
+		<value>Резюме</value>
+	</data>
+	<data name="CV extended successfully.">
+		<value>Резюме успешно дополнено.</value>
+	</data>
+	<data name="CV is empty.">
+		<value>Резюме пусто.</value>
+	</data>
+	<data name="CV saved.">
+		<value>Резюме сохранено.</value>
+	</data>
+	<data name="Delete">
+		<value>Удалить</value>
+	</data>
+	<data name="Delete it first (if necessary) to regenerate it.">
+		<value>Сначала удалите его (при необходимости), чтобы создать заново.</value>
+	</data>
+	<data name="Details see Setup -> API usage">
+		<value>Подробности см. в разделе «Настройка» -> «Использование API»</value>
+	</data>
+	<data name="Discard">
+		<value>Отклонить</value>
+	</data>
+	<data name="Error">
+		<value>Ошибка</value>
+	</data>
+	<data name="Error while executing:">
+		<value>Ошибка при выполнении:</value>
+	</data>
+	<data name="Extend CV">
+		<value>Дополнить резюме</value>
+	</data>
+	<data name="Extend CV with answers">
+		<value>Дополнить резюме ответами</value>
+	</data>
+	<data name="Extend failed: {0}">
+		<value>Не удалось дополнить: {0}</value>
+	</data>
+	<data name="Extract">
+		<value>Извлечь</value>
+	</data>
+	<data name="Extracted text appears here.">
+		<value>Извлечённый текст появится здесь.</value>
+	</data>
+	<data name="Extracting">
+		<value>Извлечение</value>
+	</data>
+	<data name="Extracting job ad...">
+		<value>Извлечение вакансии...</value>
+	</data>
+	<data name="Extraction failed: {0}">
+		<value>Не удалось извлечь: {0}</value>
+	</data>
+	<data name="Extended CV">
+		<value>Дополненное резюме</value>
+	</data>
+	<data name="Extended CV applied and saved.">
+		<value>Дополненное резюме применено и сохранено.</value>
+	</data>
+	<data name="Extending CV...">
+		<value>Дополнение резюме...</value>
+	</data>
+	<data name="Extended CV created - review and apply.">
+		<value>Дополненное резюме создано — проверьте и примените.</value>
+	</data>
+	<data name="Final Letter">
+		<value>Итоговое письмо</value>
+	</data>
+	<data name="GGUF model|*.gguf">
+		<value>Модель GGUF|*.gguf</value>
+	</data>
+	<data name="General">
+		<value>General</value>
+	</data>
+	<data name="General - {0}">
+		<value>General — {0}</value>
+	</data>
+	<data name="Insert">
+		<value>Вставить</value>
+	</data>
+	<data name="Insert failed: {0}">
+		<value>Не удалось вставить: {0}</value>
+	</data>
+	<data name="Insufficient match between CV and job ad.">
+		<value>Недостаточное соответствие между резюме и вакансией.</value>
+	</data>
+	<data name="Job ad">
+		<value>Вакансия</value>
+	</data>
+	<data name="Job ad (DB)">
+		<value>Вакансия (БД)</value>
+	</data>
+	<data name="Job ad added.">
+		<value>Вакансия добавлена.</value>
+	</data>
+	<data name="Job ad does not match the profile.">
+		<value>Вакансия не соответствует профилю.</value>
+	</data>
+	<data name="Job ad extracted.">
+		<value>Вакансия извлечена.</value>
+	</data>
+	<data name="Job ad is empty.">
+		<value>Вакансия пуста.</value>
+	</data>
+	<data name="No Windows ZIP found in llama-server release.">
+		<value>В выпуске llama-server не найден Windows ZIP.</value>
+	</data>
+	<data name="LanguageDescription">
+		<value>Выберите язык интерфейса приложения.</value>
+	</data>
+	<data name="LanguageRestartHint">
+		<value>Перезапустите приложение, чтобы применить смену языка.</value>
+	</data>
+	<data name="LanguageTitle">
+		<value>Язык</value>
+	</data>
+	<data name="LLM Engine">
+		<value>Движок LLM</value>
+	</data>
+	<data name="Letter">
+		<value>Письмо</value>
+	</data>
+	<data name="Letters finished - {0} OK, {1} errors.">
+		<value>Письма готовы — успешно: {0}, ошибок: {1}.</value>
+	</data>
+	<data name="LLM server is not running. Please start it in the sidebar.">
+		<value>Сервер LLM не запущен. Запустите его на боковой панели.</value>
+	</data>
+	<data name="LLM server could not be started: {0}">
+		<value>Не удалось запустить сервер LLM: {0}</value>
+	</data>
+	<data name="llama-server not configured.">
+		<value>llama-server не настроен.</value>
+	</data>
+	<data name="llama-server.exe not found in ZIP.">
+		<value>llama-server.exe не найден в ZIP.</value>
+	</data>
+	<data name="Mark as done">
+		<value>Отметить как выполненное</value>
+	</data>
+	<data name="Mark as irrelevant">
+		<value>Отметить как нерелевантное</value>
+	</data>
+	<data name="Marked as irrelevant - ignored when extending.">
+		<value>Отмечено как нерелевантное — игнорируется при дополнении.</value>
+	</data>
+	<data name="Match your CV against job ads and extend it in a targeted way.">
+		<value>Сопоставляйте резюме с вакансиями и целенаправленно дополняйте его.</value>
+	</data>
+	<data name="Missing skills - confirm">
+		<value>Недостающие навыки — подтвердить</value>
+	</data>
+	<data name="Missing skills:">
+		<value>Недостающие навыки:</value>
+	</data>
+	<data name="Model {0} could not be started: {1}">
+		<value>Не удалось запустить модель {0}: {1}</value>
+	</data>
+	<data name="Model {0} is running.">
+		<value>Модель {0} работает.</value>
+	</data>
+	<data name="Model {0} is not configured.">
+		<value>Модель {0} не настроена.</value>
+	</data>
+	<data name="Model '{0}' is not configured.">
+		<value>Модель «{0}» не настроена.</value>
+	</data>
+	<data name="Model not found.">
+		<value>Модель не найдена.</value>
+	</data>
+	<data name="Models">
+		<value>Модели</value>
+	</data>
+	<data name="No analysis yet.">
+		<value>Анализа пока нет.</value>
+	</data>
+	<data name="No changes">
+		<value>Без изменений</value>
+	</data>
+	<data name="No changes to apply.">
+		<value>Нет изменений для применения.</value>
+	</data>
+	<data name="No changes to the CV.">
+		<value>Нет изменений в резюме.</value>
+	</data>
+	<data name="No cover letter generated yet.">
+		<value>Сопроводительное письмо ещё не создано.</value>
+	</data>
+	<data name="No cover letter will be generated.">
+		<value>Сопроводительное письмо не будет создано.</value>
+	</data>
+	<data name="No cover letter yet. Please generate one first.">
+		<value>Сопроводительного письма ещё нет. Сначала создайте его.</value>
+	</data>
+	<data name="No entries with a Phase 2 prompt.">
+		<value>Нет записей с промптом этапа 2.</value>
+	</data>
+	<data name="No gaps found.">
+		<value>Пробелов не найдено.</value>
+	</data>
+	<data name="No gaps found - your CV matches the ad.">
+		<value>Пробелов не найдено — ваше резюме соответствует вакансии.</value>
+	</data>
+	<data name="No pending entries for Phase 1.">
+		<value>Нет ожидающих записей для этапа 1.</value>
+	</data>
+	<data name="No pending entries for analysis.">
+		<value>Нет ожидающих записей для анализа.</value>
+	</data>
+	<data name="No questions will be asked - adapting the CV is not useful here.">
+		<value>Вопросы задаваться не будут — адаптация резюме здесь не полезна.</value>
+	</data>
+	<data name="No substantive changes - the topics are already in the CV.">
+		<value>Существенных изменений нет — темы уже есть в резюме.</value>
+	</data>
+	<data name="No text extracted.">
+		<value>Текст не извлечён.</value>
+	</data>
+	<data name="No URLs in the queue yet.">
+		<value>В очереди пока нет URL.</value>
+	</data>
+	<data name="Not configured">
+		<value>Не настроено</value>
+	</data>
+	<data name="OK">
+		<value>ОК</value>
+	</data>
+	<data name="One URL per line...">
+		<value>По одному URL в строке...</value>
+	</data>
+	<data name="One URL per line. Multiple URLs will be added at once.">
+		<value>По одному URL в строке. Несколько URL будут добавлены сразу.</value>
+	</data>
+	<data name="Open in browser (letter in clipboard)">
+		<value>Открыть в браузере (письмо в буфере обмена)</value>
+	</data>
+	<data name="Open questions">
+		<value>Открытые вопросы</value>
+	</data>
+	<data name="Operation cancelled.">
+		<value>Операция отменена.</value>
+	</data>
+	<data name="Operation cancelled. No cover letter was created.">
+		<value>Операция отменена. Сопроводительное письмо не создано.</value>
+	</data>
+	<data name="Or paste the job ad here...">
+		<value>Или вставьте вакансию сюда...</value>
+	</data>
+	<data name="Page not found.">
+		<value>Страница не найдена.</value>
+	</data>
+	<data name="Partial match.">
+		<value>Частичное соответствие.</value>
+	</data>
+	<data name="Paste a job ad. It will be saved as a separate queue entry.">
+		<value>Вставьте вакансию. Она будет сохранена как отдельная запись в очереди.</value>
+	</data>
+	<data name="Paste job ad">
+		<value>Вставить вакансию</value>
+	</data>
+	<data name="Paste job ad here...">
+		<value>Вставьте вакансию сюда...</value>
+	</data>
+	<data name="Pasted job ad - no link available.">
+		<value>Вставленная вакансия — ссылка недоступна.</value>
+	</data>
+	<data name="Phase 0 - Match check">
+		<value>Этап 0 — проверка соответствия</value>
+	</data>
+	<data name="Phase 0 incorrectly reported the following skills as missing:">
+		<value>Этап 0 ошибочно указал следующие навыки как недостающие:</value>
+	</data>
+	<data name="Phase 1">
+		<value>Этап 1</value>
+	</data>
+	<data name="Phase 1 (all)">
+		<value>Этап 1 (все)</value>
+	</data>
+	<data name="Phase 1 - Analysis">
+		<value>Этап 1 — анализ</value>
+	</data>
+	<data name="Phase 1 finished - {0} OK, {1} skipped.">
+		<value>Этап 1 завершён — успешно: {0}, пропущено: {1}.</value>
+	</data>
+	<data name="Phase 2">
+		<value>Этап 2</value>
+	</data>
+	<data name="Phase 2 - Prompt">
+		<value>Этап 2 — промпт</value>
+	</data>
+	<data name="Please answer at least one relevant question.">
+		<value>Ответьте хотя бы на один релевантный вопрос.</value>
+	</data>
+	<data name="Please enter at least one URL.">
+		<value>Введите хотя бы один URL.</value>
+	</data>
+	<data name="Please enter a URL.">
+		<value>Введите URL.</value>
+	</data>
+	<data name="Please enter or extract a job ad first.">
+		<value>Сначала введите или извлеките вакансию.</value>
+	</data>
+	<data name="Please paste a job ad.">
+		<value>Вставьте вакансию.</value>
+	</data>
+	<data name="Press Ctrl+V to paste into the application form.">
+		<value>Нажмите Ctrl+V, чтобы вставить в форму заявки.</value>
+	</data>
+	<data name="Queue ({0})">
+		<value>Очередь ({0})</value>
+	</data>
+	<data name="Raw LLM response (debug)">
+		<value>Необработанный ответ LLM (отладка)</value>
+	</data>
+	<data name="Ready">
+		<value>Готово</value>
+	</data>
+	<data name="Really delete this URL?">
+		<value>Действительно удалить этот URL?</value>
+	</data>
+	<data name="Remove">
+		<value>Удалить</value>
+	</data>
+	<data name="Remove tags with the x that you do not have.">
+		<value>Удалите теги с помощью «x», если у вас их нет.</value>
+	</data>
+	<data name="Restore relevance">
+		<value>Восстановить релевантность</value>
+	</data>
+	<data name="Running - {0}">
+		<value>Работает — {0}</value>
+	</data>
+	<data name="Save">
+		<value>Сохранить</value>
+	</data>
+	<data name="Save failed: {0}">
+		<value>Не удалось сохранить: {0}</value>
+	</data>
+	<data name="ScrapeLabelBlocked">
+		<value>Заблокировано WAF</value>
+	</data>
+	<data name="ScrapeLabelCaptcha">
+		<value>Проверка Captcha</value>
+	</data>
+	<data name="ScrapeLabelEmpty">
+		<value>Пустое или короткое содержимое</value>
+	</data>
+	<data name="ScrapeLabelGeo">
+		<value>Геоблокировка</value>
+	</data>
+	<data name="ScrapeLabelJsRequired">
+		<value>Требуется JavaScript</value>
+	</data>
+	<data name="ScrapeLabelNetwork">
+		<value>Сетевая ошибка</value>
+	</data>
+	<data name="ScrapeLabelRateLimited">
+		<value>Ограничение частоты запросов</value>
+	</data>
+	<data name="ScrapeLabelUnknown">
+		<value>Неизвестная ошибка</value>
+	</data>
+	<data name="Selected job">
+		<value>Выбранная вакансия</value>
+	</data>
+	<data name="Server terminated (ExitCode {0}).">
+		<value>Сервер завершён (код выхода {0}).</value>
+	</data>
+	<data name="Setup">
+		<value>Настройка</value>
+	</data>
+	<data name="SetupTitle">
+		<value>Настройка</value>
+	</data>
+	<data name="SetupSubtitle">
+		<value>Настройте язык, модели и использование API для WpfTree Studio.</value>
+	</data>
+	<data name="Setup incomplete. Please configure llama-server and models first.">
+		<value>Настройка не завершена. Сначала настройте llama-server и модели.</value>
+	</data>
+	<data name="Show details">
+		<value>Показать подробности</value>
+	</data>
+	<data name="Start">
+		<value>Запустить</value>
+	</data>
+	<data name="Start failed: {0}">
+		<value>Не удалось запустить: {0}</value>
+	</data>
+	<data name="Start gap analysis">
+		<value>Начать анализ пробелов</value>
+	</data>
+	<data name="Starting {0}... (1-5 minutes)">
+		<value>Запуск {0}... (1–5 минут)</value>
+	</data>
+	<data name="Starting {0} model... (may take 1-2 minutes)">
+		<value>Запуск модели {0}... (может занять 1–2 минуты)</value>
+	</data>
+	<data name="Starting {0}...">
+		<value>Запуск {0}...</value>
+	</data>
+	<data name="Starting LLM server...">
+		<value>Запуск сервера LLM...</value>
+	</data>
+	<data name="Starting...">
+		<value>Запуск...</value>
+	</data>
+	<data name="Stop">
+		<value>Остановить</value>
+	</data>
+	<data name="Stopped">
+		<value>Остановлено</value>
+	</data>
+	<data name="Stopping...">
+		<value>Остановка...</value>
+	</data>
+	<data name="Studio">
+		<value>Studio</value>
+	</data>
+	<data name="Switch failed: {0}">
+		<value>Не удалось переключить: {0}</value>
+	</data>
+	<data name="Switching to {0}...">
+		<value>Переключение на {0}...</value>
+	</data>
+	<data name="The ad describes a different role than your CV covers.">
+		<value>Вакансия описывает другую роль, чем та, что покрыта вашим резюме.</value>
+	</data>
+	<data name="The answers did not add any new information. This happens when the topics are already in the CV. The original CV remains unchanged.">
+		<value>Ответы не добавили новой информации. Это происходит, когда темы уже есть в резюме. Исходное резюме остаётся без изменений.</value>
+	</data>
+	<data name="The CV only partially matches the job ad.">
+		<value>Резюме лишь частично соответствует вакансии.</value>
+	</data>
+	<data name="The job ad is too short ({0} words, at least {1} required).">
+		<value>Вакансия слишком короткая (слов: {0}, требуется минимум {1}).</value>
+	</data>
+	<data name="These questions were discarded because the skills they contain are already in the CV.">
+		<value>Эти вопросы отброшены, потому что содержащиеся в них навыки уже есть в резюме.</value>
+	</data>
+	<data name="Timeout during startup.">
+		<value>Тайм-аут при запуске.</value>
+	</data>
+	<data name="Tip: Open the ad in your browser, copy the text, and paste it via [Paste job ad].">
+		<value>Совет: откройте вакансию в браузере, скопируйте текст и вставьте его через [Вставить вакансию].</value>
+	</data>
+	<data name="Unknown match level: {0}">
+		<value>Неизвестный уровень соответствия: {0}</value>
+	</data>
+	<data name="Use [Add URLs] or [Job ad] above.">
+		<value>Используйте [Добавить URL] или [Вакансия] выше.</value>
+	</data>
+	<data name="Vacancies">
+		<value>Вакансии</value>
+	</data>
+	<data name="WpfTree">
+		<value>WpfTree</value>
+	</data>
+	<data name="WPF .NET 10 File Explorer">
+		<value>Проводник файлов WPF .NET 10</value>
+	</data>
+	<data name="Your CV covers all requirements.">
+		<value>Ваше резюме соответствует всем требованиям.</value>
+	</data>
+	<data name="Your CV does not match the job ad">
+		<value>Ваше резюме не соответствует вакансии</value>
+	</data>
+	<data name="Your answer... (any language is fine)">
+		<value>Ваш ответ... (подойдёт любой язык)</value>
+	</data>
+	<data name="(no URL)">
+		<value>(нет URL)</value>
+	</data>
+	<data name="(pasted job ad)">
+		<value>(вставленная вакансия)</value>
+	</data>
+	<data name="A cover letter already exists for this entry.">
+		<value>Для этой записи уже существует сопроводительное письмо.</value>
+	</data>
+	<data name="Applied and saved.">
+		<value>Применено и сохранено.</value>
+	</data>
+	<data name="Already in CV: {0}">
+		<value>Уже в резюме: {0}</value>
+	</data>
+	<data name="DownloadFailed">
+		<value>Не удалось загрузить</value>
+	</data>
+	<data name="filter by category (you must have tagged your pages to do this)">
+		<value>фильтр по категории (для этого вы должны были пометить свои страницы тегами)</value>
+	</data>
+	<data name="GeneralModelTitle">
+		<value>Общая модель</value>
+	</data>
+	<data name="GeneralModelDescription">
+		<value>Настройте универсальную модель, используемую для анализа и написания.</value>
+	</data>
+	<data name="CoderModelTitle">
+		<value>Модель Coder</value>
+	</data>
+	<data name="CoderModelDescription">
+		<value>Настройте модель для программирования.</value>
+	</data>
+	<data name="LlamaServerTitle">
+		<value>llama-server</value>
+	</data>
+	<data name="LlamaServerDescription">
+		<value>Загрузите и настройте локальный llama-server, необходимый для моделей GGUF.</value>
+	</data>
+	<data name="LlamaServerDownload">
+		<value>Скачать llama-server</value>
+	</data>
+	<data name="PickExistingFile">
+		<value>Выбрать существующий файл</value>
+	</data>
+	<data name="StatusReady">
+		<value>Готово</value>
+	</data>
+	<data name="StatusIncomplete">
+		<value>Настройка не завершена</value>
+	</data>
+	<data name="StatusMissing">
+		<value>Отсутствует</value>
+	</data>
+	<data name="RestartNow">
+		<value>Перезапустить сейчас</value>
+	</data>
+	<data name="ModeLocalGguf">
+		<value>Локально (GGUF)</value>
+	</data>
+	<data name="ModeApi">
+		<value>API</value>
+	</data>
+	<data name="DownloadDefaultModel">
+		<value>Скачать модель по умолчанию ({0})</value>
+	</data>
+	<data name="PickOwnGguf">
+		<value>Выбрать собственную модель GGUF</value>
+	</data>
+	<data name="ApiBaseUrl">
+		<value>Базовый URL API</value>
+	</data>
+	<data name="ApiKeyOptional">
+		<value>Ключ API (необязательно)</value>
+	</data>
+	<data name="ApiModelName">
+		<value>Имя модели API</value>
+	</data>
+	<data name="PrivacyLabel">
+		<value>Конфиденциальность:</value>
+	</data>
+	<data name="PrivacyWarningApi">
+		<value>Запросы и содержимое резюме/вакансии отправляются в {0}. Ознакомьтесь с политикой конфиденциальности этого провайдера.</value>
+	</data>
+	<data name="PrivacyProviderFallback">
+		<value>настроенный провайдер API</value>
+	</data>
+	<data name="ModelsDirectoryTitle">
+		<value>Расположение хранилища моделей</value>
+	</data>
+	<data name="Change">
+		<value>Изменить</value>
+	</data>
+	<data name="ModelsDirectoryCustom">
+		<value>Пользовательский каталог моделей</value>
+	</data>
+	<data name="ResetToDefault">
+		<value>Сбросить по умолчанию</value>
+	</data>
+	<data name="DefaultLabel">
+		<value>По умолчанию:</value>
+	</data>
+	<data name="ApiUsageTitle">
+		<value>Использование API</value>
+	</data>
+	<data name="Reset">
+		<value>Сбросить</value>
+	</data>
+	<data name="ApiUsageDescription">
+		<value>Использование токенов, учтённое для запросов к API-модели.</value>
+	</data>
+	<data name="ApiUsageModel">
+		<value>Модель</value>
+	</data>
+	<data name="ApiUsageRequests">
+		<value>Запросы</value>
+	</data>
+	<data name="ApiUsagePrompt">
+		<value>Токены промпта</value>
+	</data>
+	<data name="ApiUsageCompletion">
+		<value>Токены завершения</value>
+	</data>
+	<data name="ApiUsageTotal">
+		<value>Всего токенов</value>
+	</data>
+	<data name="ApiUsageSum">
+		<value>Итого</value>
+	</data>
+	<data name="LlamaServerInstalled">
+		<value>llama-server установлен.</value>
+	</data>
+	<data name="LlamaServerPathSaved">
+		<value>Путь к llama-server сохранён.</value>
+	</data>
+	<data name="GeneralModelDownloaded">
+		<value>Общая модель загружена.</value>
+	</data>
+	<data name="CoderModelDownloaded">
+		<value>Модель Coder загружена.</value>
+	</data>
+	<data name="ModelPathSaved">
+		<value>Путь к модели сохранён.</value>
+	</data>
+	<data name="ModelsDirectoryChanged">
+		<value>Каталог моделей изменён на {0}.</value>
+	</data>
+	<data name="ModelsDirectoryReset">
+		<value>Каталог моделей сброшен по умолчанию.</value>
+	</data>
+	<data name="ApiUsageReset">
+		<value>Использование API сброшено.</value>
+	</data>
+	<data name="Restart failed: {0}">
+		<value>Не удалось перезапустить: {0}</value>
+	</data>
+	<data name="LanguageChanged">
+		<value>Язык изменён. Перезапустите приложение, чтобы применить.</value>
+	</data>
+	<data name="No relevant gaps - {0} redundant question(s) automatically filtered.">
+		<value>Релевантных пробелов нет — автоматически отфильтровано избыточных вопросов: {0}.</value>
+	</data>
+	<data name="Pricing">
+		<value>Цены</value>
+	</data>
+	<data name="Help &amp; Info">
+		<value>Справка и информация</value>
+	</data>
+	<data name="Processes">
+		<value>Процессы</value>
+	</data>
+	<data name="No processes &gt; 3 GB RAM / 2 GB VRAM">
+		<value>Нет процессов &gt; 3 ГБ ОЗУ / 2 ГБ видеопамяти</value>
+	</data>
+	<data name="End process">
+		<value>Завершить процесс</value>
+	</data>
+	<data name="An error occurred">
+		<value>Произошла ошибка</value>
+	</data>
+	<data name="Retry">
+		<value>Повторить</value>
+	</data>
+	<data name="Report problem">
+		<value>Сообщить о проблеме</value>
+	</data>
+	<data name="Really end process {0}?">
+		<value>Действительно завершить процесс {0}?</value>
+	</data>
+	<data name="Process ended.">
+		<value>Процесс завершён.</value>
+	</data>
+	<data name="Process could not be ended.">
+		<value>Не удалось завершить процесс.</value>
+	</data>
+	<data name="{0} of {1} answered">
+		<value>Отвечено {0} из {1}</value>
+	</data>
+	<data name="Start setup wizard">
+		<value>Запустить мастер настройки</value>
+	</data>
+	<data name="Hardware">
+		<value>Оборудование</value>
+	</data>
+	<data name="CPU">
+		<value>CPU</value>
+	</data>
+	<data name="Threads">
+		<value>Потоки</value>
+	</data>
+	<data name="RAM">
+		<value>ОЗУ</value>
+	</data>
+	<data name="free">
+		<value>свободно</value>
+	</data>
+	<data name="VRAM">
+		<value>Видеопамять</value>
+	</data>
+	<data name="Unknown">
+		<value>Неизвестно</value>
+	</data>
+	<data name="Drives">
+		<value>Диски</value>
+	</data>
+	<data name="No drives detected.">
+		<value>Диски не обнаружены.</value>
+	</data>
+	<data name="Your hardware meets Qwen3 30B requirements (32+ GB RAM, 40+ GB free storage). Recommendation: Local - Qwen3 30B.">
+		<value>Ваше оборудование соответствует требованиям Qwen3 30B (32+ ГБ ОЗУ, 40+ ГБ свободного места). Рекомендация: локально — Qwen3 30B.</value>
+	</data>
+	<data name="Qwen3 30B is too large, but Qwen2.5 14B fits (16+ GB RAM, 18+ GB free storage). Recommendation: Local - Qwen2.5 14B.">
+		<value>Qwen3 30B слишком велика, но Qwen2.5 14B подходит (16+ ГБ ОЗУ, 18+ ГБ свободного места). Рекомендация: локально — Qwen2.5 14B.</value>
+	</data>
+	<data name="Local models lack RAM or free storage. Recommendation: Own API model.">
+		<value>Для локальных моделей не хватает ОЗУ или свободного места. Рекомендация: собственная модель API.</value>
+	</data>
+	<data name="Quick start">
+		<value>Быстрый старт</value>
+	</data>
+	<data name="Choose a preconfigured variant. The wizard guides you through setup.">
+		<value>Выберите готовый вариант. Мастер проведёт вас через настройку.</value>
+	</data>
+	<data name="Active">
+		<value>Активно</value>
+	</data>
+	<data name="Recommended">
+		<value>Рекомендуется</value>
+	</data>
+	<data name="Local - Qwen3 30B">
+		<value>Локально — Qwen3 30B</value>
+	</data>
+	<data name="Better quality, more RAM/VRAM. Recommended for strong hardware.">
+		<value>Лучшее качество, больше ОЗУ/видеопамяти. Рекомендуется для мощного оборудования.</value>
+	</data>
+	<data name="Best local results - no token costs - privacy">
+		<value>Лучшие локальные результаты — без платы за токены — конфиденциальность</value>
+	</data>
+	<data name="40 GB disk - 32+ GB RAM - slower than API">
+		<value>40 ГБ на диске — 32+ ГБ ОЗУ — медленнее API</value>
+	</data>
+	<data name="Hardware suitable">
+		<value>Оборудование подходит</value>
+	</data>
+	<data name="Hardware too weak">
+		<value>Оборудование слишком слабое</value>
+	</data>
+	<data name="Check again">
+		<value>Проверить снова</value>
+	</data>
+	<data name="Select">
+		<value>Выбрать</value>
+	</data>
+	<data name="Local - Qwen2.5 14B">
+		<value>Локально — Qwen2.5 14B</value>
+	</data>
+	<data name="Faster, less memory. Recommended for mid-range hardware.">
+		<value>Быстрее, меньше памяти. Рекомендуется для оборудования среднего уровня.</value>
+	</data>
+	<data name="Like Qwen3 local - no token costs - privacy - smaller &amp; faster">
+		<value>Как Qwen3 локально — без платы за токены — конфиденциальность — меньше и быстрее</value>
+	</data>
+	<data name="Not quite as perfect cover letters - 18 GB disk - 16+ GB RAM">
+		<value>Сопроводительные письма чуть менее идеальны — 18 ГБ на диске — 16+ ГБ ОЗУ</value>
+	</data>
+	<data name="Own API model">
+		<value>Собственная модель API</value>
+	</data>
+	<data name="Bring your own: OpenAI-compatible endpoint.">
+		<value>Подключите свою: конечная точка, совместимая с OpenAI.</value>
+	</data>
+	<data name="No download - key + URL required">
+		<value>Без загрузки — требуются ключ и URL</value>
+	</data>
+	<data name="Fastest responses - no download - no local hardware required">
+		<value>Самые быстрые ответы — без загрузки — локальное оборудование не требуется</value>
+	</data>
+	<data name="No privacy - costs money - internet/API key required">
+		<value>Нет конфиденциальности — платно — требуются интернет и ключ API</value>
+	</data>
+	<data name="Always available">
+		<value>Всегда доступно</value>
+	</data>
+	<data name="Reconfigure">
+		<value>Перенастроить</value>
+	</data>
+	<data name="Advanced settings">
+		<value>Дополнительные параметры</value>
+	</data>
+	<data name="Setup Wizard">
+		<value>Мастер настройки</value>
+	</data>
+	<data name="How do you want to run your LLM?">
+		<value>Как вы хотите запускать LLM?</value>
+	</data>
+	<data name="Local means: models run on this PC. API means: an external provider performs the calculation.">
+		<value>Локально означает: модели работают на этом ПК. API означает: вычисления выполняет внешний провайдер.</value>
+	</data>
+	<data name="Local">
+		<value>Локально</value>
+	</data>
+	<data name="Models run on your PC. Full privacy. Requires strong hardware.">
+		<value>Модели работают на вашем ПК. Полная конфиденциальность. Требуется мощное оборудование.</value>
+	</data>
+	<data name="Bring your own API">
+		<value>Собственный API</value>
+	</data>
+	<data name="OpenAI-compatible endpoint (OpenAI, Azure, OpenRouter, Ollama, vLLM ...).">
+		<value>Конечная точка, совместимая с OpenAI (OpenAI, Azure, OpenRouter, Ollama, vLLM ...).</value>
+	</data>
+	<data name="Which model size?">
+		<value>Какой размер модели?</value>
+	</data>
+	<data name="Both variants run locally. Larger = better quality, more RAM/VRAM required.">
+		<value>Оба варианта работают локально. Больше = лучше качество, требуется больше ОЗУ/видеопамяти.</value>
+	</data>
+	<data name="Large - Qwen3 30B">
+		<value>Большая — Qwen3 30B</value>
+	</data>
+	<data name="Better quality. Requires about 40 GB storage, 32+ GB RAM.">
+		<value>Лучшее качество. Требуется около 40 ГБ места, 32+ ГБ ОЗУ.</value>
+	</data>
+	<data name="Small - Qwen2.5 14B">
+		<value>Малая — Qwen2.5 14B</value>
+	</data>
+	<data name="Faster, less memory. Requires about 18 GB storage, 16+ GB RAM.">
+		<value>Быстрее, меньше памяти. Требуется около 18 ГБ места, 16+ ГБ ОЗУ.</value>
+	</data>
+	<data name="API access">
+		<value>Доступ к API</value>
+	</data>
+	<data name="OpenAI-compatible endpoints. The key is stored locally and only sent to this endpoint.">
+		<value>Конечные точки, совместимые с OpenAI. Ключ хранится локально и отправляется только в эту конечную точку.</value>
+	</data>
+	<data name="Base URL">
+		<value>Базовый URL</value>
+	</data>
+	<data name="Must end with /. Examples: api.openai.com/v1/, openrouter.ai/api/v1/, localhost:11434/v1/">
+		<value>Должен заканчиваться на /. Примеры: api.openai.com/v1/, openrouter.ai/api/v1/, localhost:11434/v1/</value>
+	</data>
+	<data name="Optional for local endpoints.">
+		<value>Необязательно для локальных конечных точек.</value>
+	</data>
+	<data name="Model name">
+		<value>Имя модели</value>
+	</data>
+	<data name="Privacy:">
+		<value>Конфиденциальность:</value>
+	</data>
+	<data name="CV and job ad content are sent to the specified provider.">
+		<value>Содержимое резюме и вакансии отправляется указанному провайдеру.</value>
+	</data>
+	<data name="Summary">
+		<value>Сводка</value>
+	</data>
+	<data name="Local configuration">
+		<value>Локальная конфигурация</value>
+	</data>
+	<data name="Variant">
+		<value>Вариант</value>
+	</data>
+	<data name="available">
+		<value>доступно</value>
+	</data>
+	<data name="will be downloaded">
+		<value>будет загружено</value>
+	</data>
+	<data name="Storage location">
+		<value>Расположение хранилища</value>
+	</data>
+	<data name="The download can be 20-40 GB depending on the model and may take several minutes. You can continue using the app meanwhile.">
+		<value>Загрузка может составлять 20–40 ГБ в зависимости от модели и занять несколько минут. Тем временем вы можете продолжать пользоваться приложением.</value>
+	</data>
+	<data name="API configuration">
+		<value>Конфигурация API</value>
+	</data>
+	<data name="(not set)">
+		<value>(не задано)</value>
+	</data>
+	<data name="Model">
+		<value>Модель</value>
+	</data>
+	<data name="During setup the endpoint is tested. If it fails, you can correct the details.">
+		<value>Во время настройки конечная точка проверяется. Если проверка не удалась, вы можете исправить данные.</value>
+	</data>
+	<data name="Setup in progress...">
+		<value>Выполняется настройка...</value>
+	</data>
+	<data name="You can close the window - the download continues in the background and resumes when reopened.">
+		<value>Вы можете закрыть окно — загрузка продолжится в фоне и возобновится при повторном открытии.</value>
+	</data>
+	<data name="Done!">
+		<value>Готово!</value>
+	</data>
+	<data name="The local models are set up. You can start them from the sidebar.">
+		<value>Локальные модели настроены. Вы можете запустить их из боковой панели.</value>
+	</data>
+	<data name="The API is set up. The endpoint was tested successfully.">
+		<value>API настроен. Конечная точка успешно проверена.</value>
+	</data>
+	<data name="Next">
+		<value>Далее</value>
+	</data>
+	<data name="Back">
+		<value>Назад</value>
+	</data>
+	<data name="Download &amp; set up">
+		<value>Скачать и настроить</value>
+	</data>
+	<data name="Test &amp; save">
+		<value>Проверить и сохранить</value>
+	</data>
+	<data name="Continue in background">
+		<value>Продолжить в фоне</value>
+	</data>
+	<data name="Done">
+		<value>Готово</value>
+	</data>
+	<data name="Preparing...">
+		<value>Подготовка...</value>
+	</data>
+	<data name="Setup failed: {0}">
+		<value>Не удалось выполнить настройку: {0}</value>
+	</data>
+	<data name="Downloading llama-server...">
+		<value>Загрузка llama-server...</value>
+	</data>
+	<data name="Downloading general model...">
+		<value>Загрузка общей модели...</value>
+	</data>
+	<data name="Downloading coder model...">
+		<value>Загрузка модели Coder...</value>
+	</data>
+	<data name="Testing API endpoint...">
+		<value>Проверка конечной точки API...</value>
+	</data>
+	<data name="Endpoint not reachable. Check URL, key, and model name.">
+		<value>Конечная точка недоступна. Проверьте URL, ключ и имя модели.</value>
+	</data>
+	<data name="About">
+		<value>О программе</value>
+	</data>
+	<data name="About LetterLoom">
+		<value>О LetterLoom</value>
+	</data>
+	<data name="Cover letters that convince. One-time EUR 39, no subscription trap.">
+		<value>Сопроводительные письма, которые убеждают. Единоразово 39 евро, без ловушки подписки.</value>
+	</data>
+	<data name="Product">
+		<value>Продукт</value>
+	</data>
+	<data name="Legal">
+		<value>Правовая информация</value>
+	</data>
+	<data name="Contact">
+		<value>Контакты</value>
+	</data>
+	<data name="Contact form">
+		<value>Контактная форма</value>
+	</data>
+	<data name="Toggle light / dark">
+		<value>Переключить светлую / тёмную тему</value>
+	</data>
+	<data name="Switch color scheme">
+		<value>Сменить цветовую схему</value>
+	</data>
+	<data name="LetterLoom is a Windows application that creates cover letters that really match the job ad - without cliches, without copy-paste, without monthly costs.">
+		<value>LetterLoom — это приложение для Windows, которое создаёт сопроводительные письма, действительно соответствующие вакансии — без клише, без копирования, без ежемесячных расходов.</value>
+	</data>
+	<data name="Who is LetterLoom for?">
+		<value>Для кого LetterLoom?</value>
+	</data>
+	<data name="For applicants who don't want to spend their time writing the same cover letters over and over. LetterLoom compares the job ad with your CV, identifies missing qualifications, and formulates an individual cover letter.">
+		<value>Для соискателей, которые не хотят снова и снова тратить время на одни и те же сопроводительные письма. LetterLoom сравнивает вакансию с вашим резюме, выявляет недостающую квалификацию и формулирует индивидуальное сопроводительное письмо.</value>
+	</data>
+	<data name="Local or API - you decide">
+		<value>Локально или API — решаете вы</value>
+	</data>
+	<data name="LetterLoom can run entirely locally with models such as Qwen3 30B or Qwen2.5 14B on your own computer - without application data leaving the device. Alternatively, you can connect any OpenAI-compatible endpoint.">
+		<value>LetterLoom может работать полностью локально с такими моделями, как Qwen3 30B или Qwen2.5 14B, на вашем компьютере — без передачи данных приложения за пределы устройства. Либо вы можете подключить любую конечную точку, совместимую с OpenAI.</value>
+	</data>
+	<data name="Technology">
+		<value>Технологии</value>
+	</data>
+	<data name="Local LLMs via llama.cpp (llama-server)">
+		<value>Локальные LLM через llama.cpp (llama-server)</value>
+	</data>
+	<data name="SQLite for local data">
+		<value>SQLite для локальных данных</value>
+	</data>
+	<data name="Questions, feedback, or a problem? Write to us at">
+		<value>Вопросы, отзывы или проблема? Напишите нам на</value>
+	</data>
+	<data name="Page not found - LetterLoom">
+		<value>Страница не найдена — LetterLoom</value>
+	</data>
+	<data name="The requested page does not exist.">
+		<value>Запрошенная страница не существует.</value>
+	</data>
+	<data name="Back to home">
+		<value>На главную</value>
+	</data>
+	<data name="cover letters that really fit">
+		<value>сопроводительные письма, которые действительно подходят</value>
+	</data>
+	<data name="AI-powered applications">
+		<value>приложения на основе ИИ</value>
+	</data>
+	<data name="Cover letters that">
+		<value>Сопроводительные письма, которые</value>
+	</data>
+	<data name="really fit">
+		<value>действительно подходят</value>
+	</data>
+	<data name="LetterLoom analyzes the job ad, compares it with your CV, and creates an individual, professional cover letter - locally on your PC or via your own API.">
+		<value>LetterLoom анализирует вакансию, сравнивает её с вашим резюме и создаёт индивидуальное профессиональное сопроводительное письмо — локально на вашем ПК или через ваш собственный API.</value>
+	</data>
+	<data name="Download for free">
+		<value>Скачать бесплатно</value>
+	</data>
+	<data name="View price - EUR 39">
+		<value>Посмотреть цену — 39 евро</value>
+	</data>
+	<data name="Windows 10/11 - try 5 cover letters for free - no registration required">
+		<value>Windows 10/11 — попробуйте 5 сопроводительных писем бесплатно — регистрация не требуется</value>
+	</data>
+	<data name="Watch demo video">
+		<value>Смотреть демовидео</value>
+	</data>
+	<data name="Sample cover letter">
+		<value>Пример сопроводительного письма</value>
+	</data>
+	<data name="Watch demo">
+		<value>Смотреть демо</value>
+	</data>
+	<data name="LetterLoom at a glance">
+		<value>LetterLoom кратко</value>
+	</data>
+	<data name="5 cover letters free">
+		<value>5 сопроводительных писем бесплатно</value>
+	</data>
+	<data name="full length, no restrictions">
+		<value>полной длины, без ограничений</value>
+	</data>
+	<data name="EUR 39 one-time">
+		<value>39 евро единоразово</value>
+	</data>
+	<data name="no subscription, no hidden costs">
+		<value>без подписки, без скрытых платежей</value>
+	</data>
+	<data name="8 GB VRAM is enough">
+		<value>достаточно 8 ГБ видеопамяти</value>
+	</data>
+	<data name="or even without a GPU">
+		<value>или даже без GPU</value>
+	</data>
+	<data name="4 languages">
+		<value>4 языка</value>
+	</data>
+	<data name="Cover letters in the job's language">
+		<value>Сопроводительные письма на языке вакансии</value>
+	</data>
+	<data name="Page navigation">
+		<value>Навигация по странице</value>
+	</data>
+	<data name="Features">
+		<value>Возможности</value>
+	</data>
+	<data name="Try for free">
+		<value>Попробовать бесплатно</value>
+	</data>
+	<data name="How it works">
+		<value>Как это работает</value>
+	</data>
+	<data name="Insights">
+		<value>Обзор</value>
+	</data>
+	<data name="Local vs. API">
+		<value>Локально или API</value>
+	</data>
+	<data name="Everything you need for a convincing application">
+		<value>Всё необходимое для убедительной заявки</value>
+	</data>
+	<data name="No more copy-paste. LetterLoom does the matching and writes the cover letter.">
+		<value>Больше никакого копирования. LetterLoom выполняет сопоставление и пишет сопроводительное письмо.</value>
+	</data>
+	<data name="Insert job ad">
+		<value>Вставить вакансию</value>
+	</data>
+	<data name="Paste a URL or the ad text - LetterLoom automatically extracts the requirements.">
+		<value>Вставьте URL или текст вакансии — LetterLoom автоматически извлечёт требования.</value>
+	</data>
+	<data name="Match CV">
+		<value>Сопоставить резюме</value>
+	</data>
+	<data name="The CV is checked against the job. Missing skills are identified and can be added.">
+		<value>Резюме проверяется на соответствие вакансии. Недостающие навыки выявляются, и их можно добавить.</value>
+	</data>
+	<data name="Generate cover letter">
+		<value>Создать сопроводительное письмо</value>
+	</data>
+	<data name="In the language of the job ad, without cliches, with the most relevant projects.">
+		<value>На языке вакансии, без клише, с наиболее релевантными проектами.</value>
+	</data>
+	<data name="Local or API">
+		<value>Локально или API</value>
+	</data>
+	<data name="Full control: local models on your PC or your own OpenAI-compatible endpoint.">
+		<value>Полный контроль: локальные модели на вашем ПК или ваша собственная конечная точка, совместимая с OpenAI.</value>
+	</data>
+	<data name="Try first, then decide">
+		<value>Сначала попробуйте, потом решайте</value>
+	</data>
+	<data name="Download LetterLoom and create your first">
+		<value>Скачайте LetterLoom и создайте первые</value>
+	</data>
+	<data name="5 cover letters for free and in full length">
+		<value>5 сопроводительных писем бесплатно и полной длины</value>
+	</data>
+	<data name="The app remains fully usable afterwards - from the 6th cover letter onwards, the result is only displayed as a">
+		<value>Приложение остаётся полностью работоспособным — начиная с 6-го сопроводительного письма результат отображается только как</value>
+	</data>
+	<data name="shortened preview image with watermark">
+		<value>сокращённое изображение предпросмотра с водяным знаком</value>
+	</data>
+	<data name="This way you can see at your leisure what LetterLoom can do and then decide whether you want to unlock the full version for a one-time EUR 39.">
+		<value>Так вы сможете не спеша увидеть, на что способен LetterLoom, и затем решить, хотите ли вы разблокировать полную версию за единоразовые 39 евро.</value>
+	</data>
+	<data name="Download now">
+		<value>Скачать сейчас</value>
+	</data>
+	<data name="From job ad to finished cover letter - in under a minute.">
+		<value>От вакансии до готового сопроводительного письма — менее чем за минуту.</value>
+	</data>
+	<data name="Your browser cannot play this video.">
+		<value>Ваш браузер не может воспроизвести это видео.</value>
+	</data>
+	<data name="Download video">
+		<value>Скачать видео</value>
+	</data>
+	<data name="Click the video to see the complete process - including the practical “Open URL” feature that puts the cover letter directly into your clipboard.">
+		<value>Нажмите на видео, чтобы увидеть весь процесс — включая удобную функцию «Открыть URL», которая сразу помещает сопроводительное письмо в буфер обмена.</value>
+	</data>
+	<data name="Paste a URL or ad text. LetterLoom extracts the relevant content.">
+		<value>Вставьте URL или текст вакансии. LetterLoom извлечёт релевантное содержимое.</value>
+	</data>
+	<data name="LetterLoom checks which requirements your CV meets - and which are missing.">
+		<value>LetterLoom проверяет, каким требованиям соответствует ваше резюме, а каких не хватает.</value>
+	</data>
+	<data name="Get cover letter">
+		<value>Получить сопроводительное письмо</value>
+	</data>
+	<data name="In the language of the job, with your strongest projects - copyable directly into the application form.">
+		<value>На языке вакансии, с вашими сильнейшими проектами — можно сразу скопировать в форму заявки.</value>
+	</data>
+	<data name="A look into the app">
+		<value>Взгляд на приложение</value>
+	</data>
+	<data name="This is what the workflow in LetterLoom looks like - from job ad to finished cover letter.">
+		<value>Так выглядит рабочий процесс в LetterLoom — от вакансии до готового сопроводительного письма.</value>
+	</data>
+	<data name="Vacancy view">
+		<value>Просмотр вакансии</value>
+	</data>
+	<data name="Vacancy view with job ad, phases 1 and 2, and generated cover letter">
+		<value>Просмотр вакансии с объявлением, этапами 1 и 2 и созданным сопроводительным письмом</value>
+	</data>
+	<data name="Job ad &amp; cover letter">
+		<value>Вакансия и сопроводительное письмо</value>
+	</data>
+	<data name="Paste a URL or ad text - LetterLoom detects phases and generates the cover letter.">
+		<value>Вставьте URL или текст вакансии — LetterLoom определяет этапы и создаёт сопроводительное письмо.</value>
+	</data>
+	<data name="CV gap analysis">
+		<value>Анализ пробелов в резюме</value>
+	</data>
+	<data name="CV gap analysis with missing skills and open questions">
+		<value>Анализ пробелов в резюме с недостающими навыками и открытыми вопросами</value>
+	</data>
+	<data name="CV matching with open questions">
+		<value>Сопоставление резюме с открытыми вопросами</value>
+	</data>
+	<data name="Missing skills are identified and can be added in one step.">
+		<value>Недостающие навыки выявляются, и их можно добавить за один шаг.</value>
+	</data>
+	<data name="Setup wizard with hardware check and preset selection">
+		<value>Мастер настройки с проверкой оборудования и выбором предустановки</value>
+	</data>
+	<data name="Hardware check, preset selection, and model download - in a guided process.">
+		<value>Проверка оборудования, выбор предустановки и загрузка модели — в пошаговом процессе.</value>
+	</data>
+	<data name="The screenshots are from the current version 1.0. Real images coming soon - until then, the tiles show placeholders.">
+		<value>Скриншоты из текущей версии 1.0. Настоящие изображения появятся скоро — до тех пор плитки показывают заполнители.</value>
+	</data>
+	<data name="Local AI or your own API - you decide">
+		<value>Локальный ИИ или ваш собственный API — решаете вы</value>
+	</data>
+	<data name="LetterLoom supports both paths. Both have strengths and weaknesses - the setup wizard helps you make the right choice.">
+		<value>LetterLoom поддерживает оба пути. У каждого есть сильные и слабые стороны — мастер настройки поможет сделать правильный выбор.</value>
+	</data>
+	<data name="Local AI">
+		<value>Локальный ИИ</value>
+	</data>
+	<data name="Models run directly on your PC. Full privacy.">
+		<value>Модели работают непосредственно на вашем ПК. Полная конфиденциальность.</value>
+	</data>
+	<data name="Maximum privacy">
+		<value>Максимальная конфиденциальность</value>
+	</data>
+	<data name="Your CV and job ad never leave your computer. No data transfer to third parties.">
+		<value>Ваше резюме и вакансия никогда не покидают компьютер. Никакой передачи данных третьим лицам.</value>
+	</data>
+	<data name="No ongoing costs">
+		<value>Без регулярных расходов</value>
+	</data>
+	<data name="No token fees. Unlimited use after purchase.">
+		<value>Без платы за токены. Неограниченное использование после покупки.</value>
+	</data>
+	<data name="Works offline">
+		<value>Работает офлайн</value>
+	</data>
+	<data name="No internet, no API key, no sign-up required.">
+		<value>Без интернета, без ключа API, без регистрации.</value>
+	</data>
+	<data name="Some hardware required">
+		<value>Требуется определённое оборудование</value>
+	</data>
+	<data name="The local models run smoothly with just 8 GB VRAM and 16 GB RAM - it also works without a GPU, just slower.">
+		<value>Локальные модели работают плавно даже с 8 ГБ видеопамяти и 16 ГБ ОЗУ — также работает без GPU, только медленнее.</value>
+	</data>
+	<data name="Slower">
+		<value>Медленнее</value>
+	</data>
+	<data name="A cover letter takes 1-5 minutes depending on hardware.">
+		<value>Сопроводительное письмо занимает 1–5 минут в зависимости от оборудования.</value>
+	</data>
+	<data name="Your own API">
+		<value>Ваш собственный API</value>
+	</data>
+	<data name="OpenAI-compatible endpoint. Bring your own.">
+		<value>Конечная точка, совместимая с OpenAI. Подключите свою.</value>
+	</data>
+	<data name="Very fast">
+		<value>Очень быстро</value>
+	</data>
+	<data name="Cover letter in seconds instead of minutes.">
+		<value>Сопроводительное письмо за секунды вместо минут.</value>
+	</data>
+	<data name="No hardware required">
+		<value>Оборудование не требуется</value>
+	</data>
+	<data name="Runs on any PC with an internet connection.">
+		<value>Работает на любом ПК с интернетом.</value>
+	</data>
+	<data name="Highest quality possible">
+		<value>Максимально возможное качество</value>
+	</data>
+	<data name="GPT-4, Claude, or other strong models.">
+		<value>GPT-4, Claude или другие мощные модели.</value>
+	</data>
+	<data name="Token costs">
+		<value>Плата за токены</value>
+	</data>
+	<data name="Depending on the provider, cents to euros per cover letter.">
+		<value>В зависимости от провайдера — от центов до евро за сопроводительное письмо.</value>
+	</data>
+	<data name="Data goes to provider">
+		<value>Данные передаются провайдеру</value>
+	</data>
+	<data name="CV and ad are sent to the API endpoint.">
+		<value>Резюме и вакансия отправляются в конечную точку API.</value>
+	</data>
+	<data name="Internet + API key required">
+		<value>Требуются интернет и ключ API</value>
+	</data>
+	<data name="No connection, no generation.">
+		<value>Нет подключения — нет создания.</value>
+	</data>
+	<data name="Our recommendation:">
+		<value>Наша рекомендация:</value>
+	</data>
+	<data name="Local AI runs with just">
+		<value>Локальный ИИ работает всего с</value>
+	</data>
+	<data name="(or even without a GPU, just slower) and">
+		<value>(или даже без GPU, только медленнее) и</value>
+	</data>
+	<data name="Those with 32 GB RAM and 44 GB free storage can use the larger Qwen3 30B and get even better cover letters. For maximum speed without your own hardware, an API endpoint is suitable (e.g. OpenAI, OpenRouter, Azure OpenAI, or a local Ollama). The setup wizard automatically detects your hardware and suggests the right preset.">
+		<value>Те, у кого 32 ГБ ОЗУ и 44 ГБ свободного места, могут использовать более крупную Qwen3 30B и получать ещё лучшие сопроводительные письма. Для максимальной скорости без собственного оборудования подойдёт конечная точка API (например, OpenAI, OpenRouter, Azure OpenAI или локальная Ollama). Мастер настройки автоматически определяет ваше оборудование и предлагает подходящую предустановку.</value>
+	</data>
+	<data name="Why not just ChatGPT?">
+		<value>Почему не просто ChatGPT?</value>
+	</data>
+	<data name="Writing manually, using ChatGPT, or LetterLoom - an honest comparison.">
+		<value>Писать вручную, использовать ChatGPT или LetterLoom — честное сравнение.</value>
+	</data>
+	<data name="Manual">
+		<value>Вручную</value>
+	</data>
+	<data name="Time per cover letter">
+		<value>Время на одно сопроводительное письмо</value>
+	</data>
+	<data name="30-60 min">
+		<value>30–60 мин</value>
+	</data>
+	<data name="5-15 min">
+		<value>5–15 мин</value>
+	</data>
+	<data name="1-3 min">
+		<value>1–3 мин</value>
+	</data>
+	<data name="Automatic CV matching">
+		<value>Автоматическое сопоставление резюме</value>
+	</data>
+	<data name="Detection of missing skills">
+		<value>Выявление недостающих навыков</value>
+	</data>
+	<data name="Cover letters without cliches">
+		<value>Сопроводительные письма без клише</value>
+	</data>
+	<data name="hard">
+		<value>сложно</value>
+	</data>
+	<data name="varies">
+		<value>зависит</value>
+	</data>
+	<data name="Data stays local">
+		<value>Данные остаются локально</value>
+	</data>
+	<data name="no (server)">
+		<value>нет (сервер)</value>
+	</data>
+	<data name="optional">
+		<value>опционально</value>
+	</data>
+	<data name="Costs">
+		<value>Расходы</value>
+	</data>
+	<data name="EUR 0">
+		<value>0 евро</value>
+	</data>
+	<data name="EUR 0-20/month">
+		<value>0–20 евро/мес.</value>
+	</data>
+	<data name="Try before">
+		<value>Попробовать перед</value>
+	</data>
+	<data name="Build the prompt yourself">
+		<value>Составьте промпт самостоятельно</value>
+	</data>
+	<data name="ChatGPT can deliver good cover letters - if you write the right prompts. LetterLoom handles the entire workflow: insert ad, match CV, write cover letter. Fully local if desired, without your data ever hitting a server.">
+		<value>ChatGPT может выдавать хорошие сопроводительные письма — если вы пишете правильные промпты. LetterLoom выполняет весь процесс: вставить вакансию, сопоставить резюме, написать сопроводительное письмо. Полностью локально при желании, без передачи данных на сервер.</value>
+	</data>
+	<data name="Installation &amp; setup">
+		<value>Установка и настройка</value>
+	</data>
+	<data name="Ready to use in a few minutes. Runs with just 8 GB VRAM (or without GPU). The setup wizard guides you step by step through the configuration - including hardware check and model download.">
+		<value>Готово к использованию за несколько минут. Работает всего с 8 ГБ видеопамяти (или без GPU). Мастер настройки шаг за шагом проведёт через конфигурацию — включая проверку оборудования и загрузку модели.</value>
+	</data>
+	<data name="Download &amp; start">
+		<value>Скачать и запустить</value>
+	</data>
+	<data name="Run the Windows installer. LetterLoom requires .NET 10 (installed automatically if needed).">
+		<value>Запустите установщик Windows. LetterLoom требует .NET 10 (при необходимости устанавливается автоматически).</value>
+	</data>
+	<data name="Run setup wizard">
+		<value>Запустить мастер настройки</value>
+	</data>
+	<data name="The wizard detects your hardware (CPU, RAM, VRAM, storage) and suggests the right preset.">
+		<value>Мастер определяет ваше оборудование (CPU, ОЗУ, видеопамять, накопитель) и предлагает подходящую предустановку.</value>
+	</data>
+	<data name="Configure models">
+		<value>Настроить модели</value>
+	</data>
+	<data name="Local models are downloaded automatically - or you provide your API endpoint.">
+		<value>Локальные модели загружаются автоматически — или вы указываете свою конечную точку API.</value>
+	</data>
+	<data name="Get started">
+		<value>Начать</value>
+	</data>
+	<data name="Insert CV, insert job ad, generate cover letter. Done.">
+		<value>Вставьте резюме, вставьте вакансию, создайте сопроводительное письмо. Готово.</value>
+	</data>
+	<data name="The three setup variants">
+		<value>Три варианта настройки</value>
+	</data>
+	<data name="Recommended for strong PCs">
+		<value>Рекомендуется для мощных ПК</value>
+	</data>
+	<data name="Best local quality. Also runs with 8 GB VRAM - slower, but fully functional.">
+		<value>Лучшее локальное качество. Также работает с 8 ГБ видеопамяти — медленнее, но полностью функционально.</value>
+	</data>
+	<data name="For mid-range hardware">
+		<value>Для оборудования среднего уровня</value>
+	</data>
+	<data name="Faster and less demanding. Good quality for most applications.">
+		<value>Быстрее и менее требовательно. Хорошее качество для большинства заявок.</value>
+	</data>
+	<data name="For weaker PCs">
+		<value>Для слабых ПК</value>
+	</data>
+	<data name="Bring your own: OpenAI-compatible endpoint. No local hardware required.">
+		<value>Подключите свою: конечная точка, совместимая с OpenAI. Локальное оборудование не требуется.</value>
+	</data>
+	<data name="Internet connection">
+		<value>Интернет-подключение</value>
+	</data>
+	<data name="API key">
+		<value>Ключ API</value>
+	</data>
+	<data name="Maximum speed">
+		<value>Максимальная скорость</value>
+	</data>
+	<data name="System requirements">
+		<value>Системные требования</value>
+	</data>
+	<data name="Minimum">
+		<value>Минимум</value>
+	</data>
+	<data name="Windows 10 (64-bit) or newer">
+		<value>Windows 10 (64-разрядная) или новее</value>
+	</data>
+	<data name="4 CPU cores">
+		<value>4 ядра CPU</value>
+	</data>
+	<data name="18 GB free disk space">
+		<value>18 ГБ свободного места на диске</value>
+	</data>
+	<data name="Internet (for download &amp; API mode)">
+		<value>Интернет (для загрузки и режима API)</value>
+	</data>
+	<data name="Windows 11 (64-bit)">
+		<value>Windows 11 (64-разрядная)</value>
+	</data>
+	<data name="8+ CPU cores">
+		<value>8+ ядер CPU</value>
+	</data>
+	<data name="44 GB free disk space (for Qwen3 30B)">
+		<value>44 ГБ свободного места на диске (для Qwen3 30B)</value>
+	</data>
+	<data name=".NET 10 is installed automatically if needed. Without a dedicated GPU, the local models run too - just slower. For maximum speed, an API endpoint also works on weaker hardware.">
+		<value>.NET 10 устанавливается автоматически при необходимости. Без выделенного GPU локальные модели тоже работают — просто медленнее. Для максимальной скорости конечная точка API также подойдёт на слабом оборудовании.</value>
+	</data>
+	<data name="Local storage">
+		<value>Локальное хранилище</value>
+	</data>
+	<data name="All data (CV, cover letters, settings) is stored in a local SQLite database on your PC.">
+		<value>Все данные (резюме, сопроводительные письма, параметры) хранятся в локальной базе данных SQLite на вашем ПК.</value>
+	</data>
+	<data name="Switch anytime">
+		<value>Переключайтесь в любое время</value>
+	</data>
+	<data name="You can switch between local and API without reinstalling the app.">
+		<value>Вы можете переключаться между локальным режимом и API без переустановки приложения.</value>
+	</data>
+	<data name="Frequently asked questions">
+		<value>Часто задаваемые вопросы</value>
+	</data>
+	<data name="Everything you want to know before buying.">
+		<value>Всё, что вы хотите знать перед покупкой.</value>
+	</data>
+	<data name="Is LetterLoom really free to try?">
+		<value>Действительно ли LetterLoom можно бесплатно попробовать?</value>
+	</data>
+	<data name="Yes. You can download LetterLoom and create the first">
+		<value>Да. Вы можете скачать LetterLoom и создать первые</value>
+	</data>
+	<data name="completely and without restrictions">
+		<value>полностью и без ограничений</value>
+	</data>
+	<data name=". From the 6th cover letter onwards, the result is displayed as a shortened preview image with watermark - but the app remains fully usable. This way you can calmly check whether LetterLoom is right for you.">
+		<value>. Начиная с 6-го сопроводительного письма результат отображается как сокращённое изображение предпросмотра с водяным знаком — но приложение остаётся полностью работоспособным. Так вы сможете спокойно проверить, подходит ли вам LetterLoom.</value>
+	</data>
+	<data name="Do I need a strong graphics card?">
+		<value>Нужна ли мощная видеокарта?</value>
+	</data>
+	<data name="No. The local models run smoothly with">
+		<value>Нет. Локальные модели плавно работают с</value>
+	</data>
+	<data name=". It also works entirely without a dedicated GPU - then a cover letter takes a bit longer. If you want maximum speed, you can connect your own API (OpenAI, OpenRouter, Ollama ...) instead and don't need any local computing power at all.">
+		<value>. Также работает полностью без выделенного GPU — тогда сопроводительное письмо занимает немного больше времени. Если нужна максимальная скорость, можно вместо этого подключить собственный API (OpenAI, OpenRouter, Ollama ...) и вообще не нуждаться в локальных вычислительных ресурсах.</value>
+	</data>
+	<data name="Where does my data go (CV, job ad, cover letter)?">
+		<value>Куда попадают мои данные (резюме, вакансия, сопроводительное письмо)?</value>
+	</data>
+	<data name="With local use, your data">
+		<value>При локальном использовании ваши данные</value>
+	</data>
+	<data name="never leaves your PC">
+		<value>никогда не покидают ваш ПК</value>
+	</data>
+	<data name=". CV, job ads, and cover letters are stored in a local SQLite database on your hard drive. There is no cloud connection, no registration, and no telemetry. Only if you voluntarily connect an API are the contents sent to the endpoint of your choice.">
+		<value>. Резюме, вакансии и сопроводительные письма хранятся в локальной базе данных SQLite на вашем жёстком диске. Нет облачного подключения, регистрации и телеметрии. Только если вы добровольно подключите API, содержимое отправляется в выбранную вами конечную точку.</value>
+	</data>
+	<data name="What is the difference from ChatGPT?">
+		<value>В чём отличие от ChatGPT?</value>
+	</data>
+	<data name="LetterLoom is">
+		<value>LetterLoom</value>
+	</data>
+	<data name="built specifically for applications">
+		<value>создан специально для заявок</value>
+	</data>
+	<data name=": It automatically compares your CV with the job ad, identifies missing qualifications, filters out redundant skills, and formulates the cover letter according to fixed anti-cliche rules. With ChatGPT, you have to orchestrate these steps yourself each time and write the prompt yourself. LetterLoom does this in one workflow - and optionally locally, without data transfer. A direct comparison can be found in the section above.">
+		<value>: он автоматически сравнивает ваше резюме с вакансией, выявляет недостающие квалификации, отфильтровывает избыточные навыки и формулирует сопроводительное письмо по фиксированным правилам против клише. С ChatGPT вам каждый раз нужно самостоятельно организовывать эти шаги и писать промпт. LetterLoom делает это в одном рабочем процессе — и опционально локально, без передачи данных. Прямое сравнение приведено в разделе выше.</value>
+	</data>
+	<data name="In which languages does LetterLoom work?">
+		<value>На каких языках работает LetterLoom?</value>
+	</data>
+	<data name="The user interface is available in">
+		<value>Пользовательский интерфейс доступен на</value>
+	</data>
+	<data name="German, English, Italian, and Russian">
+		<value>немецком, английском, итальянском и русском</value>
+	</data>
+	<data name=". The generated cover letter automatically uses the language of the job ad - regardless of which UI language is set.">
+		<value>. Созданное сопроводительное письмо автоматически использует язык вакансии — независимо от выбранного языка интерфейса.</value>
+	</data>
+	<data name="Can I use the license on multiple PCs?">
+		<value>Можно ли использовать лицензию на нескольких ПК?</value>
+	</data>
+	<data name="A license is valid for">
+		<value>Лицензия действительна для</value>
+	</data>
+	<data name="one computer">
+		<value>одного компьютера</value>
+	</data>
+	<data name=". If you want to install LetterLoom on a new PC, write to us via">
+		<value>. Если вы хотите установить LetterLoom на новый ПК, напишите нам через</value>
+	</data>
+	<data name="- we'll help with the transfer.">
+		<value>— мы поможем с переносом.</value>
+	</data>
+	<data name="Is there a refund?">
+		<value>Есть ли возврат средств?</value>
+	</data>
+	<data name="The purchase is processed via Paddle (Merchant of Record). Statutory withdrawal rules apply - details can be found in our">
+		<value>Покупка обрабатывается через Paddle (Merchant of Record). Применяются установленные законом правила отказа от договора — подробности можно найти в нашей</value>
+	</data>
+	<data name="withdrawal policy">
+		<value>политике отказа</value>
+	</data>
+	<data name=". For consumers, the 14-day right of withdrawal applies. Since you can test LetterLoom with 5 cover letters for free beforehand, we recommend using the trial before purchasing.">
+		<value>. Для потребителей действует 14-дневное право на отказ. Поскольку перед покупкой вы можете бесплатно протестировать LetterLoom на 5 сопроводительных письмах, рекомендуем воспользоваться пробной версией.</value>
+	</data>
+	<data name="Do I get updates for free?">
+		<value>Обновления бесплатны?</value>
+	</data>
+	<data name="Yes. Updates within the current major version (1.x) are">
+		<value>Да. Обновления в пределах текущей мажорной версии (1.x)</value>
+	</data>
+	<data name="Free">
+		<value>бесплатны</value>
+	</data>
+	<data name=". Should a new major version ever appear, we will inform you in advance by email.">
+		<value>. Если когда-либо появится новая мажорная версия, мы заранее сообщим вам по электронной почте.</value>
+	</data>
+	<data name="Your question isn't listed?">
+		<value>Вашего вопроса нет в списке?</value>
+	</data>
+	<data name="- we usually respond within 1-2 business days.">
+		<value>— мы обычно отвечаем в течение 1–2 рабочих дней.</value>
+	</data>
+	<data name="One-time EUR 39. No subscription.">
+		<value>Единоразово 39 евро. Без подписки.</value>
+	</data>
+	<data name="After the first 5 free cover letters, you can unlock LetterLoom at any time with a one-time payment - including all updates within the major version. No monthly costs, no contract commitment.">
+		<value>После первых 5 бесплатных сопроводительных писем вы можете в любое время разблокировать LetterLoom единоразовым платежом — включая все обновления в пределах мажорной версии. Без ежемесячных расходов и договорных обязательств.</value>
+	</data>
+	<data name="Price details">
+		<value>Подробности о цене</value>
+	</data>
+	<data name="Ready to try it out?">
+		<value>Готовы попробовать?</value>
+	</data>
+	<data name="Download LetterLoom and create your first 5 cover letters for free.">
+		<value>Скачайте LetterLoom и создайте первые 5 сопроводительных писем бесплатно.</value>
+	</data>
+</root>

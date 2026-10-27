@@ -1,0 +1,211 @@
+﻿@using System.Globalization
+@using LocalizationCatalog
+@inject IJSRuntime JS
+
+@if (IsDebugBuild)
+{
+    <div class="dev-locale-explorer app-card mb-3 border-warning">
+        <div class="app-card-title d-flex align-items-center gap-2">
+            <span class="badge text-bg-warning">DEV</span>
+            <strong>Locale Explorer</strong>
+            <span class="ms-auto text-muted small">
+                Aktuelle Kultur: <code>@CurrentCultureCode</code>
+            </span>
+        </div>
+
+        <!-- ============================ -->
+        <!-- Schnellwahl                   -->
+        <!-- ============================ -->
+        <div class="d-flex flex-wrap gap-2 mb-3">
+            @foreach (var locale in Languages)
+            {
+                <button type="button"
+                        class="btn btn-sm @(IsActive(locale) ? "btn-primary" : "btn-outline-secondary")"
+                        dir="@(locale.IsRightToLeft ? "rtl" : "ltr")"
+                        title="@BuildTitle(locale)"
+                        disabled="@_switching"
+                        @onclick="() => SelectAsync(locale)">
+                    @if (AppLocales.GetFlag(locale.Code) is { Length: > 0 } flag)
+                    {
+                        <span style="margin-right:6px;">@flag</span>
+                    }
+                    @locale.NativeName
+                </button>
+            }
+        </div>
+
+        <!-- ============================ -->
+        <!-- Metadaten-Tabelle             -->
+        <!-- ============================ -->
+        <div class="table-responsive">
+            <table class="table table-sm table-hover align-middle mb-0 small">
+                <thead class="table-light">
+                <tr>
+                    <th style="min-width: 140px;">Sprache</th>
+                    <th>
+                        <code>Code</code>
+                    </th>
+                    <th>
+                        <code>Script</code>
+                    </th>
+                    <th>Richtung</th>
+                    <th>Währung</th>
+                    <th>Zeitzone</th>
+                    <th style="min-width: 180px;">Plural-Kategorien</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var locale in Languages)
+                {
+                    <tr class="@(IsActive(locale) ? "table-primary" : "")">
+                        <td>
+                            @if (AppLocales.GetFlag(locale.Code) is { Length: > 0 } flag)
+                            {
+                                <span style="margin-right:6px;">@flag</span>
+                            }
+                            @locale.NativeName
+                            <div class="text-muted" style="font-size: 0.75rem;">
+                                @locale.EnglishName
+                            </div>
+                        </td>
+                        <td>
+                            <code>@locale.Code</code>
+                        </td>
+                        <td>
+                            <code>@locale.Script</code>
+                        </td>
+                        <td>
+                            @if (locale.IsRightToLeft)
+                            {
+                                <span class="badge text-bg-info">RTL</span>
+                            }
+                            else
+                            {
+                                <span class="text-muted">LTR</span>
+                            }
+                        </td>
+                        <td>
+                            @if (!string.IsNullOrEmpty(locale.CurrencySymbol))
+                            {
+                                <span>@locale.CurrencySymbol</span>
+                                <code class="ms-1">@locale.CurrencyCode</code>
+                            }
+                            else
+                            {
+                                <span class="text-muted">-</span>
+                            }
+                        </td>
+                        <td>
+                            @if (!string.IsNullOrEmpty(locale.DefaultTimeZoneId))
+                            {
+                                <code>@locale.DefaultTimeZoneId</code>
+                            }
+                            else
+                            {
+                                <span class="text-muted">-</span>
+                            }
+                        </td>
+                        <td>
+                            @foreach (var cat in locale.PluralCategories.OrderBy(c => c))
+                            {
+                                <span class="badge text-bg-secondary me-1 mb-1">@cat</span>
+                            }
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ============================ -->
+        <!-- Legende / Hinweise            -->
+        <!-- ============================ -->
+        <div class="mt-3 text-muted" style="font-size: 0.75rem;">
+            <i class="bi bi-info-circle"></i>
+            RTL-Sprachen spiegeln das Layout. <code>Plural-Kategorien</code> bestimmen,
+            wie viele <code>.resx</code>-Keys pro Sprache nötig sind - Sprachen mit
+            <code>{One, Other}</code> reichen mit zwei Keys, alle anderen brauchen mehr.
+        </div>
+    </div>
+}
+
+@code {
+
+    /// <summary>
+    ///     Optionaler Callback für Plattformen, die einen eigenen Sprachwechsel
+    ///     brauchen (z. B. WPF: AppSettings speichern + Prozess-Neustart).
+    ///     Ohne Callback wird das WASM-Muster (localStorage + Reload) verwendet.
+    /// </summary>
+    [Parameter]
+    public EventCallback<LocaleDefinition> OnLanguageSelected { get; set; }
+
+    /// <summary>
+    ///     Wenn true, werden alle 79 Locales aus dem Katalog angezeigt
+    ///     (nicht nur die in <see cref="AppLocales.SupportedLanguages" />).
+    ///     Nur zum Erkunden - das Umschalten funktioniert dann ggf. nicht,
+    ///     weil für nicht-unterstützte Sprachen keine .resx existieren.
+    /// </summary>
+    [Parameter]
+    public bool ShowAllCatalogLocales { get; set; }
+
+    private static readonly LocaleDefinition[] SupportedLanguages = AppLocales.SupportedLanguages.Select(LocaleCatalog.Get).ToArray();
+
+#if DEBUG
+    private const bool IsDebugBuild = true;
+#else
+    private const bool IsDebugBuild = false;
+#endif
+
+    private bool _switching;
+
+    private LocaleDefinition[] Languages => ShowAllCatalogLocales ? LocaleCatalog.All.ToArray() : SupportedLanguages;
+
+    private static string CurrentCultureCode => CultureInfo.CurrentUICulture.Name;
+
+    private static bool IsActive(LocaleDefinition locale)
+    {
+        var current = CurrentCultureCode;
+        return string.Equals(locale.Code, current, StringComparison.OrdinalIgnoreCase) || current.StartsWith(locale.Code + "-", StringComparison.OrdinalIgnoreCase);
+    }
+
+    private static string BuildTitle(LocaleDefinition locale)
+    {
+        var title = $"{locale.EnglishName} ({locale.Code})";
+        if (locale.IsRightToLeft) title += " - RTL";
+        return title;
+    }
+
+    private async Task SelectAsync(LocaleDefinition locale)
+    {
+        if (IsActive(locale) || _switching) return;
+
+        _switching = true;
+        try
+        {
+            if (OnLanguageSelected.HasDelegate)
+            {
+                await OnLanguageSelected.InvokeAsync(locale);
+                return;
+            }
+
+            // Default: WASM-Muster (localStorage + Reload).
+            // In WPF mit BlazorWebView funktioniert der Reload, aber die
+            // Kultur aus App.xaml.cs wird nicht neu gelesen - dort
+            // OnLanguageSelected benutzen.
+            await JS.InvokeVoidAsync("letterLoom.setCulture", locale.Code);
+            await JS.InvokeVoidAsync("letterLoom.setDirection", locale.IsRightToLeft, locale.Code);
+            await JS.InvokeVoidAsync("letterLoom.reload");
+        }
+        catch (JSException)
+        {
+            // JS-Interop nicht verfügbar (reine WPF-Shell ohne
+            // BlazorWebView-JS-Modul). Kein harter Fehler - die
+            // Metadaten-Tabelle funktioniert trotzdem.
+        }
+        finally
+        {
+            _switching = false;
+        }
+    }
+
+}

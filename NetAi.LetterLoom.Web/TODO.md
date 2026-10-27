@@ -1,0 +1,6 @@
+﻿- screenshots erstellen und einfügen
+- Video erstellen (siehe video.odt) erstellen und einfügen
+- paddle checkout
+- cloudflare hosten --- nein wir bleiben auf github
+- wärend startphase LLM ist service länger unavaivable ... das muss ich irgendwie überbrüchken mit retry, oder sicher abfangen starting - started !!!
+- localisation

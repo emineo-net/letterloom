@@ -1,0 +1,1814 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="[yes] is enough for certificates and tools. For experience questions, details such as project, company, and year help.">
+		<value>[yes] is enough for certificates and tools. For experience questions, details such as project, company, and year help.</value>
+	</data>
+	<data name="{0} answered - {1} irrelevant">
+		<value>{0} answered - {1} irrelevant</value>
+	</data>
+	<data name="{0} copied to clipboard.">
+		<value>{0} copied to clipboard.</value>
+	</data>
+	<data name="{0} could not be copied.">
+		<value>{0} could not be copied.</value>
+	</data>
+	<data name="{0} line(s) changed">
+		<value>{0} line(s) changed</value>
+	</data>
+	<data name="{0} open question(s) found ({1} redundant filtered).">
+		<value>{0} open question(s) found ({1} redundant filtered).</value>
+	</data>
+	<data name="{0} open question(s) found.">
+		<value>{0} open question(s) found.</value>
+	</data>
+	<data name="{0} ready">
+		<value>{0} ready</value>
+	</data>
+	<data name="{0} tag(s) confirmed, of which {1} were saved/updated in the skills table.">
+		<value>{0} tag(s) confirmed, of which {1} were saved/updated in the skills table.</value>
+	</data>
+	<data name="{0} URL(s) added.">
+		<value>{0} URL(s) added.</value>
+	</data>
+	<data name="{0}x API - {1} Tokens">
+		<value>{0}x API - {1} Tokens</value>
+	</data>
+	<data name="{0} is still empty.">
+		<value>{0} is still empty.</value>
+	</data>
+	<data name="{0} ready.">
+		<value>{0} ready.</value>
+	</data>
+	<data name="Add">
+		<value>Add</value>
+	</data>
+	<data name="Add new URLs">
+		<value>Add new URLs</value>
+	</data>
+	<data name="Add new job ads below.">
+		<value>Add new job ads below.</value>
+	</data>
+	<data name="Add URLs">
+		<value>Add URLs</value>
+	</data>
+	<data name="All letters">
+		<value>All letters</value>
+	</data>
+	<data name="All remaining tags will be written to the skills table when you click OK.">
+		<value>All remaining tags will be written to the skills table when you click OK.</value>
+	</data>
+	<data name="Analysis failed: {0}">
+		<value>Analysis failed: {0}</value>
+	</data>
+	<data name="Analysis finished - {0} OK, {1} skipped.">
+		<value>Analysis finished - {0} OK, {1} skipped.</value>
+	</data>
+	<data name="Analyze (Coder, all)">
+		<value>Analyze (Coder, all)</value>
+	</data>
+	<data name="Analyzing">
+		<value>Analyzing</value>
+	</data>
+	<data name="All files|*.*">
+		<value>All files|*.*</value>
+	</data>
+	<data name="All of them are present in KnownSkills or the skills table.">
+		<value>All of them are present in KnownSkills or the skills table.</value>
+	</data>
+	<data name="An error occurred during generation:">
+		<value>An error occurred during generation:</value>
+	</data>
+	<data name="Analyzing CV against job ad...">
+		<value>Analyzing CV against job ad...</value>
+	</data>
+	<data name="ApiUrl is missing.">
+		<value>ApiUrl is missing.</value>
+	</data>
+	<data name="API endpoint not reachable or configuration invalid.">
+		<value>API endpoint not reachable or configuration invalid.</value>
+	</data>
+	<data name="API: {0} - {1}">
+		<value>API: {0} - {1}</value>
+	</data>
+	<data name="Apply to CV">
+		<value>Apply to CV</value>
+	</data>
+	<data name="Automatically filtered ({0})">
+		<value>Automatically filtered ({0})</value>
+	</data>
+	<data name="Automatically tailor your CV to job ads.">
+		<value>Automatically tailor your CV to job ads.</value>
+	</data>
+	<data name="Browser will open with the job ad...">
+		<value>Browser will open with the job ad...</value>
+	</data>
+	<data name="Cancel">
+		<value>Cancel</value>
+	</data>
+	<data name="Click [Start gap analysis].">
+		<value>Click [Start gap analysis].</value>
+	</data>
+	<data name="Click: copy letter">
+		<value>Click: copy letter</value>
+	</data>
+	<data name="Click: copy Phase 1 prompt">
+		<value>Click: copy Phase 1 prompt</value>
+	</data>
+	<data name="Click: copy Phase 2 prompt">
+		<value>Click: copy Phase 2 prompt</value>
+	</data>
+	<data name="Coder">
+		<value>Coder</value>
+	</data>
+	<data name="Coder - {0}">
+		<value>Coder - {0}</value>
+	</data>
+	<data name="Copy cover letter and open in browser">
+		<value>Copy cover letter and open in browser</value>
+	</data>
+	<data name="Cover letter">
+		<value>Cover letter</value>
+	</data>
+	<data name="Cover letter copied to clipboard.">
+		<value>Cover letter copied to clipboard.</value>
+	</data>
+	<data name="Cover letters (General, all)">
+		<value>Cover letters (General, all)</value>
+	</data>
+	<data name="Create cover letter">
+		<value>Create cover letter</value>
+	</data>
+	<data name="Creating cover letter">
+		<value>Creating cover letter</value>
+	</data>
+	<data name="Current job ad">
+		<value>Current job ad</value>
+	</data>
+	<data name="CV">
+		<value>CV</value>
+	</data>
+	<data name="CV extended successfully.">
+		<value>CV extended successfully.</value>
+	</data>
+	<data name="CV is empty.">
+		<value>CV is empty.</value>
+	</data>
+	<data name="CV saved.">
+		<value>CV saved.</value>
+	</data>
+	<data name="Delete">
+		<value>Delete</value>
+	</data>
+	<data name="Delete it first (if necessary) to regenerate it.">
+		<value>Delete it first (if necessary) to regenerate it.</value>
+	</data>
+	<data name="Details see Setup -> API usage">
+		<value>Details see Setup -> API usage</value>
+	</data>
+	<data name="Discard">
+		<value>Discard</value>
+	</data>
+	<data name="Error">
+		<value>Error</value>
+	</data>
+	<data name="Error while executing:">
+		<value>Error while executing:</value>
+	</data>
+	<data name="Extend CV">
+		<value>Extend CV</value>
+	</data>
+	<data name="Extend CV with answers">
+		<value>Extend CV with answers</value>
+	</data>
+	<data name="Extend failed: {0}">
+		<value>Extend failed: {0}</value>
+	</data>
+	<data name="Extract">
+		<value>Extract</value>
+	</data>
+	<data name="Extracted text appears here.">
+		<value>Extracted text appears here.</value>
+	</data>
+	<data name="Extracting">
+		<value>Extracting</value>
+	</data>
+	<data name="Extracting job ad...">
+		<value>Extracting job ad...</value>
+	</data>
+	<data name="Extraction failed: {0}">
+		<value>Extraction failed: {0}</value>
+	</data>
+	<data name="Extended CV">
+		<value>Extended CV</value>
+	</data>
+	<data name="Extended CV applied and saved.">
+		<value>Extended CV applied and saved.</value>
+	</data>
+	<data name="Extending CV...">
+		<value>Extending CV...</value>
+	</data>
+	<data name="Extended CV created - review and apply.">
+		<value>Extended CV created - review and apply.</value>
+	</data>
+	<data name="Final Letter">
+		<value>Final Letter</value>
+	</data>
+	<data name="GGUF model|*.gguf">
+		<value>GGUF model|*.gguf</value>
+	</data>
+	<data name="General">
+		<value>General</value>
+	</data>
+	<data name="General - {0}">
+		<value>General - {0}</value>
+	</data>
+	<data name="Insert">
+		<value>Insert</value>
+	</data>
+	<data name="Insert failed: {0}">
+		<value>Insert failed: {0}</value>
+	</data>
+	<data name="Insufficient match between CV and job ad.">
+		<value>Insufficient match between CV and job ad.</value>
+	</data>
+	<data name="Job ad">
+		<value>Job ad</value>
+	</data>
+	<data name="Job ad (DB)">
+		<value>Job ad (DB)</value>
+	</data>
+	<data name="Job ad added.">
+		<value>Job ad added.</value>
+	</data>
+	<data name="Job ad does not match the profile.">
+		<value>Job ad does not match the profile.</value>
+	</data>
+	<data name="Job ad extracted.">
+		<value>Job ad extracted.</value>
+	</data>
+	<data name="Job ad is empty.">
+		<value>Job ad is empty.</value>
+	</data>
+	<data name="No Windows ZIP found in llama-server release.">
+		<value>No Windows ZIP found in llama-server release.</value>
+	</data>
+	<data name="LanguageDescription">
+		<value>Choose the language used for the app interface.</value>
+	</data>
+	<data name="LanguageRestartHint">
+		<value>Restart the app to apply the language change.</value>
+	</data>
+	<data name="LanguageTitle">
+		<value>Language</value>
+	</data>
+	<data name="LLM Engine">
+		<value>LLM Engine</value>
+	</data>
+	<data name="Letter">
+		<value>Letter</value>
+	</data>
+	<data name="Letters finished - {0} OK, {1} errors.">
+		<value>Letters finished - {0} OK, {1} errors.</value>
+	</data>
+	<data name="LLM server is not running. Please start it in the sidebar.">
+		<value>LLM server is not running. Please start it in the sidebar.</value>
+	</data>
+	<data name="LLM server could not be started: {0}">
+		<value>LLM server could not be started: {0}</value>
+	</data>
+	<data name="llama-server not configured.">
+		<value>llama-server not configured.</value>
+	</data>
+	<data name="llama-server.exe not found in ZIP.">
+		<value>llama-server.exe not found in ZIP.</value>
+	</data>
+	<data name="Mark as done">
+		<value>Mark as done</value>
+	</data>
+	<data name="Mark as irrelevant">
+		<value>Mark as irrelevant</value>
+	</data>
+	<data name="Marked as irrelevant - ignored when extending.">
+		<value>Marked as irrelevant - ignored when extending.</value>
+	</data>
+	<data name="Match your CV against job ads and extend it in a targeted way.">
+		<value>Match your CV against job ads and extend it in a targeted way.</value>
+	</data>
+	<data name="Missing skills - confirm">
+		<value>Missing skills - confirm</value>
+	</data>
+	<data name="Missing skills:">
+		<value>Missing skills:</value>
+	</data>
+	<data name="Model {0} could not be started: {1}">
+		<value>Model {0} could not be started: {1}</value>
+	</data>
+	<data name="Model {0} is running.">
+		<value>Model {0} is running.</value>
+	</data>
+	<data name="Model {0} is not configured.">
+		<value>Model {0} is not configured.</value>
+	</data>
+	<data name="Model '{0}' is not configured.">
+		<value>Model '{0}' is not configured.</value>
+	</data>
+	<data name="Model not found.">
+		<value>Model not found.</value>
+	</data>
+	<data name="Models">
+		<value>Models</value>
+	</data>
+	<data name="No analysis yet.">
+		<value>No analysis yet.</value>
+	</data>
+	<data name="No changes">
+		<value>No changes</value>
+	</data>
+	<data name="No changes to apply.">
+		<value>No changes to apply.</value>
+	</data>
+	<data name="No changes to the CV.">
+		<value>No changes to the CV.</value>
+	</data>
+	<data name="No cover letter generated yet.">
+		<value>No cover letter generated yet.</value>
+	</data>
+	<data name="No cover letter will be generated.">
+		<value>No cover letter will be generated.</value>
+	</data>
+	<data name="No cover letter yet. Please generate one first.">
+		<value>No cover letter yet. Please generate one first.</value>
+	</data>
+	<data name="No entries with a Phase 2 prompt.">
+		<value>No entries with a Phase 2 prompt.</value>
+	</data>
+	<data name="No gaps found.">
+		<value>No gaps found.</value>
+	</data>
+	<data name="No gaps found - your CV matches the ad.">
+		<value>No gaps found - your CV matches the ad.</value>
+	</data>
+	<data name="No pending entries for Phase 1.">
+		<value>No pending entries for Phase 1.</value>
+	</data>
+	<data name="No pending entries for analysis.">
+		<value>No pending entries for analysis.</value>
+	</data>
+	<data name="No questions will be asked - adapting the CV is not useful here.">
+		<value>No questions will be asked - adapting the CV is not useful here.</value>
+	</data>
+	<data name="No substantive changes - the topics are already in the CV.">
+		<value>No substantive changes - the topics are already in the CV.</value>
+	</data>
+	<data name="No text extracted.">
+		<value>No text extracted.</value>
+	</data>
+	<data name="No URLs in the queue yet.">
+		<value>No URLs in the queue yet.</value>
+	</data>
+	<data name="Not configured">
+		<value>Not configured</value>
+	</data>
+	<data name="OK">
+		<value>OK</value>
+	</data>
+	<data name="One URL per line...">
+		<value>One URL per line...</value>
+	</data>
+	<data name="One URL per line. Multiple URLs will be added at once.">
+		<value>One URL per line. Multiple URLs will be added at once.</value>
+	</data>
+	<data name="Open in browser (letter in clipboard)">
+		<value>Open in browser (letter in clipboard)</value>
+	</data>
+	<data name="Open questions">
+		<value>Open questions</value>
+	</data>
+	<data name="Operation cancelled.">
+		<value>Operation cancelled.</value>
+	</data>
+	<data name="Operation cancelled. No cover letter was created.">
+		<value>Operation cancelled. No cover letter was created.</value>
+	</data>
+	<data name="Or paste the job ad here...">
+		<value>Or paste the job ad here...</value>
+	</data>
+	<data name="Page not found.">
+		<value>Page not found.</value>
+	</data>
+	<data name="Partial match.">
+		<value>Partial match.</value>
+	</data>
+	<data name="Paste a job ad. It will be saved as a separate queue entry.">
+		<value>Paste a job ad. It will be saved as a separate queue entry.</value>
+	</data>
+	<data name="Paste job ad">
+		<value>Paste job ad</value>
+	</data>
+	<data name="Paste job ad here...">
+		<value>Paste job ad here...</value>
+	</data>
+	<data name="Pasted job ad - no link available.">
+		<value>Pasted job ad - no link available.</value>
+	</data>
+	<data name="Phase 0 - Match check">
+		<value>Phase 0 - Match check</value>
+	</data>
+	<data name="Phase 0 incorrectly reported the following skills as missing:">
+		<value>Phase 0 incorrectly reported the following skills as missing:</value>
+	</data>
+	<data name="Phase 1">
+		<value>Phase 1</value>
+	</data>
+	<data name="Phase 1 (all)">
+		<value>Phase 1 (all)</value>
+	</data>
+	<data name="Phase 1 - Analysis">
+		<value>Phase 1 - Analysis</value>
+	</data>
+	<data name="Phase 1 finished - {0} OK, {1} skipped.">
+		<value>Phase 1 finished - {0} OK, {1} skipped.</value>
+	</data>
+	<data name="Phase 2">
+		<value>Phase 2</value>
+	</data>
+	<data name="Phase 2 - Prompt">
+		<value>Phase 2 - Prompt</value>
+	</data>
+	<data name="Please answer at least one relevant question.">
+		<value>Please answer at least one relevant question.</value>
+	</data>
+	<data name="Please enter at least one URL.">
+		<value>Please enter at least one URL.</value>
+	</data>
+	<data name="Please enter a URL.">
+		<value>Please enter a URL.</value>
+	</data>
+	<data name="Please enter or extract a job ad first.">
+		<value>Please enter or extract a job ad first.</value>
+	</data>
+	<data name="Please paste a job ad.">
+		<value>Please paste a job ad.</value>
+	</data>
+	<data name="Press Ctrl+V to paste into the application form.">
+		<value>Press Ctrl+V to paste into the application form.</value>
+	</data>
+	<data name="Queue ({0})">
+		<value>Queue ({0})</value>
+	</data>
+	<data name="Raw LLM response (debug)">
+		<value>Raw LLM response (debug)</value>
+	</data>
+	<data name="Ready">
+		<value>Ready</value>
+	</data>
+	<data name="Really delete this URL?">
+		<value>Really delete this URL?</value>
+	</data>
+	<data name="Remove">
+		<value>Remove</value>
+	</data>
+	<data name="Remove tags with the x that you do not have.">
+		<value>Remove tags with the x that you do not have.</value>
+	</data>
+	<data name="Restore relevance">
+		<value>Restore relevance</value>
+	</data>
+	<data name="Running - {0}">
+		<value>Running - {0}</value>
+	</data>
+	<data name="Save">
+		<value>Save</value>
+	</data>
+	<data name="Save failed: {0}">
+		<value>Save failed: {0}</value>
+	</data>
+	<data name="ScrapeLabelBlocked">
+		<value>Blocked by WAF</value>
+	</data>
+	<data name="ScrapeLabelCaptcha">
+		<value>Captcha challenge</value>
+	</data>
+	<data name="ScrapeLabelEmpty">
+		<value>Empty or short content</value>
+	</data>
+	<data name="ScrapeLabelGeo">
+		<value>Geo blocked</value>
+	</data>
+	<data name="ScrapeLabelJsRequired">
+		<value>JavaScript required</value>
+	</data>
+	<data name="ScrapeLabelNetwork">
+		<value>Network error</value>
+	</data>
+	<data name="ScrapeLabelRateLimited">
+		<value>Rate limited</value>
+	</data>
+	<data name="ScrapeLabelUnknown">
+		<value>Unknown error</value>
+	</data>
+	<data name="Selected job">
+		<value>Selected job</value>
+	</data>
+	<data name="Server terminated (ExitCode {0}).">
+		<value>Server terminated (ExitCode {0}).</value>
+	</data>
+	<data name="Setup">
+		<value>Setup</value>
+	</data>
+	<data name="SetupTitle">
+		<value>Setup</value>
+	</data>
+	<data name="SetupSubtitle">
+		<value>Configure the language, models, and API usage for WpfTree Studio.</value>
+	</data>
+	<data name="Setup incomplete. Please configure llama-server and models first.">
+		<value>Setup incomplete. Please configure llama-server and models first.</value>
+	</data>
+	<data name="Show details">
+		<value>Show details</value>
+	</data>
+	<data name="Start">
+		<value>Start</value>
+	</data>
+	<data name="Start failed: {0}">
+		<value>Start failed: {0}</value>
+	</data>
+	<data name="Start gap analysis">
+		<value>Start gap analysis</value>
+	</data>
+	<data name="Starting {0}... (1-5 minutes)">
+		<value>Starting {0}... (1-5 minutes)</value>
+	</data>
+	<data name="Starting {0} model... (may take 1-2 minutes)">
+		<value>Starting {0} model... (may take 1-2 minutes)</value>
+	</data>
+	<data name="Starting {0}...">
+		<value>Starting {0}...</value>
+	</data>
+	<data name="Starting LLM server...">
+		<value>Starting LLM server...</value>
+	</data>
+	<data name="Starting...">
+		<value>Starting...</value>
+	</data>
+	<data name="Stop">
+		<value>Stop</value>
+	</data>
+	<data name="Stopped">
+		<value>Stopped</value>
+	</data>
+	<data name="Stopping...">
+		<value>Stopping...</value>
+	</data>
+	<data name="Studio">
+		<value>Studio</value>
+	</data>
+	<data name="Switch failed: {0}">
+		<value>Switch failed: {0}</value>
+	</data>
+	<data name="Switching to {0}...">
+		<value>Switching to {0}...</value>
+	</data>
+	<data name="The ad describes a different role than your CV covers.">
+		<value>The ad describes a different role than your CV covers.</value>
+	</data>
+	<data name="The answers did not add any new information. This happens when the topics are already in the CV. The original CV remains unchanged.">
+		<value>The answers did not add any new information. This happens when the topics are already in the CV. The original CV remains unchanged.</value>
+	</data>
+	<data name="The CV only partially matches the job ad.">
+		<value>The CV only partially matches the job ad.</value>
+	</data>
+	<data name="The job ad is too short ({0} words, at least {1} required).">
+		<value>The job ad is too short ({0} words, at least {1} required).</value>
+	</data>
+	<data name="These questions were discarded because the skills they contain are already in the CV.">
+		<value>These questions were discarded because the skills they contain are already in the CV.</value>
+	</data>
+	<data name="Timeout during startup.">
+		<value>Timeout during startup.</value>
+	</data>
+	<data name="Tip: Open the ad in your browser, copy the text, and paste it via [Paste job ad].">
+		<value>Tip: Open the ad in your browser, copy the text, and paste it via [Paste job ad].</value>
+	</data>
+	<data name="Unknown match level: {0}">
+		<value>Unknown match level: {0}</value>
+	</data>
+	<data name="Use [Add URLs] or [Job ad] above.">
+		<value>Use [Add URLs] or [Job ad] above.</value>
+	</data>
+	<data name="Vacancies">
+		<value>Vacancies</value>
+	</data>
+	<data name="WpfTree">
+		<value>WpfTree</value>
+	</data>
+	<data name="WPF .NET 10 File Explorer">
+		<value>WPF .NET 10 File Explorer</value>
+	</data>
+	<data name="Your CV covers all requirements.">
+		<value>Your CV covers all requirements.</value>
+	</data>
+	<data name="Your CV does not match the job ad">
+		<value>Your CV does not match the job ad</value>
+	</data>
+	<data name="Your answer... (any language is fine)">
+		<value>Your answer... (any language is fine)</value>
+	</data>
+	<data name="(no URL)">
+		<value>(no URL)</value>
+	</data>
+	<data name="(pasted job ad)">
+		<value>(pasted job ad)</value>
+	</data>
+	<data name="A cover letter already exists for this entry.">
+		<value>A cover letter already exists for this entry.</value>
+	</data>
+	<data name="Applied and saved.">
+		<value>Applied and saved.</value>
+	</data>
+	<data name="Already in CV: {0}">
+		<value>Already in CV: {0}</value>
+	</data>
+	<data name="DownloadFailed">
+		<value>Download failed</value>
+	</data>
+	<data name="filter by category (you must have tagged your pages to do this)">
+		<value>filter by category (you must have tagged your pages to do this)</value>
+	</data>
+	<data name="GeneralModelTitle">
+		<value>General model</value>
+	</data>
+	<data name="GeneralModelDescription">
+		<value>Configure the general-purpose model used for analysis and writing.</value>
+	</data>
+	<data name="CoderModelTitle">
+		<value>Coder model</value>
+	</data>
+	<data name="CoderModelDescription">
+		<value>Configure the coding model.</value>
+	</data>
+	<data name="LlamaServerTitle">
+		<value>llama-server</value>
+	</data>
+	<data name="LlamaServerDescription">
+		<value>Download and configure the local llama-server required for GGUF models.</value>
+	</data>
+	<data name="LlamaServerDownload">
+		<value>Download llama-server</value>
+	</data>
+	<data name="PickExistingFile">
+		<value>Select existing file</value>
+	</data>
+	<data name="StatusReady">
+		<value>Ready</value>
+	</data>
+	<data name="StatusIncomplete">
+		<value>Setup incomplete</value>
+	</data>
+	<data name="StatusMissing">
+		<value>Missing</value>
+	</data>
+	<data name="RestartNow">
+		<value>Restart now</value>
+	</data>
+	<data name="ModeLocalGguf">
+		<value>Local (GGUF)</value>
+	</data>
+	<data name="ModeApi">
+		<value>API</value>
+	</data>
+	<data name="DownloadDefaultModel">
+		<value>Download default model ({0})</value>
+	</data>
+	<data name="PickOwnGguf">
+		<value>Select own GGUF model</value>
+	</data>
+	<data name="ApiBaseUrl">
+		<value>API base URL</value>
+	</data>
+	<data name="ApiKeyOptional">
+		<value>API key (optional)</value>
+	</data>
+	<data name="ApiModelName">
+		<value>API model name</value>
+	</data>
+	<data name="PrivacyLabel">
+		<value>Privacy:</value>
+	</data>
+	<data name="PrivacyWarningApi">
+		<value>Requests and CV/job ad content are sent to {0}. Review that provider's privacy policy.</value>
+	</data>
+	<data name="PrivacyProviderFallback">
+		<value>the configured API provider</value>
+	</data>
+	<data name="ModelsDirectoryTitle">
+		<value>Model storage location</value>
+	</data>
+	<data name="Change">
+		<value>Change</value>
+	</data>
+	<data name="ModelsDirectoryCustom">
+		<value>Custom model directory</value>
+	</data>
+	<data name="ResetToDefault">
+		<value>Reset to default</value>
+	</data>
+	<data name="DefaultLabel">
+		<value>Default:</value>
+	</data>
+	<data name="ApiUsageTitle">
+		<value>API usage</value>
+	</data>
+	<data name="Reset">
+		<value>Reset</value>
+	</data>
+	<data name="ApiUsageDescription">
+		<value>Token usage recorded for API model requests.</value>
+	</data>
+	<data name="ApiUsageModel">
+		<value>Model</value>
+	</data>
+	<data name="ApiUsageRequests">
+		<value>Requests</value>
+	</data>
+	<data name="ApiUsagePrompt">
+		<value>Prompt tokens</value>
+	</data>
+	<data name="ApiUsageCompletion">
+		<value>Completion tokens</value>
+	</data>
+	<data name="ApiUsageTotal">
+		<value>Total tokens</value>
+	</data>
+	<data name="ApiUsageSum">
+		<value>Total</value>
+	</data>
+	<data name="LlamaServerInstalled">
+		<value>llama-server installed.</value>
+	</data>
+	<data name="LlamaServerPathSaved">
+		<value>llama-server path saved.</value>
+	</data>
+	<data name="GeneralModelDownloaded">
+		<value>General model downloaded.</value>
+	</data>
+	<data name="CoderModelDownloaded">
+		<value>Coder model downloaded.</value>
+	</data>
+	<data name="ModelPathSaved">
+		<value>Model path saved.</value>
+	</data>
+	<data name="ModelsDirectoryChanged">
+		<value>Model directory changed to {0}.</value>
+	</data>
+	<data name="ModelsDirectoryReset">
+		<value>Model directory reset to default.</value>
+	</data>
+	<data name="ApiUsageReset">
+		<value>API usage reset.</value>
+	</data>
+	<data name="Restart failed: {0}">
+		<value>Restart failed: {0}</value>
+	</data>
+	<data name="LanguageChanged">
+		<value>Language changed. Restart the app to apply it.</value>
+	</data>
+	<data name="No relevant gaps - {0} redundant question(s) automatically filtered.">
+		<value>No relevant gaps - {0} redundant question(s) automatically filtered.</value>
+	</data>
+	<data name="Pricing">
+		<value>Pricing</value>
+	</data>
+	<data name="Help &amp; Info">
+		<value>Help &amp; Info</value>
+	</data>
+	<data name="Processes">
+		<value>Processes</value>
+	</data>
+	<data name="No processes &gt; 3 GB RAM / 2 GB VRAM">
+		<value>No processes &gt; 3 GB RAM / 2 GB VRAM</value>
+	</data>
+	<data name="End process">
+		<value>End process</value>
+	</data>
+	<data name="An error occurred">
+		<value>An error occurred</value>
+	</data>
+	<data name="Retry">
+		<value>Retry</value>
+	</data>
+	<data name="Report problem">
+		<value>Report problem</value>
+	</data>
+	<data name="Really end process {0}?">
+		<value>Really end process {0}?</value>
+	</data>
+	<data name="Process ended.">
+		<value>Process ended.</value>
+	</data>
+	<data name="Process could not be ended.">
+		<value>Process could not be ended.</value>
+	</data>
+	<data name="{0} of {1} answered">
+		<value>{0} of {1} answered</value>
+	</data>
+	<data name="Start setup wizard">
+		<value>Start setup wizard</value>
+	</data>
+	<data name="Hardware">
+		<value>Hardware</value>
+	</data>
+	<data name="CPU">
+		<value>CPU</value>
+	</data>
+	<data name="Threads">
+		<value>Threads</value>
+	</data>
+	<data name="RAM">
+		<value>RAM</value>
+	</data>
+	<data name="free">
+		<value>free</value>
+	</data>
+	<data name="VRAM">
+		<value>VRAM</value>
+	</data>
+	<data name="Unknown">
+		<value>Unknown</value>
+	</data>
+	<data name="Drives">
+		<value>Drives</value>
+	</data>
+	<data name="No drives detected.">
+		<value>No drives detected.</value>
+	</data>
+	<data name="Your hardware meets Qwen3 30B requirements (32+ GB RAM, 40+ GB free storage). Recommendation: Local - Qwen3 30B.">
+		<value>Your hardware meets Qwen3 30B requirements (32+ GB RAM, 40+ GB free storage). Recommendation: Local - Qwen3 30B.</value>
+	</data>
+	<data name="Qwen3 30B is too large, but Qwen2.5 14B fits (16+ GB RAM, 18+ GB free storage). Recommendation: Local - Qwen2.5 14B.">
+		<value>Qwen3 30B is too large, but Qwen2.5 14B fits (16+ GB RAM, 18+ GB free storage). Recommendation: Local - Qwen2.5 14B.</value>
+	</data>
+	<data name="Local models lack RAM or free storage. Recommendation: Own API model.">
+		<value>Local models lack RAM or free storage. Recommendation: Own API model.</value>
+	</data>
+	<data name="Quick start">
+		<value>Quick start</value>
+	</data>
+	<data name="Choose a preconfigured variant. The wizard guides you through setup.">
+		<value>Choose a preconfigured variant. The wizard guides you through setup.</value>
+	</data>
+	<data name="Active">
+		<value>Active</value>
+	</data>
+	<data name="Recommended">
+		<value>Recommended</value>
+	</data>
+	<data name="Local - Qwen3 30B">
+		<value>Local - Qwen3 30B</value>
+	</data>
+	<data name="Better quality, more RAM/VRAM. Recommended for strong hardware.">
+		<value>Better quality, more RAM/VRAM. Recommended for strong hardware.</value>
+	</data>
+	<data name="Best local results - no token costs - privacy">
+		<value>Best local results - no token costs - privacy</value>
+	</data>
+	<data name="40 GB disk - 32+ GB RAM - slower than API">
+		<value>40 GB disk - 32+ GB RAM - slower than API</value>
+	</data>
+	<data name="Hardware suitable">
+		<value>Hardware suitable</value>
+	</data>
+	<data name="Hardware too weak">
+		<value>Hardware too weak</value>
+	</data>
+	<data name="Check again">
+		<value>Check again</value>
+	</data>
+	<data name="Select">
+		<value>Select</value>
+	</data>
+	<data name="Local - Qwen2.5 14B">
+		<value>Local - Qwen2.5 14B</value>
+	</data>
+	<data name="Faster, less memory. Recommended for mid-range hardware.">
+		<value>Faster, less memory. Recommended for mid-range hardware.</value>
+	</data>
+	<data name="Like Qwen3 local - no token costs - privacy - smaller &amp; faster">
+		<value>Like Qwen3 local - no token costs - privacy - smaller &amp; faster</value>
+	</data>
+	<data name="Not quite as perfect cover letters - 18 GB disk - 16+ GB RAM">
+		<value>Not quite as perfect cover letters - 18 GB disk - 16+ GB RAM</value>
+	</data>
+	<data name="Own API model">
+		<value>Own API model</value>
+	</data>
+	<data name="Bring your own: OpenAI-compatible endpoint.">
+		<value>Bring your own: OpenAI-compatible endpoint.</value>
+	</data>
+	<data name="No download - key + URL required">
+		<value>No download - key + URL required</value>
+	</data>
+	<data name="Fastest responses - no download - no local hardware required">
+		<value>Fastest responses - no download - no local hardware required</value>
+	</data>
+	<data name="No privacy - costs money - internet/API key required">
+		<value>No privacy - costs money - internet/API key required</value>
+	</data>
+	<data name="Always available">
+		<value>Always available</value>
+	</data>
+	<data name="Reconfigure">
+		<value>Reconfigure</value>
+	</data>
+	<data name="Advanced settings">
+		<value>Advanced settings</value>
+	</data>
+	<data name="Setup Wizard">
+		<value>Setup Wizard</value>
+	</data>
+	<data name="How do you want to run your LLM?">
+		<value>How do you want to run your LLM?</value>
+	</data>
+	<data name="Local means: models run on this PC. API means: an external provider performs the calculation.">
+		<value>Local means: models run on this PC. API means: an external provider performs the calculation.</value>
+	</data>
+	<data name="Local">
+		<value>Local</value>
+	</data>
+	<data name="Models run on your PC. Full privacy. Requires strong hardware.">
+		<value>Models run on your PC. Full privacy. Requires strong hardware.</value>
+	</data>
+	<data name="Bring your own API">
+		<value>Bring your own API</value>
+	</data>
+	<data name="OpenAI-compatible endpoint (OpenAI, Azure, OpenRouter, Ollama, vLLM ...).">
+		<value>OpenAI-compatible endpoint (OpenAI, Azure, OpenRouter, Ollama, vLLM ...).</value>
+	</data>
+	<data name="Which model size?">
+		<value>Which model size?</value>
+	</data>
+	<data name="Both variants run locally. Larger = better quality, more RAM/VRAM required.">
+		<value>Both variants run locally. Larger = better quality, more RAM/VRAM required.</value>
+	</data>
+	<data name="Large - Qwen3 30B">
+		<value>Large - Qwen3 30B</value>
+	</data>
+	<data name="Better quality. Requires about 40 GB storage, 32+ GB RAM.">
+		<value>Better quality. Requires about 40 GB storage, 32+ GB RAM.</value>
+	</data>
+	<data name="Small - Qwen2.5 14B">
+		<value>Small - Qwen2.5 14B</value>
+	</data>
+	<data name="Faster, less memory. Requires about 18 GB storage, 16+ GB RAM.">
+		<value>Faster, less memory. Requires about 18 GB storage, 16+ GB RAM.</value>
+	</data>
+	<data name="API access">
+		<value>API access</value>
+	</data>
+	<data name="OpenAI-compatible endpoints. The key is stored locally and only sent to this endpoint.">
+		<value>OpenAI-compatible endpoints. The key is stored locally and only sent to this endpoint.</value>
+	</data>
+	<data name="Base URL">
+		<value>Base URL</value>
+	</data>
+	<data name="Must end with /. Examples: api.openai.com/v1/, openrouter.ai/api/v1/, localhost:11434/v1/">
+		<value>Must end with /. Examples: api.openai.com/v1/, openrouter.ai/api/v1/, localhost:11434/v1/</value>
+	</data>
+	<data name="Optional for local endpoints.">
+		<value>Optional for local endpoints.</value>
+	</data>
+	<data name="Model name">
+		<value>Model name</value>
+	</data>
+	<data name="Privacy:">
+		<value>Privacy:</value>
+	</data>
+	<data name="CV and job ad content are sent to the specified provider.">
+		<value>CV and job ad content are sent to the specified provider.</value>
+	</data>
+	<data name="Summary">
+		<value>Summary</value>
+	</data>
+	<data name="Local configuration">
+		<value>Local configuration</value>
+	</data>
+	<data name="Variant">
+		<value>Variant</value>
+	</data>
+	<data name="available">
+		<value>available</value>
+	</data>
+	<data name="will be downloaded">
+		<value>will be downloaded</value>
+	</data>
+	<data name="Storage location">
+		<value>Storage location</value>
+	</data>
+	<data name="The download can be 20-40 GB depending on the model and may take several minutes. You can continue using the app meanwhile.">
+		<value>The download can be 20-40 GB depending on the model and may take several minutes. You can continue using the app meanwhile.</value>
+	</data>
+	<data name="API configuration">
+		<value>API configuration</value>
+	</data>
+	<data name="(not set)">
+		<value>(not set)</value>
+	</data>
+	<data name="Model">
+		<value>Model</value>
+	</data>
+	<data name="During setup the endpoint is tested. If it fails, you can correct the details.">
+		<value>During setup the endpoint is tested. If it fails, you can correct the details.</value>
+	</data>
+	<data name="Setup in progress...">
+		<value>Setup in progress...</value>
+	</data>
+	<data name="You can close the window - the download continues in the background and resumes when reopened.">
+		<value>You can close the window - the download continues in the background and resumes when reopened.</value>
+	</data>
+	<data name="Done!">
+		<value>Done!</value>
+	</data>
+	<data name="The local models are set up. You can start them from the sidebar.">
+		<value>The local models are set up. You can start them from the sidebar.</value>
+	</data>
+	<data name="The API is set up. The endpoint was tested successfully.">
+		<value>The API is set up. The endpoint was tested successfully.</value>
+	</data>
+	<data name="Next">
+		<value>Next</value>
+	</data>
+	<data name="Back">
+		<value>Back</value>
+	</data>
+	<data name="Download &amp; set up">
+		<value>Download &amp; set up</value>
+	</data>
+	<data name="Test &amp; save">
+		<value>Test &amp; save</value>
+	</data>
+	<data name="Continue in background">
+		<value>Continue in background</value>
+	</data>
+	<data name="Done">
+		<value>Done</value>
+	</data>
+	<data name="Preparing...">
+		<value>Preparing...</value>
+	</data>
+	<data name="Setup failed: {0}">
+		<value>Setup failed: {0}</value>
+	</data>
+	<data name="Downloading llama-server...">
+		<value>Downloading llama-server...</value>
+	</data>
+	<data name="Downloading general model...">
+		<value>Downloading general model...</value>
+	</data>
+	<data name="Downloading coder model...">
+		<value>Downloading coder model...</value>
+	</data>
+	<data name="Testing API endpoint...">
+		<value>Testing API endpoint...</value>
+	</data>
+	<data name="Endpoint not reachable. Check URL, key, and model name.">
+		<value>Endpoint not reachable. Check URL, key, and model name.</value>
+	</data>
+	<data name="About">
+		<value>About</value>
+	</data>
+	<data name="About LetterLoom">
+		<value>About LetterLoom</value>
+	</data>
+	<data name="Cover letters that convince. One-time EUR 39, no subscription trap.">
+		<value>Cover letters that convince. One-time EUR 39, no subscription trap.</value>
+	</data>
+	<data name="Product">
+		<value>Product</value>
+	</data>
+	<data name="Legal">
+		<value>Legal</value>
+	</data>
+	<data name="Contact">
+		<value>Contact</value>
+	</data>
+	<data name="Contact form">
+		<value>Contact form</value>
+	</data>
+	<data name="Toggle light / dark">
+		<value>Toggle light / dark</value>
+	</data>
+	<data name="Switch color scheme">
+		<value>Switch color scheme</value>
+	</data>
+	<data name="LetterLoom is a Windows application that creates cover letters that really match the job ad - without cliches, without copy-paste, without monthly costs.">
+		<value>LetterLoom is a Windows application that creates cover letters that really match the job ad - without cliches, without copy-paste, without monthly costs.</value>
+	</data>
+	<data name="Who is LetterLoom for?">
+		<value>Who is LetterLoom for?</value>
+	</data>
+	<data name="For applicants who don't want to spend their time writing the same cover letters over and over. LetterLoom compares the job ad with your CV, identifies missing qualifications, and formulates an individual cover letter.">
+		<value>For applicants who don't want to spend their time writing the same cover letters over and over. LetterLoom compares the job ad with your CV, identifies missing qualifications, and formulates an individual cover letter.</value>
+	</data>
+	<data name="Local or API - you decide">
+		<value>Local or API - you decide</value>
+	</data>
+	<data name="LetterLoom can run entirely locally with models such as Qwen3 30B or Qwen2.5 14B on your own computer - without application data leaving the device. Alternatively, you can connect any OpenAI-compatible endpoint.">
+		<value>LetterLoom can run entirely locally with models such as Qwen3 30B or Qwen2.5 14B on your own computer - without application data leaving the device. Alternatively, you can connect any OpenAI-compatible endpoint.</value>
+	</data>
+	<data name="Technology">
+		<value>Technology</value>
+	</data>
+	<data name="Local LLMs via llama.cpp (llama-server)">
+		<value>Local LLMs via llama.cpp (llama-server)</value>
+	</data>
+	<data name="SQLite for local data">
+		<value>SQLite for local data</value>
+	</data>
+	<data name="Questions, feedback, or a problem? Write to us at">
+		<value>Questions, feedback, or a problem? Write to us at</value>
+	</data>
+	<data name="Page not found - LetterLoom">
+		<value>Page not found - LetterLoom</value>
+	</data>
+	<data name="The requested page does not exist.">
+		<value>The requested page does not exist.</value>
+	</data>
+	<data name="Back to home">
+		<value>Back to home</value>
+	</data>
+	<data name="cover letters that really fit">
+		<value>cover letters that really fit</value>
+	</data>
+	<data name="AI-powered applications">
+		<value>AI-powered applications</value>
+	</data>
+	<data name="Cover letters that">
+		<value>Cover letters that</value>
+	</data>
+	<data name="really fit">
+		<value>really fit</value>
+	</data>
+	<data name="LetterLoom analyzes the job ad, compares it with your CV, and creates an individual, professional cover letter - locally on your PC or via your own API.">
+		<value>LetterLoom analyzes the job ad, compares it with your CV, and creates an individual, professional cover letter - locally on your PC or via your own API.</value>
+	</data>
+	<data name="Download for free">
+		<value>Download for free</value>
+	</data>
+	<data name="View price - EUR 39">
+		<value>View price - EUR 39</value>
+	</data>
+	<data name="Windows 10/11 - try 5 cover letters for free - no registration required">
+		<value>Windows 10/11 - try 5 cover letters for free - no registration required</value>
+	</data>
+	<data name="Watch demo video">
+		<value>Watch demo video</value>
+	</data>
+	<data name="Sample cover letter">
+		<value>Sample cover letter</value>
+	</data>
+	<data name="Watch demo">
+		<value>Watch demo</value>
+	</data>
+	<data name="LetterLoom at a glance">
+		<value>LetterLoom at a glance</value>
+	</data>
+	<data name="5 cover letters free">
+		<value>5 cover letters free</value>
+	</data>
+	<data name="full length, no restrictions">
+		<value>full length, no restrictions</value>
+	</data>
+	<data name="EUR 39 one-time">
+		<value>EUR 39 one-time</value>
+	</data>
+	<data name="no subscription, no hidden costs">
+		<value>no subscription, no hidden costs</value>
+	</data>
+	<data name="8 GB VRAM is enough">
+		<value>8 GB VRAM is enough</value>
+	</data>
+	<data name="or even without a GPU">
+		<value>or even without a GPU</value>
+	</data>
+	<data name="4 languages">
+		<value>4 languages</value>
+	</data>
+	<data name="Cover letters in the job's language">
+		<value>Cover letters in the job's language</value>
+	</data>
+	<data name="Page navigation">
+		<value>Page navigation</value>
+	</data>
+	<data name="Features">
+		<value>Features</value>
+	</data>
+	<data name="Try for free">
+		<value>Try for free</value>
+	</data>
+	<data name="How it works">
+		<value>How it works</value>
+	</data>
+	<data name="Insights">
+		<value>Insights</value>
+	</data>
+	<data name="Local vs. API">
+		<value>Local vs. API</value>
+	</data>
+	<data name="Everything you need for a convincing application">
+		<value>Everything you need for a convincing application</value>
+	</data>
+	<data name="No more copy-paste. LetterLoom does the matching and writes the cover letter.">
+		<value>No more copy-paste. LetterLoom does the matching and writes the cover letter.</value>
+	</data>
+	<data name="Insert job ad">
+		<value>Insert job ad</value>
+	</data>
+	<data name="Paste a URL or the ad text - LetterLoom automatically extracts the requirements.">
+		<value>Paste a URL or the ad text - LetterLoom automatically extracts the requirements.</value>
+	</data>
+	<data name="Match CV">
+		<value>Match CV</value>
+	</data>
+	<data name="The CV is checked against the job. Missing skills are identified and can be added.">
+		<value>The CV is checked against the job. Missing skills are identified and can be added.</value>
+	</data>
+	<data name="Generate cover letter">
+		<value>Generate cover letter</value>
+	</data>
+	<data name="In the language of the job ad, without cliches, with the most relevant projects.">
+		<value>In the language of the job ad, without cliches, with the most relevant projects.</value>
+	</data>
+	<data name="Local or API">
+		<value>Local or API</value>
+	</data>
+	<data name="Full control: local models on your PC or your own OpenAI-compatible endpoint.">
+		<value>Full control: local models on your PC or your own OpenAI-compatible endpoint.</value>
+	</data>
+	<data name="Try first, then decide">
+		<value>Try first, then decide</value>
+	</data>
+	<data name="Download LetterLoom and create your first">
+		<value>Download LetterLoom and create your first</value>
+	</data>
+	<data name="5 cover letters for free and in full length">
+		<value>5 cover letters for free and in full length</value>
+	</data>
+	<data name="The app remains fully usable afterwards - from the 6th cover letter onwards, the result is only displayed as a">
+		<value>The app remains fully usable afterwards - from the 6th cover letter onwards, the result is only displayed as a</value>
+	</data>
+	<data name="shortened preview image with watermark">
+		<value>shortened preview image with watermark</value>
+	</data>
+	<data name="This way you can see at your leisure what LetterLoom can do and then decide whether you want to unlock the full version for a one-time EUR 39.">
+		<value>This way you can see at your leisure what LetterLoom can do and then decide whether you want to unlock the full version for a one-time EUR 39.</value>
+	</data>
+	<data name="Download now">
+		<value>Download now</value>
+	</data>
+	<data name="From job ad to finished cover letter - in under a minute.">
+		<value>From job ad to finished cover letter - in under a minute.</value>
+	</data>
+	<data name="Your browser cannot play this video.">
+		<value>Your browser cannot play this video.</value>
+	</data>
+	<data name="Download video">
+		<value>Download video</value>
+	</data>
+	<data name="Click the video to see the complete process - including the practical [Open URL] feature that puts the cover letter directly into your clipboard.">
+		<value>Click the video to see the complete process - including the practical “Open URL” feature that puts the cover letter directly into your clipboard.</value>
+	</data>
+	<data name="Paste a URL or ad text. LetterLoom extracts the relevant content.">
+		<value>Paste a URL or ad text. LetterLoom extracts the relevant content.</value>
+	</data>
+	<data name="LetterLoom checks which requirements your CV meets - and which are missing.">
+		<value>LetterLoom checks which requirements your CV meets - and which are missing.</value>
+	</data>
+	<data name="Get cover letter">
+		<value>Get cover letter</value>
+	</data>
+	<data name="In the language of the job, with your strongest projects - copyable directly into the application form.">
+		<value>In the language of the job, with your strongest projects - copyable directly into the application form.</value>
+	</data>
+	<data name="A look into the app">
+		<value>A look into the app</value>
+	</data>
+	<data name="This is what the workflow in LetterLoom looks like - from job ad to finished cover letter.">
+		<value>This is what the workflow in LetterLoom looks like - from job ad to finished cover letter.</value>
+	</data>
+	<data name="Vacancy view">
+		<value>Vacancy view</value>
+	</data>
+	<data name="Vacancy view with job ad, phases 1 and 2, and generated cover letter">
+		<value>Vacancy view with job ad, phases 1 and 2, and generated cover letter</value>
+	</data>
+	<data name="Job ad &amp; cover letter">
+		<value>Job ad &amp; cover letter</value>
+	</data>
+	<data name="Paste a URL or ad text - LetterLoom detects phases and generates the cover letter.">
+		<value>Paste a URL or ad text - LetterLoom detects phases and generates the cover letter.</value>
+	</data>
+	<data name="CV gap analysis">
+		<value>CV gap analysis</value>
+	</data>
+	<data name="CV gap analysis with missing skills and open questions">
+		<value>CV gap analysis with missing skills and open questions</value>
+	</data>
+	<data name="CV matching with open questions">
+		<value>CV matching with open questions</value>
+	</data>
+	<data name="Missing skills are identified and can be added in one step.">
+		<value>Missing skills are identified and can be added in one step.</value>
+	</data>
+	<data name="Setup wizard with hardware check and preset selection">
+		<value>Setup wizard with hardware check and preset selection</value>
+	</data>
+	<data name="Hardware check, preset selection, and model download - in a guided process.">
+		<value>Hardware check, preset selection, and model download - in a guided process.</value>
+	</data>
+	<data name="The screenshots are from the current version 1.0. Real images coming soon - until then, the tiles show placeholders.">
+		<value>The screenshots are from the current version 1.0. Real images coming soon - until then, the tiles show placeholders.</value>
+	</data>
+	<data name="Local AI or your own API - you decide">
+		<value>Local AI or your own API - you decide</value>
+	</data>
+	<data name="LetterLoom supports both paths. Both have strengths and weaknesses - the setup wizard helps you make the right choice.">
+		<value>LetterLoom supports both paths. Both have strengths and weaknesses - the setup wizard helps you make the right choice.</value>
+	</data>
+	<data name="Local AI">
+		<value>Local AI</value>
+	</data>
+	<data name="Models run directly on your PC. Full privacy.">
+		<value>Models run directly on your PC. Full privacy.</value>
+	</data>
+	<data name="Maximum privacy">
+		<value>Maximum privacy</value>
+	</data>
+	<data name="Your CV and job ad never leave your computer. No data transfer to third parties.">
+		<value>Your CV and job ad never leave your computer. No data transfer to third parties.</value>
+	</data>
+	<data name="No ongoing costs">
+		<value>No ongoing costs</value>
+	</data>
+	<data name="No token fees. Unlimited use after purchase.">
+		<value>No token fees. Unlimited use after purchase.</value>
+	</data>
+	<data name="Works offline">
+		<value>Works offline</value>
+	</data>
+	<data name="No internet, no API key, no sign-up required.">
+		<value>No internet, no API key, no sign-up required.</value>
+	</data>
+	<data name="Some hardware required">
+		<value>Some hardware required</value>
+	</data>
+	<data name="The local models run smoothly with just 8 GB VRAM and 16 GB RAM - it also works without a GPU, just slower.">
+		<value>The local models run smoothly with just 8 GB VRAM and 16 GB RAM - it also works without a GPU, just slower.</value>
+	</data>
+	<data name="Slower">
+		<value>Slower</value>
+	</data>
+	<data name="A cover letter takes 1-5 minutes depending on hardware.">
+		<value>A cover letter takes 1-5 minutes depending on hardware.</value>
+	</data>
+	<data name="Your own API">
+		<value>Your own API</value>
+	</data>
+	<data name="OpenAI-compatible endpoint. Bring your own.">
+		<value>OpenAI-compatible endpoint. Bring your own.</value>
+	</data>
+	<data name="Very fast">
+		<value>Very fast</value>
+	</data>
+	<data name="Cover letter in seconds instead of minutes.">
+		<value>Cover letter in seconds instead of minutes.</value>
+	</data>
+	<data name="No hardware required">
+		<value>No hardware required</value>
+	</data>
+	<data name="Runs on any PC with an internet connection.">
+		<value>Runs on any PC with an internet connection.</value>
+	</data>
+	<data name="Highest quality possible">
+		<value>Highest quality possible</value>
+	</data>
+	<data name="GPT-4, Claude, or other strong models.">
+		<value>GPT-4, Claude, or other strong models.</value>
+	</data>
+	<data name="Token costs">
+		<value>Token costs</value>
+	</data>
+	<data name="Depending on the provider, cents to euros per cover letter.">
+		<value>Depending on the provider, cents to euros per cover letter.</value>
+	</data>
+	<data name="Data goes to provider">
+		<value>Data goes to provider</value>
+	</data>
+	<data name="CV and ad are sent to the API endpoint.">
+		<value>CV and ad are sent to the API endpoint.</value>
+	</data>
+	<data name="Internet + API key required">
+		<value>Internet + API key required</value>
+	</data>
+	<data name="No connection, no generation.">
+		<value>No connection, no generation.</value>
+	</data>
+	<data name="Our recommendation:">
+		<value>Our recommendation:</value>
+	</data>
+	<data name="Local AI runs with just">
+		<value>Local AI runs with just</value>
+	</data>
+	<data name="(or even without a GPU, just slower) and">
+		<value>(or even without a GPU, just slower) and</value>
+	</data>
+	<data name="Those with 32 GB RAM and 44 GB free storage can use the larger Qwen3 30B and get even better cover letters. For maximum speed without your own hardware, an API endpoint is suitable (e.g. OpenAI, OpenRouter, Azure OpenAI, or a local Ollama). The setup wizard automatically detects your hardware and suggests the right preset.">
+		<value>Those with 32 GB RAM and 44 GB free storage can use the larger Qwen3 30B and get even better cover letters. For maximum speed without your own hardware, an API endpoint is suitable (e.g. OpenAI, OpenRouter, Azure OpenAI, or a local Ollama). The setup wizard automatically detects your hardware and suggests the right preset.</value>
+	</data>
+	<data name="Why not just ChatGPT?">
+		<value>Why not just ChatGPT?</value>
+	</data>
+	<data name="Writing manually, using ChatGPT, or LetterLoom - an honest comparison.">
+		<value>Writing manually, using ChatGPT, or LetterLoom - an honest comparison.</value>
+	</data>
+	<data name="Manual">
+		<value>Manual</value>
+	</data>
+	<data name="Time per cover letter">
+		<value>Time per cover letter</value>
+	</data>
+	<data name="30-60 min">
+		<value>30-60 min</value>
+	</data>
+	<data name="5-15 min">
+		<value>5-15 min</value>
+	</data>
+	<data name="1-3 min">
+		<value>1-3 min</value>
+	</data>
+	<data name="Automatic CV matching">
+		<value>Automatic CV matching</value>
+	</data>
+	<data name="Detection of missing skills">
+		<value>Detection of missing skills</value>
+	</data>
+	<data name="Cover letters without cliches">
+		<value>Cover letters without cliches</value>
+	</data>
+	<data name="hard">
+		<value>hard</value>
+	</data>
+	<data name="varies">
+		<value>varies</value>
+	</data>
+	<data name="Data stays local">
+		<value>Data stays local</value>
+	</data>
+	<data name="no (server)">
+		<value>no (server)</value>
+	</data>
+	<data name="optional">
+		<value>optional</value>
+	</data>
+	<data name="Costs">
+		<value>Costs</value>
+	</data>
+	<data name="EUR 0">
+		<value>EUR 0</value>
+	</data>
+	<data name="EUR 0-20/month">
+		<value>EUR 0-20/month</value>
+	</data>
+	<data name="Try before">
+		<value>Try before</value>
+	</data>
+	<data name="Build the prompt yourself">
+		<value>Build the prompt yourself</value>
+	</data>
+	<data name="ChatGPT can deliver good cover letters - if you write the right prompts. LetterLoom handles the entire workflow: insert ad, match CV, write cover letter. Fully local if desired, without your data ever hitting a server.">
+		<value>ChatGPT can deliver good cover letters - if you write the right prompts. LetterLoom handles the entire workflow: insert ad, match CV, write cover letter. Fully local if desired, without your data ever hitting a server.</value>
+	</data>
+	<data name="Installation &amp; setup">
+		<value>Installation &amp; setup</value>
+	</data>
+	<data name="Ready to use in a few minutes. Runs with just 8 GB VRAM (or without GPU). The setup wizard guides you step by step through the configuration - including hardware check and model download.">
+		<value>Ready to use in a few minutes. Runs with just 8 GB VRAM (or without GPU). The setup wizard guides you step by step through the configuration - including hardware check and model download.</value>
+	</data>
+	<data name="Download &amp; start">
+		<value>Download &amp; start</value>
+	</data>
+	<data name="Run the Windows installer. LetterLoom requires .NET 10 (installed automatically if needed).">
+		<value>Run the Windows installer. LetterLoom requires .NET 10 (installed automatically if needed).</value>
+	</data>
+	<data name="Run setup wizard">
+		<value>Run setup wizard</value>
+	</data>
+	<data name="The wizard detects your hardware (CPU, RAM, VRAM, storage) and suggests the right preset.">
+		<value>The wizard detects your hardware (CPU, RAM, VRAM, storage) and suggests the right preset.</value>
+	</data>
+	<data name="Configure models">
+		<value>Configure models</value>
+	</data>
+	<data name="Local models are downloaded automatically - or you provide your API endpoint.">
+		<value>Local models are downloaded automatically - or you provide your API endpoint.</value>
+	</data>
+	<data name="Get started">
+		<value>Get started</value>
+	</data>
+	<data name="Insert CV, insert job ad, generate cover letter. Done.">
+		<value>Insert CV, insert job ad, generate cover letter. Done.</value>
+	</data>
+	<data name="The three setup variants">
+		<value>The three setup variants</value>
+	</data>
+	<data name="Recommended for strong PCs">
+		<value>Recommended for strong PCs</value>
+	</data>
+	<data name="Best local quality. Also runs with 8 GB VRAM - slower, but fully functional.">
+		<value>Best local quality. Also runs with 8 GB VRAM - slower, but fully functional.</value>
+	</data>
+	<data name="For mid-range hardware">
+		<value>For mid-range hardware</value>
+	</data>
+	<data name="Faster and less demanding. Good quality for most applications.">
+		<value>Faster and less demanding. Good quality for most applications.</value>
+	</data>
+	<data name="For weaker PCs">
+		<value>For weaker PCs</value>
+	</data>
+	<data name="Bring your own: OpenAI-compatible endpoint. No local hardware required.">
+		<value>Bring your own: OpenAI-compatible endpoint. No local hardware required.</value>
+	</data>
+	<data name="Internet connection">
+		<value>Internet connection</value>
+	</data>
+	<data name="API key">
+		<value>API key</value>
+	</data>
+	<data name="Maximum speed">
+		<value>Maximum speed</value>
+	</data>
+	<data name="System requirements">
+		<value>System requirements</value>
+	</data>
+	<data name="Minimum">
+		<value>Minimum</value>
+	</data>
+	<data name="Windows 10 (64-bit) or newer">
+		<value>Windows 10 (64-bit) or newer</value>
+	</data>
+	<data name="4 CPU cores">
+		<value>4 CPU cores</value>
+	</data>
+	<data name="18 GB free disk space">
+		<value>18 GB free disk space</value>
+	</data>
+	<data name="Internet (for download &amp; API mode)">
+		<value>Internet (for download &amp; API mode)</value>
+	</data>
+	<data name="Windows 11 (64-bit)">
+		<value>Windows 11 (64-bit)</value>
+	</data>
+	<data name="8+ CPU cores">
+		<value>8+ CPU cores</value>
+	</data>
+	<data name="44 GB free disk space (for Qwen3 30B)">
+		<value>44 GB free disk space (for Qwen3 30B)</value>
+	</data>
+	<data name=".NET 10 is installed automatically if needed. Without a dedicated GPU, the local models run too - just slower. For maximum speed, an API endpoint also works on weaker hardware.">
+		<value>.NET 10 is installed automatically if needed. Without a dedicated GPU, the local models run too - just slower. For maximum speed, an API endpoint also works on weaker hardware.</value>
+	</data>
+	<data name="Local storage">
+		<value>Local storage</value>
+	</data>
+	<data name="All data (CV, cover letters, settings) is stored in a local SQLite database on your PC.">
+		<value>All data (CV, cover letters, settings) is stored in a local SQLite database on your PC.</value>
+	</data>
+	<data name="Switch anytime">
+		<value>Switch anytime</value>
+	</data>
+	<data name="You can switch between local and API without reinstalling the app.">
+		<value>You can switch between local and API without reinstalling the app.</value>
+	</data>
+	<data name="Frequently asked questions">
+		<value>Frequently asked questions</value>
+	</data>
+	<data name="Everything you want to know before buying.">
+		<value>Everything you want to know before buying.</value>
+	</data>
+	<data name="Is LetterLoom really free to try?">
+		<value>Is LetterLoom really free to try?</value>
+	</data>
+	<data name="Yes. You can download LetterLoom and create the first">
+		<value>Yes. You can download LetterLoom and create the first</value>
+	</data>
+	<data name="completely and without restrictions">
+		<value>completely and without restrictions</value>
+	</data>
+	<data name=". From the 6th cover letter onwards, the result is displayed as a shortened preview image with watermark - but the app remains fully usable. This way you can calmly check whether LetterLoom is right for you.">
+		<value>. From the 6th cover letter onwards, the result is displayed as a shortened preview image with watermark - but the app remains fully usable. This way you can calmly check whether LetterLoom is right for you.</value>
+	</data>
+	<data name="Do I need a strong graphics card?">
+		<value>Do I need a strong graphics card?</value>
+	</data>
+	<data name="No. The local models run smoothly with">
+		<value>No. The local models run smoothly with</value>
+	</data>
+	<data name=". It also works entirely without a dedicated GPU - then a cover letter takes a bit longer. If you want maximum speed, you can connect your own API (OpenAI, OpenRouter, Ollama ...) instead and don't need any local computing power at all.">
+		<value>. It also works entirely without a dedicated GPU - then a cover letter takes a bit longer. If you want maximum speed, you can connect your own API (OpenAI, OpenRouter, Ollama ...) instead and don't need any local computing power at all.</value>
+	</data>
+	<data name="Where does my data go (CV, job ad, cover letter)?">
+		<value>Where does my data go (CV, job ad, cover letter)?</value>
+	</data>
+	<data name="With local use, your data">
+		<value>With local use, your data</value>
+	</data>
+	<data name="never leaves your PC">
+		<value>never leaves your PC</value>
+	</data>
+	<data name=". CV, job ads, and cover letters are stored in a local SQLite database on your hard drive. There is no cloud connection, no registration, and no telemetry. Only if you voluntarily connect an API are the contents sent to the endpoint of your choice.">
+		<value>. CV, job ads, and cover letters are stored in a local SQLite database on your hard drive. There is no cloud connection, no registration, and no telemetry. Only if you voluntarily connect an API are the contents sent to the endpoint of your choice.</value>
+	</data>
+	<data name="What is the difference from ChatGPT?">
+		<value>What is the difference from ChatGPT?</value>
+	</data>
+	<data name="LetterLoom is">
+		<value>LetterLoom is</value>
+	</data>
+	<data name="built specifically for applications">
+		<value>built specifically for applications</value>
+	</data>
+	<data name=": It automatically compares your CV with the job ad, identifies missing qualifications, filters out redundant skills, and formulates the cover letter according to fixed anti-cliche rules. With ChatGPT, you have to orchestrate these steps yourself each time and write the prompt yourself. LetterLoom does this in one workflow - and optionally locally, without data transfer. A direct comparison can be found in the section above.">
+		<value>: It automatically compares your CV with the job ad, identifies missing qualifications, filters out redundant skills, and formulates the cover letter according to fixed anti-cliche rules. With ChatGPT, you have to orchestrate these steps yourself each time and write the prompt yourself. LetterLoom does this in one workflow - and optionally locally, without data transfer. A direct comparison can be found in the section above.</value>
+	</data>
+	<data name="In which languages does LetterLoom work?">
+		<value>In which languages does LetterLoom work?</value>
+	</data>
+	<data name="The user interface is available in">
+		<value>The user interface is available in</value>
+	</data>
+	<data name="German, English, Italian, and Russian">
+		<value>German, English, Italian, and Russian</value>
+	</data>
+	<data name=". The generated cover letter automatically uses the language of the job ad - regardless of which UI language is set.">
+		<value>. The generated cover letter automatically uses the language of the job ad - regardless of which UI language is set.</value>
+	</data>
+	<data name="Can I use the license on multiple PCs?">
+		<value>Can I use the license on multiple PCs?</value>
+	</data>
+	<data name="A license is valid for">
+		<value>A license is valid for</value>
+	</data>
+	<data name="one computer">
+		<value>one computer</value>
+	</data>
+	<data name=". If you want to install LetterLoom on a new PC, write to us via">
+		<value>. If you want to install LetterLoom on a new PC, write to us via</value>
+	</data>
+	<data name="- we'll help with the transfer.">
+		<value>- we'll help with the transfer.</value>
+	</data>
+	<data name="Is there a refund?">
+		<value>Is there a refund?</value>
+	</data>
+	<data name="The purchase is processed via Paddle (Merchant of Record). Statutory withdrawal rules apply - details can be found in our">
+		<value>The purchase is processed via Paddle (Merchant of Record). Statutory withdrawal rules apply - details can be found in our</value>
+	</data>
+	<data name="withdrawal policy">
+		<value>withdrawal policy</value>
+	</data>
+	<data name=". For consumers, the 14-day right of withdrawal applies. Since you can test LetterLoom with 5 cover letters for free beforehand, we recommend using the trial before purchasing.">
+		<value>. For consumers, the 14-day right of withdrawal applies. Since you can test LetterLoom with 5 cover letters for free beforehand, we recommend using the trial before purchasing.</value>
+	</data>
+	<data name="Do I get updates for free?">
+		<value>Do I get updates for free?</value>
+	</data>
+	<data name="Yes. Updates within the current major version (1.x) are">
+		<value>Yes. Updates within the current major version (1.x) are</value>
+	</data>
+	<data name="Free">
+		<value>Free</value>
+	</data>
+	<data name=". Should a new major version ever appear, we will inform you in advance by email.">
+		<value>. Should a new major version ever appear, we will inform you in advance by email.</value>
+	</data>
+	<data name="Your question isn't listed?">
+		<value>Your question isn't listed?</value>
+	</data>
+	<data name="- we usually respond within 1-2 business days.">
+		<value>- we usually respond within 1-2 business days.</value>
+	</data>
+	<data name="One-time EUR 39. No subscription.">
+		<value>One-time EUR 39. No subscription.</value>
+	</data>
+	<data name="After the first 5 free cover letters, you can unlock LetterLoom at any time with a one-time payment - including all updates within the major version. No monthly costs, no contract commitment.">
+		<value>After the first 5 free cover letters, you can unlock LetterLoom at any time with a one-time payment - including all updates within the major version. No monthly costs, no contract commitment.</value>
+	</data>
+	<data name="Price details">
+		<value>Price details</value>
+	</data>
+	<data name="Ready to try it out?">
+		<value>Ready to try it out?</value>
+	</data>
+	<data name="Download LetterLoom and create your first 5 cover letters for free.">
+		<value>Download LetterLoom and create your first 5 cover letters for free.</value>
+	</data>
+</root>

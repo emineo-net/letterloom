@@ -1,0 +1,38 @@
+﻿@page "/about"
+
+<PageTitle>@Loc["About LetterLoom"]</PageTitle>
+
+<section class="web-section">
+    <div class="web-container web-narrow">
+
+        <h1 class="web-page-title">@Loc["About LetterLoom"]</h1>
+        <p class="web-lead">
+            @Loc["LetterLoom is a Windows application that creates cover letters that really match the job ad - without cliches, without copy-paste, without monthly costs."]
+        </p>
+
+        <h2>@Loc["Who is LetterLoom for?"]</h2>
+        <p>
+            @Loc["For applicants who don't want to spend their time writing the same cover letters over and over. LetterLoom compares the job ad with your CV, identifies missing qualifications, and formulates an individual cover letter."]
+        </p>
+
+        <h2>@Loc["Local or API - you decide"]</h2>
+        <p>
+            @Loc["LetterLoom can run entirely locally with models such as Qwen3 30B or Qwen2.5 14B on your own computer - without application data leaving the device. Alternatively, you can connect any OpenAI-compatible endpoint."]
+        </p>
+
+        <h2>@Loc["Technology"]</h2>
+        <ul>
+            <li>.NET 10 / Blazor Desktop (WPF + BlazorWebView)</li>
+            <li>@Loc["Local LLMs via llama.cpp (llama-server)"]</li>
+            <li>@Loc["SQLite for local data"]</li>
+            <li>Windows 10 / 11</li>
+        </ul>
+
+        <h2>@Loc["Contact"]</h2>
+        <p>
+            @Loc["Questions, feedback, or a problem? Write to us at"]
+            <a href="/contact">@Loc["Contact form"]</a>.
+        </p>
+
+    </div>
+</section>

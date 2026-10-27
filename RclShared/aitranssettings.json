@@ -1,0 +1,21 @@
+{
+  "$schema": "aitranssettings-schema.json",
+  "version": "1.1",
+  "translator": {
+    "mode": "none",
+    "apiKey": "",
+    "context": "",
+    "glossaryPath": "",
+    "defaultLanguage": "en",
+    "supportedLanguages": ["de", "it", "en", "ar", "ru"]
+  },
+  "aiConfiguration": {
+    "baseUrl": "http://localhost:8081/",
+    "model": "gpt-4o",
+    "temperature": 0.2,
+    "timeoutMinutes": 5,
+    "systemPrompt": "",
+    "apiKey": "",
+    "apiKeyEnvVar": ""
+  }
+}

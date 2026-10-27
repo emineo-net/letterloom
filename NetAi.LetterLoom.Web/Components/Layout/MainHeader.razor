@@ -1,0 +1,26 @@
+﻿<header class="web-header">
+    <div class="web-container web-header-inner">
+        <a href="" class="web-brand">
+            <i class="bi bi-stars"></i>
+            <span>LetterLoom</span>
+        </a>
+
+        <nav class="web-nav">
+            <NavLink class="web-nav-link" href="" Match="NavLinkMatch.All">@Loc["Home"]</NavLink>
+            <NavLink class="web-nav-link" href="pricing">@Loc["Pricing"]</NavLink>
+            <NavLink class="web-nav-link" href="about">@Loc["About"]</NavLink>
+        </nav>
+
+        <div class="web-header-actions">
+            <ThemeToggle/>
+
+            <!-- Download statt Kauf - konsistent zur Startseite -->
+            <a href="/downloads/LetterLoom-Setup-1.0.0.exe"
+               class="btn btn-primary btn-icon">
+                <i class="bi bi-download"></i>
+                <span class="d-none d-sm-inline">@Loc["Download"]</span>
+                <span class="d-inline d-sm-none">@Loc["Download"]</span>
+            </a>
+        </div>
+    </div>
+</header>

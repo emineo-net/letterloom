@@ -1,0 +1,922 @@
+﻿@page "/"
+@using NetAi.LetterLoom.Web.Services
+@inject DownloadService Downloads
+
+<PageTitle>LetterLoom - @Loc["cover letters that really fit"]</PageTitle>
+
+<!-- ============================================================ -->
+<!-- HERO: Download im Vordergrund                                  -->
+<!-- ============================================================ -->
+<section class="web-hero">
+    <div class="web-container">
+        <div class="web-hero-grid">
+            <div class="web-hero-copy">
+                <span class="web-badge">
+                    <i class="bi bi-stars"></i> @Loc["AI-powered applications"]
+                </span>
+                <h1 class="web-hero-title">
+                    @Loc["Cover letters that"] <span class="text-accent">@Loc["really fit"]</span>.
+                </h1>
+                <p class="web-hero-subtitle">
+                    @Loc["LetterLoom analyzes the job ad, compares it with your CV, and creates an individual, professional cover letter - locally on your PC or via your own API."]
+                </p>
+                <div class="web-hero-actions">
+                    <a href="@SetupUrl"
+                       class="btn btn-primary btn-lg btn-icon @(IsReady ? "" : "disabled")"
+                       aria-disabled="@(IsReady ? null : "true")"
+                       tabindex="@(IsReady ? 0 : -1)">
+                        <i class="bi bi-download"></i>
+                        <span>@Loc["Download for free"]</span>
+                    </a>
+
+                    <a href="pricing" class="btn btn-outline-secondary btn-lg btn-icon">
+                        <i class="bi bi-tag"></i>
+                        <span>@Loc["View price - EUR 39"]</span>
+                    </a>
+                </div>
+
+                <!-- Portable-Download -->
+                <div style="margin-top: .75rem;">
+                    <a href="@PortableUrl"
+                       class="text-decoration-none small @(IsPortableReady ? "" : "disabled")"
+                       aria-disabled="@(IsPortableReady ? null : "true")"
+                       tabindex="@(IsPortableReady ? 0 : -1)">
+                        <i class="bi bi-box-seam"></i>
+                        @Loc["Or download the portable version (no installation required)"]
+                    </a>
+                </div>
+
+                <div class="web-hero-note">
+                    <i class="bi bi-shield-check"></i>
+                    <span>@Loc["Windows 10/11 - try 5 cover letters for free - no registration required"]</span>
+                </div>
+            </div>
+
+
+            <div class="web-hero-visual">
+                <a href="#how-it-works" class="web-hero-shot" aria-label="@Loc["Watch demo video"]">
+                    <div class="web-hero-shot-placeholder">
+                        <i class="bi bi-file-earmark-text"></i>
+                        <span>
+                            @Loc["Sample cover letter"]<br><small>img/hero-letter.webp</small>
+                        </span>
+                    </div>
+                    <img src="img/hero-letter.webp"
+                         alt="@Loc["Sample cover letter"]"
+                         loading="eager"/>
+                    <span class="web-hero-shot-play">
+                        <i class="bi bi-play-fill"></i>
+                        <span>@Loc["Watch demo"]</span>
+                    </span>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!-- STATS-BAR                                                     -->
+<!-- ============================================================ -->
+<section class="web-stats-bar" aria-label="@Loc["LetterLoom at a glance"]">
+    <div class="web-container">
+        <div class="web-stats-grid">
+            <div class="web-stat">
+                <i class="bi bi-gift"></i>
+                <div>
+                    <strong>@Loc["5 cover letters free"]</strong>
+                    <span>@Loc["full length, no restrictions"]</span>
+                </div>
+            </div>
+            <div class="web-stat">
+                <i class="bi bi-tag"></i>
+                <div>
+                    <strong>@Loc["EUR 39 one-time"]</strong>
+                    <span>@Loc["no subscription, no hidden costs"]</span>
+                </div>
+            </div>
+            <div class="web-stat">
+                <i class="bi bi-gpu-card"></i>
+                <div>
+                    <strong>@Loc["8 GB VRAM is enough"]</strong>
+                    <span>@Loc["or even without a GPU"]</span>
+                </div>
+            </div>
+            <div class="web-stat">
+                <i class="bi bi-translate"></i>
+                <div>
+                    <strong>@Loc["4 languages"]</strong>
+                    <span>@Loc["Cover letters in the job's language"]</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!-- Sticky Sub-Navigation                                          -->
+<!-- ============================================================ -->
+<nav class="web-section-nav" aria-label="@Loc["Page navigation"]">
+    <div class="web-container web-section-nav-inner">
+        <a href="#features">@Loc["Features"]</a>
+        <a href="#trial">@Loc["Try for free"]</a>
+        <a href="#how-it-works">@Loc["How it works"]</a>
+        <a href="#screenshots">@Loc["Insights"]</a>
+        <a href="#compare">@Loc["Local vs. API"]</a>
+        <a href="#vs-chatgpt">vs. ChatGPT</a>
+        <a href="#setup">@Loc["Setup"]</a>
+        <a href="#faq">FAQ</a>
+    </div>
+</nav>
+
+
+<!-- ============================================================ -->
+<!-- FEATURES                                                       -->
+<!-- ============================================================ -->
+<section id="features" class="web-section">
+    <div class="web-container">
+        <div class="web-section-head">
+            <h2>@Loc["Everything you need for a convincing application"]</h2>
+            <p>@Loc["No more copy-paste. LetterLoom does the matching and writes the cover letter."]</p>
+        </div>
+
+        <div class="web-features">
+            <div class="web-feature">
+                <div class="web-feature-icon">
+                    <i class="bi bi-briefcase"></i>
+                </div>
+                <h3>@Loc["Insert job ad"]</h3>
+                <p>@Loc["Paste a URL or the ad text - LetterLoom automatically extracts the requirements."]</p>
+            </div>
+            <div class="web-feature">
+                <div class="web-feature-icon">
+                    <i class="bi bi-person-vcard"></i>
+                </div>
+                <h3>@Loc["Match CV"]</h3>
+                <p>@Loc["The CV is checked against the job. Missing skills are identified and can be added."]</p>
+            </div>
+            <div class="web-feature">
+                <div class="web-feature-icon">
+                    <i class="bi bi-envelope-paper"></i>
+                </div>
+                <h3>@Loc["Generate cover letter"]</h3>
+                <p>@Loc["In the language of the job ad, without cliches, with the most relevant projects."]</p>
+            </div>
+            <div class="web-feature">
+                <div class="web-feature-icon">
+                    <i class="bi bi-shield-lock"></i>
+                </div>
+                <h3>@Loc["Local or API"]</h3>
+                <p>@Loc["Full control: local models on your PC or your own OpenAI-compatible endpoint."]</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- WIE DER TEST FUNKTIONIERT                                      -->
+<!-- ============================================================ -->
+<section id="trial" class="web-section web-section-trial">
+    <div class="web-container">
+        <div class="web-trial-card">
+            <div class="web-trial-icon">
+                <i class="bi bi-gift"></i>
+            </div>
+            <div class="web-trial-body">
+                <h2>@Loc["Try first, then decide"]</h2>
+                <p>
+                    @Loc["Download LetterLoom and create your first"]
+                    <strong>@Loc["5 cover letters for free and in full length"]</strong>.
+                    @Loc["The app remains fully usable afterwards - from the 6th cover letter onwards, the result is only displayed as a"]
+                    <strong>@Loc["shortened preview image with watermark"]</strong>.
+                    @Loc["This way you can see at your leisure what LetterLoom can do and then decide whether you want to unlock the full version for a one-time EUR 39."]
+                </p>
+            </div>
+            <div class="web-trial-cta">
+                <a href="@SetupUrl"
+                   class="btn btn-primary btn-icon @(IsReady ? "" : "disabled")"
+                   aria-disabled="@(IsReady ? null : "true")"
+                   tabindex="@(IsReady ? 0 : -1)">
+                    <i class="bi bi-download"></i>
+                    <span>@Loc["Download now"]</span>
+                </a>
+                <div style="margin-top: .5rem; text-align: center;">
+                    <a href="@PortableUrl"
+                       class="text-decoration-none small @(IsPortableReady ? "" : "disabled")"
+                       aria-disabled="@(IsPortableReady ? null : "true")"
+                       tabindex="@(IsPortableReady ? 0 : -1)">
+                        <i class="bi bi-box-seam"></i>
+                        @Loc["Portable version"]
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SO FUNKTIONIERT ES                                             -->
+<!-- ============================================================ -->
+<section id="how-it-works" class="web-section web-section-alt">
+    <div class="web-container">
+        <div class="web-section-head">
+            <h2>@Loc["How it works"]</h2>
+            <p>@Loc["From job ad to finished cover letter - in under a minute."]</p>
+        </div>
+
+        <!-- Demo-Video -->
+        <div class="web-video-wrap">
+            <video class="web-video"
+                   poster="img/video/demo-poster.webp"
+                   preload="none"
+                   controls
+                   playsinline>
+                <source src="video/letterloom-demo.webm" type="video/webm"/>
+                <source src="video/letterloom-demo.mp4" type="video/mp4"/>
+                @Loc["Your browser cannot play this video."]
+                <a href="video/letterloom-demo.mp4">@Loc["Download video"]</a>.
+            </video>
+        </div>
+        <p class="web-video-caption">
+            <i class="bi bi-play-circle"></i>
+            @Loc["Click the video to see the complete process - including the practical [Open URL] feature that puts the cover letter directly into your clipboard."]
+        </p>
+
+        <!-- Die drei Schritte als Text -->
+        <div class="web-steps">
+            <div class="web-step">
+                <div class="web-step-num">1</div>
+                <h3>@Loc["Insert job ad"]</h3>
+                <p>@Loc["Paste a URL or ad text. LetterLoom extracts the relevant content."]</p>
+            </div>
+            <div class="web-step">
+                <div class="web-step-num">2</div>
+                <h3>@Loc["Match CV"]</h3>
+                <p>@Loc["LetterLoom checks which requirements your CV meets - and which are missing."]</p>
+            </div>
+            <div class="web-step">
+                <div class="web-step-num">3</div>
+                <h3>@Loc["Get cover letter"]</h3>
+                <p>@Loc["In the language of the job, with your strongest projects - copyable directly into the application form."]</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!-- EINBLICKE IN DIE APP (Screenshots)                             -->
+<!-- ============================================================ -->
+<section id="screenshots" class="web-section">
+    <div class="web-container">
+        <div class="web-section-head">
+            <h2>@Loc["A look into the app"]</h2>
+            <p>@Loc["This is what the workflow in LetterLoom looks like - from job ad to finished cover letter."]</p>
+        </div>
+
+        <div class="web-screenshots-grid">
+            <!-- Screenshot 1: Vacancy -->
+            <figure class="web-screenshot">
+                <div class="web-screenshot-frame">
+                    <div class="web-screenshot-placeholder">
+                        <i class="bi bi-window-desktop"></i>
+                        <span>
+                            @Loc["Vacancy view"]<br><small>img/screenshots/vacancy.webp</small>
+                        </span>
+                    </div>
+                    <img src="img/screenshots/vacancy.webp"
+                         alt="@Loc["Vacancy view with job ad, phases 1 and 2, and generated cover letter"]"
+                         loading="lazy"/>
+                </div>
+                <figcaption>
+                    <strong>@Loc["Job ad & cover letter"]</strong>
+                    <span>@Loc["Paste a URL or ad text - LetterLoom detects phases and generates the cover letter."]</span>
+                </figcaption>
+            </figure>
+
+            <!-- Screenshot 2: CV-Gap -->
+            <figure class="web-screenshot">
+                <div class="web-screenshot-frame">
+                    <div class="web-screenshot-placeholder">
+                        <i class="bi bi-person-vcard"></i>
+                        <span>
+                            @Loc["CV gap analysis"]<br><small>img/screenshots/cv-gap.webp</small>
+                        </span>
+                    </div>
+                    <img src="img/screenshots/cv-gap.webp"
+                         alt="@Loc["CV gap analysis with missing skills and open questions"]"
+                         loading="lazy"/>
+                </div>
+                <figcaption>
+                    <strong>@Loc["CV matching with open questions"]</strong>
+                    <span>@Loc["Missing skills are identified and can be added in one step."]</span>
+                </figcaption>
+            </figure>
+
+            <!-- Screenshot 3: Setup -->
+            <figure class="web-screenshot">
+                <div class="web-screenshot-frame">
+                    <div class="web-screenshot-placeholder">
+                        <i class="bi bi-gear-wide-connected"></i>
+                        <span>
+                            @Loc["Setup wizard"]<br><small>img/screenshots/setup.webp</small>
+                        </span>
+                    </div>
+                    <img src="img/screenshots/setup.webp"
+                         alt="@Loc["Setup wizard with hardware check and preset selection"]"
+                         loading="lazy"/>
+                </div>
+                <figcaption>
+                    <strong>@Loc["Setup wizard"]</strong>
+                    <span>@Loc["Hardware check, preset selection, and model download - in a guided process."]</span>
+                </figcaption>
+            </figure>
+        </div>
+
+        <p class="web-screenshots-note">
+            <i class="bi bi-info-circle"></i>
+            @Loc["The screenshots are from the current version 1.0. Real images coming soon - until then, the tiles show placeholders."]
+        </p>
+    </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!-- LOKALE KI vs. API                                              -->
+<!-- ============================================================ -->
+<section id="compare" class="web-section web-section-alt">
+    <div class="web-container">
+        <div class="web-section-head">
+            <h2>@Loc["Local AI or your own API - you decide"]</h2>
+            <p>
+                @Loc["LetterLoom supports both paths. Both have strengths and weaknesses - the setup wizard helps you make the right choice."]
+            </p>
+        </div>
+
+        <div class="web-compare">
+            <!-- Lokale KI -->
+            <div class="web-compare-card">
+                <div class="web-compare-head">
+                    <div class="web-compare-icon local">
+                        <i class="bi bi-cpu-fill"></i>
+                    </div>
+                    <h3>@Loc["Local AI"]</h3>
+                    <p>@Loc["Models run directly on your PC. Full privacy."]</p>
+                </div>
+                <div class="web-compare-list">
+                    <div class="web-compare-pro">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <div>
+                            <strong>@Loc["Maximum privacy"]</strong>
+                            <span>@Loc["Your CV and job ad never leave your computer. No data transfer to third parties."]</span>
+                        </div>
+                    </div>
+                    <div class="web-compare-pro">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <div>
+                            <strong>@Loc["No ongoing costs"]</strong>
+                            <span>@Loc["No token fees. Unlimited use after purchase."]</span>
+                        </div>
+                    </div>
+                    <div class="web-compare-pro">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <div>
+                            <strong>@Loc["Works offline"]</strong>
+                            <span>@Loc["No internet, no API key, no sign-up required."]</span>
+                        </div>
+                    </div>
+                    <div class="web-compare-con">
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+                        <div>
+                            <strong>@Loc["Some hardware required"]</strong>
+                            <span>@Loc["The local models run smoothly with just 8 GB VRAM and 16 GB RAM - it also works without a GPU, just slower."]</span>
+                        </div>
+                    </div>
+                    <div class="web-compare-con">
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+                        <div>
+                            <strong>@Loc["Slower"]</strong>
+                            <span>@Loc["A cover letter takes 1-5 minutes depending on hardware."]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Eigene API -->
+            <div class="web-compare-card">
+                <div class="web-compare-head">
+                    <div class="web-compare-icon api">
+                        <i class="bi bi-cloud-fill"></i>
+                    </div>
+                    <h3>@Loc["Your own API"]</h3>
+                    <p>@Loc["OpenAI-compatible endpoint. Bring your own."]</p>
+                </div>
+                <div class="web-compare-list">
+                    <div class="web-compare-pro">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <div>
+                            <strong>@Loc["Very fast"]</strong>
+                            <span>@Loc["Cover letter in seconds instead of minutes."]</span>
+                        </div>
+                    </div>
+                    <div class="web-compare-pro">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <div>
+                            <strong>@Loc["No hardware required"]</strong>
+                            <span>@Loc["Runs on any PC with an internet connection."]</span>
+                        </div>
+                    </div>
+                    <div class="web-compare-pro">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <div>
+                            <strong>@Loc["Highest quality possible"]</strong>
+                            <span>@Loc["GPT-4, Claude, or other strong models."]</span>
+                        </div>
+                    </div>
+                    <div class="web-compare-con">
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+                        <div>
+                            <strong>@Loc["Token costs"]</strong>
+                            <span>@Loc["Depending on the provider, cents to euros per cover letter."]</span>
+                        </div>
+                    </div>
+                    <div class="web-compare-con">
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+                        <div>
+                            <strong>@Loc["Data goes to provider"]</strong>
+                            <span>@Loc["CV and ad are sent to the API endpoint."]</span>
+                        </div>
+                    </div>
+                    <div class="web-compare-con">
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+                        <div>
+                            <strong>@Loc["Internet + API key required"]</strong>
+                            <span>@Loc["No connection, no generation."]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="web-compare-tip">
+            <i class="bi bi-lightbulb"></i>
+            <p>
+                <strong>@Loc["Our recommendation:"]</strong>
+                @Loc["Local AI runs with just"]
+                <strong>8 GB VRAM</strong>
+                @Loc["(or even without a GPU, just slower) and"]
+                <strong>16 GB RAM</strong>.
+                @Loc["Those with 32 GB RAM and 44 GB free storage can use the larger Qwen3 30B and get even better cover letters. For maximum speed without your own hardware, an API endpoint is suitable (e.g. OpenAI, OpenRouter, Azure OpenAI, or a local Ollama). The setup wizard automatically detects your hardware and suggests the right preset."]
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!-- Vergleich: Manuell / ChatGPT / LetterLoom                       -->
+<!-- ============================================================ -->
+<section id="vs-chatgpt" class="web-section">
+    <div class="web-container">
+        <div class="web-section-head">
+            <h2>@Loc["Why not just ChatGPT?"]</h2>
+            <p>
+                @Loc["Writing manually, using ChatGPT, or LetterLoom - an honest comparison."]
+            </p>
+        </div>
+
+        <div class="web-vs-table-wrap">
+            <table class="web-vs-table">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>@Loc["Manual"]</th>
+                    <th>ChatGPT</th>
+                    <th class="web-vs-highlight">
+                        <i class="bi bi-stars"></i> LetterLoom
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>@Loc["Time per cover letter"]</td>
+                    <td>@Loc["30-60 min"]</td>
+                    <td>@Loc["5-15 min"]</td>
+                    <td class="web-vs-highlight">@Loc["1-3 min"]</td>
+                </tr>
+                <tr>
+                    <td>@Loc["Automatic CV matching"]</td>
+                    <td class="web-vs-bad">-</td>
+                    <td class="web-vs-bad">-</td>
+                    <td class="web-vs-highlight">
+                        <i class="bi bi-check-lg"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>@Loc["Detection of missing skills"]</td>
+                    <td class="web-vs-bad">-</td>
+                    <td class="web-vs-bad">-</td>
+                    <td class="web-vs-highlight">
+                        <i class="bi bi-check-lg"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>@Loc["Cover letters without cliches"]</td>
+                    <td class="web-vs-mid">@Loc["hard"]</td>
+                    <td class="web-vs-mid">@Loc["varies"]</td>
+                    <td class="web-vs-highlight">
+                        <i class="bi bi-check-lg"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>@Loc["Data stays local"]</td>
+                    <td class="web-vs-good">
+                        <i class="bi bi-check-lg"></i>
+                    </td>
+                    <td class="web-vs-bad">@Loc["no (server)"]</td>
+                    <td class="web-vs-highlight">
+                        <i class="bi bi-check-lg"></i> @Loc["optional"]
+                    </td>
+                </tr>
+                <tr>
+                    <td>@Loc["Costs"]</td>
+                    <td>@Loc["EUR0"]</td>
+                    <td>@Loc["EUR0-20/month"]</td>
+                    <td class="web-vs-highlight">@Loc["EUR 39 one-time"]</td>
+                </tr>
+                <tr>
+                    <td>@Loc["Try before"]</td>
+                    <td>-</td>
+                    <td class="web-vs-mid">@Loc["Build the prompt yourself"]</td>
+                    <td class="web-vs-highlight">@Loc["5 cover letters free"]</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="web-vs-note">
+            <i class="bi bi-info-circle"></i>
+            @Loc["ChatGPT can deliver good cover letters - if you write the right prompts. LetterLoom handles the entire workflow: insert ad, match CV, write cover letter. Fully local if desired, without your data ever hitting a server."]
+        </p>
+    </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!-- INSTALLATION & EINRICHTUNG                                     -->
+<!-- ============================================================ -->
+<section id="setup" class="web-section web-section-alt">
+    <div class="web-container">
+        <div class="web-section-head">
+            <h2>@Loc["Installation & setup"]</h2>
+            <p>
+                @Loc["Ready to use in a few minutes. Runs with just 8 GB VRAM (or without GPU). The setup wizard guides you step by step through the configuration - including hardware check and model download."]
+            </p>
+        </div>
+
+        <div class="web-setup-steps">
+            <div class="web-setup-step">
+                <div class="web-setup-num">1</div>
+                <h3>@Loc["Download & start"]</h3>
+                <p>@Loc["Run the Windows installer. LetterLoom requires .NET 10 (installed automatically if needed)."]</p>
+            </div>
+            <div class="web-setup-step">
+                <div class="web-setup-num">2</div>
+                <h3>@Loc["Run setup wizard"]</h3>
+                <p>@Loc["The wizard detects your hardware (CPU, RAM, VRAM, storage) and suggests the right preset."]</p>
+            </div>
+            <div class="web-setup-step">
+                <div class="web-setup-num">3</div>
+                <h3>@Loc["Configure models"]</h3>
+                <p>@Loc["Local models are downloaded automatically - or you provide your API endpoint."]</p>
+            </div>
+            <div class="web-setup-step">
+                <div class="web-setup-num">4</div>
+                <h3>@Loc["Get started"]</h3>
+                <p>@Loc["Insert CV, insert job ad, generate cover letter. Done."]</p>
+            </div>
+        </div>
+
+        <h3 class="web-setup-subhead">@Loc["The three setup variants"]</h3>
+
+        <div class="web-setup-grid">
+            <!-- Local Large -->
+            <div class="web-setup-card recommended">
+                <div class="web-setup-badge">@Loc["Recommended for strong PCs"]</div>
+                <div class="web-setup-icon">
+                    <i class="bi bi-stars"></i>
+                </div>
+                <h4>@Loc["Local - Qwen3 30B"]</h4>
+                <p>@Loc["Best local quality. Also runs with 8 GB VRAM - slower, but fully functional."]</p>
+                <ul class="web-setup-specs">
+                    <li><i class="bi bi-memory"></i> 8+ GB VRAM (@Loc["optional"])</li>
+                    <li><i class="bi bi-cpu"></i> 16+ GB RAM</li>
+                    <li><i class="bi bi-hdd"></i> 44+ GB @Loc["free"]</li>
+                </ul>
+                <p class="web-setup-models">
+                    General: Qwen3-30B-A3B<br>
+                    Coder: Qwen3-Coder-30B-A3B
+                </p>
+            </div>
+
+            <!-- Local Small -->
+            <div class="web-setup-card">
+                <div class="web-setup-badge light">@Loc["For mid-range hardware"]</div>
+                <div class="web-setup-icon">
+                    <i class="bi bi-lightning-charge-fill"></i>
+                </div>
+                <h4>@Loc["Local - Qwen2.5 14B"]</h4>
+                <p>@Loc["Faster and less demanding. Good quality for most applications."]</p>
+                <ul class="web-setup-specs">
+                    <li><i class="bi bi-memory"></i> 8+ GB VRAM (@Loc["optional"])</li>
+                    <li><i class="bi bi-cpu"></i> 16+ GB RAM</li>
+                    <li><i class="bi bi-hdd"></i> 18+ GB @Loc["free"]</li>
+                </ul>
+                <p class="web-setup-models">
+                    General: Qwen2.5-14B<br>
+                    Coder: Qwen2.5-Coder-14B
+                </p>
+            </div>
+
+            <!-- API -->
+            <div class="web-setup-card">
+                <div class="web-setup-badge light">@Loc["For weaker PCs"]</div>
+                <div class="web-setup-icon">
+                    <i class="bi bi-cloud-fill"></i>
+                </div>
+                <h4>@Loc["Your own API"]</h4>
+                <p>@Loc["Bring your own: OpenAI-compatible endpoint. No local hardware required."]</p>
+                <ul class="web-setup-specs">
+                    <li>
+                        <i class="bi bi-wifi"></i> @Loc["Internet connection"]
+                    </li>
+                    <li>
+                        <i class="bi bi-key"></i> @Loc["API key"]
+                    </li>
+                    <li>
+                        <i class="bi bi-speedometer2"></i> @Loc["Maximum speed"]
+                    </li>
+                </ul>
+                <p class="web-setup-models">
+                    e.g. GPT-4o, OpenRouter, Azure OpenAI, Ollama
+                </p>
+            </div>
+        </div>
+
+        <!-- Systemanforderungen -->
+        <div class="web-sysreq">
+            <div class="web-sysreq-head">
+                <i class="bi bi-pc-display"></i>
+                <h3>@Loc["System requirements"]</h3>
+            </div>
+            <div class="web-sysreq-grid">
+                <div class="web-sysreq-col">
+                    <h4>@Loc["Minimum"]</h4>
+                    <ul>
+                        <li>
+                            <i class="bi bi-windows"></i> @Loc["Windows 10 (64-bit) or newer"]
+                        </li>
+                        <li>
+                            <i class="bi bi-cpu"></i> @Loc["4 CPU cores"]
+                        </li>
+                        <li><i class="bi bi-memory"></i> 16 GB RAM</li>
+                        <li>
+                            <i class="bi bi-hdd"></i> @Loc["18 GB free disk space"]
+                        </li>
+                        <li>
+                            <i class="bi bi-cloud"></i> @Loc["Internet (for download & API mode)"]
+                        </li>
+                    </ul>
+                </div>
+                <div class="web-sysreq-col recommended">
+                    <h4>@Loc["Recommended"]</h4>
+                    <ul>
+                        <li>
+                            <i class="bi bi-windows"></i> @Loc["Windows 11 (64-bit)"]
+                        </li>
+                        <li>
+                            <i class="bi bi-cpu"></i> @Loc["8+ CPU cores"]
+                        </li>
+                        <li><i class="bi bi-memory"></i> 32 GB RAM</li>
+                        <li><i class="bi bi-gpu-card"></i> 8+ GB VRAM (NVIDIA / AMD / Intel Arc)</li>
+                        <li>
+                            <i class="bi bi-hdd"></i> @Loc["44 GB free disk space (for Qwen3 30B)"]
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="web-sysreq-note">
+                <i class="bi bi-info-circle"></i>
+                @Loc[".NET 10 is installed automatically if needed. Without a dedicated GPU, the local models run too - just slower. For maximum speed, an API endpoint also works on weaker hardware."]
+            </p>
+        </div>
+
+        <div class="web-setup-info">
+            <div class="web-setup-info-item">
+                <i class="bi bi-translate"></i>
+                <div>
+                    <strong>@Loc["4 languages"]</strong>
+                    <span>@Loc["German, English, Italian, and Russian"]. @Loc["The generated cover letter automatically uses the language of the job ad - regardless of which UI language is set."]</span>
+                </div>
+            </div>
+            <div class="web-setup-info-item">
+                <i class="bi bi-shield-lock"></i>
+                <div>
+                    <strong>@Loc["Local storage"]</strong>
+                    <span>@Loc["All data (CV, cover letters, settings) is stored in a local SQLite database on your PC."]</span>
+                </div>
+            </div>
+            <div class="web-setup-info-item">
+                <i class="bi bi-arrow-repeat"></i>
+                <div>
+                    <strong>@Loc["Switch anytime"]</strong>
+                    <span>@Loc["You can switch between local and API without reinstalling the app."]</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!-- FAQ                                                            -->
+<!-- ============================================================ -->
+<section id="faq" class="web-section">
+    <div class="web-container web-narrow">
+        <div class="web-section-head">
+            <h2>@Loc["Frequently asked questions"]</h2>
+            <p>@Loc["Everything you want to know before buying."]</p>
+        </div>
+
+        <div class="web-faq">
+            <details class="web-faq-item">
+                <summary>
+                    <span>@Loc["Is LetterLoom really free to try?"]</span>
+                    <i class="bi bi-chevron-down"></i>
+                </summary>
+                <div class="web-faq-body">
+                    @Loc["Yes. You can download LetterLoom and create the first"]
+                    <strong>@Loc["5 cover letters for free"] @Loc["completely and without restrictions"]</strong>@Loc[". From the 6th cover letter onwards, the result is displayed as a shortened preview image with watermark - but the app remains fully usable. This way you can calmly check whether LetterLoom is right for you."]
+                </div>
+            </details>
+
+            <details class="web-faq-item">
+                <summary>
+                    <span>@Loc["Do I need a strong graphics card?"]</span>
+                    <i class="bi bi-chevron-down"></i>
+                </summary>
+                <div class="web-faq-body">
+                    @Loc["No. The local models run smoothly with"]
+                    <strong>8 GB VRAM and 16 GB RAM</strong>@Loc[". It also works entirely without a dedicated GPU - then a cover letter takes a bit longer. If you want maximum speed, you can connect your own API (OpenAI, OpenRouter, Ollama ...) instead and don't need any local computing power at all."]
+                </div>
+            </details>
+
+            <details class="web-faq-item">
+                <summary>
+                    <span>@Loc["Where does my data go (CV, job ad, cover letter)?"]</span>
+                    <i class="bi bi-chevron-down"></i>
+                </summary>
+                <div class="web-faq-body">
+                    @Loc["With local use, your data"]
+                    <strong>@Loc["never leaves your PC"]</strong>@Loc[". CV, job ads, and cover letters are stored in a local SQLite database on your hard drive. There is no cloud connection, no registration, and no telemetry. Only if you voluntarily connect an API are the contents sent to the endpoint of your choice."]
+                </div>
+            </details>
+
+            <details class="web-faq-item">
+                <summary>
+                    <span>@Loc["What is the difference from ChatGPT?"]</span>
+                    <i class="bi bi-chevron-down"></i>
+                </summary>
+                <div class="web-faq-body">
+                    @Loc["LetterLoom is"]
+                    <strong>@Loc["built specifically for applications"]</strong>@Loc[": It automatically compares your CV with the job ad, identifies missing qualifications, filters out redundant skills, and formulates the cover letter according to fixed anti-cliche rules. With ChatGPT, you have to orchestrate these steps yourself each time and write the prompt yourself. LetterLoom does this in one workflow - and optionally locally, without data transfer. A direct comparison can be found in the section above."]
+                </div>
+            </details>
+
+            <details class="web-faq-item">
+                <summary>
+                    <span>@Loc["In which languages does LetterLoom work?"]</span>
+                    <i class="bi bi-chevron-down"></i>
+                </summary>
+                <div class="web-faq-body">
+                    @Loc["The user interface is available in"]
+                    <strong>@Loc["German, English, Italian, and Russian"]</strong>@Loc[". The generated cover letter automatically uses the language of the job ad - regardless of which UI language is set."]
+                </div>
+            </details>
+
+            <details class="web-faq-item">
+                <summary>
+                    <span>@Loc["Can I use the license on multiple PCs?"]</span>
+                    <i class="bi bi-chevron-down"></i>
+                </summary>
+                <div class="web-faq-body">
+                    @Loc["A license is valid for"]
+                    <strong>@Loc["one computer"]</strong>@Loc[". If you want to install LetterLoom on a new PC, write to us via"]
+                    <a href="/contact">@Loc["Contact form"]</a>
+                    @Loc["- we'll help with the transfer."]
+                </div>
+            </details>
+
+            <details class="web-faq-item">
+                <summary>
+                    <span>@Loc["Is there a refund?"]</span>
+                    <i class="bi bi-chevron-down"></i>
+                </summary>
+                <div class="web-faq-body">
+                    @Loc["The purchase is processed via Paddle (Merchant of Record). Statutory withdrawal rules apply - details can be found in our"]
+                    <a href="legal/withdrawal">@Loc["withdrawal policy"]</a>@Loc[". For consumers, the 14-day right of withdrawal applies. Since you can test LetterLoom with 5 cover letters for free beforehand, we recommend using the trial before purchasing."]
+                </div>
+            </details>
+
+            <details class="web-faq-item">
+                <summary>
+                    <span>@Loc["Do I get updates for free?"]</span>
+                    <i class="bi bi-chevron-down"></i>
+                </summary>
+                <div class="web-faq-body">
+                    @Loc["Yes. Updates within the current major version (1.x) are"]
+                    <strong>@Loc["Free"]</strong>@Loc[". Should a new major version ever appear, we will inform you in advance by email."]
+                </div>
+            </details>
+        </div>
+
+        <p class="web-faq-footer">
+            @Loc["Your question isn't listed?"]
+            <a href="/contact">@Loc["Contact form"]</a>
+            @Loc["- we usually respond within 1-2 business days."]
+        </p>
+    </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!-- PREIS-TEASER                                                   -->
+<!-- ============================================================ -->
+<section class="web-section">
+    <div class="web-container">
+        <div class="web-pricing-teaser">
+            <div class="web-pricing-teaser-left">
+                <h2>@Loc["One-time EUR 39. No subscription."]</h2>
+                <p>
+                    @Loc["After the first 5 free cover letters, you can unlock LetterLoom at any time with a one-time payment - including all updates within the major version. No monthly costs, no contract commitment."]
+                </p>
+            </div>
+            <div class="web-pricing-teaser-right">
+                <a href="pricing" class="btn btn-primary btn-icon">
+                    <i class="bi bi-tag"></i>
+                    <span>@Loc["Price details"]</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- ABSCHLIESSENDER CTA - Download im Fokus                        -->
+<!-- ============================================================ -->
+<section class="web-section">
+    <div class="web-container">
+        <div class="web-cta">
+            <h2>@Loc["Ready to try it out?"]</h2>
+            <p>@Loc["Download LetterLoom and create your first 5 cover letters for free."]</p>
+
+            <a href="@SetupUrl"
+               class="btn btn-primary btn-lg btn-icon @(IsReady ? "" : "disabled")"
+               aria-disabled="@(IsReady ? null : "true")"
+               tabindex="@(IsReady ? 0 : -1)">
+                <i class="bi bi-download"></i>
+                <span>@Loc["Download for free"]</span>
+            </a>
+
+            <!-- Portable-Download -->
+            <div style="margin-top: 1rem;">
+                <a href="@PortableUrl"
+                   class="text-decoration-none small @(IsPortableReady ? "" : "disabled")"
+                   aria-disabled="@(IsPortableReady ? null : "true")"
+                   tabindex="@(IsPortableReady ? 0 : -1)">
+                    <i class="bi bi-box-seam"></i>
+                    @Loc["Or download the portable version (no installation required)"]
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+@code {
+    private DownloadManifest? manifest;
+
+    private bool IsReady => !string.IsNullOrEmpty(manifest?.Setup);
+    private string SetupUrl => IsReady ? $"/downloads/{manifest!.Setup}" : "#";
+
+    private bool IsPortableReady => !string.IsNullOrEmpty(manifest?.Portable);
+    private string PortableUrl => IsPortableReady ? $"/downloads/{manifest!.Portable}" : "#";
+
+    protected override async Task OnInitializedAsync()
+    {
+        manifest = await Downloads.GetManifestAsync();
+    }
+
+}

@@ -1,0 +1,19 @@
+﻿@inject IJSRuntime JS
+
+<button type="button"
+        class="web-theme-toggle"
+        title="@Loc["Toggle light / dark"]"
+        aria-label="@Loc["Switch color scheme"]"
+        @onclick="ToggleAsync">
+    <i class="bi bi-moon-stars-fill toggle-icon-light"></i>
+    <i class="bi bi-sun-fill toggle-icon-dark"></i>
+</button>
+
+@code {
+
+    private async Task ToggleAsync()
+    {
+        await JS.InvokeVoidAsync("letterLoom.toggleTheme");
+    }
+
+}

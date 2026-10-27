@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Documents/">
+    <File Path="InnoSetup.md" />
+  </Folder>
+  <Project Path="LetterLoomKeygen/LetterLoomKeygen.csproj" Id="511c1fac-92db-4070-afb0-b9e9383e6f6f" />
+  <Project Path="LocalizationCatalog/LocalizationCatalog.csproj" />
+  <Project Path="NetAi.LetterLoom.Web/NetAi.LetterLoom.Web.csproj" Id="85d342b0-a755-4591-ab56-82ce939080c4" />
+  <Project Path="RclShared/RclShared.csproj" />
+</Solution>

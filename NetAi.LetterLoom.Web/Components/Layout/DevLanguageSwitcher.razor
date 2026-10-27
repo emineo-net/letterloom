@@ -1,0 +1,70 @@
+﻿@using System.Globalization
+@using LocalizationCatalog
+@inject IJSRuntime JS
+
+@if (IsDebugBuild)
+{
+    <div class="dev-lang-switcher" title="Development only - removed in release build">
+        <span class="dev-lang-badge">DEV</span>
+        @foreach (var locale in Languages)
+        {
+            <button type="button"
+                    class="dev-lang-btn @(IsActive(locale) ? "active" : "")"
+                    dir="@(locale.IsRightToLeft ? "rtl" : "ltr")"
+                    title="@BuildTitle(locale)"
+                    @onclick="() => SetAsync(locale)">
+                @locale.NativeName
+            </button>
+        }
+    </div>
+}
+
+@code {
+
+    // Aus dem Katalog abgeleitet - nicht mehr hardcodiert.
+    private static readonly LocaleDefinition[] Languages = AppLocales.SupportedLanguages.Select(LocaleCatalog.Get).ToArray();
+
+    // Synchron im Feld-Initializer - kein Flackern, kein StateHasChanged nötig.
+    // CurrentUICulture ist durch Program.cs bereits gesetzt.
+    private readonly string _current = ResolveCurrentCode();
+
+    private static string ResolveCurrentCode()
+    {
+        var current = CultureInfo.CurrentUICulture.Name;
+        foreach (var code in AppLocales.SupportedLanguages)
+        {
+            if (string.Equals(code, current, StringComparison.OrdinalIgnoreCase) || current.StartsWith(code + "-", StringComparison.OrdinalIgnoreCase))
+                return code;
+        }
+
+        return AppLocales.SupportedLanguages.FirstOrDefault() ?? "en";
+    }
+
+    private bool IsActive(LocaleDefinition locale)
+    {
+        return string.Equals(locale.Code, _current, StringComparison.OrdinalIgnoreCase);
+    }
+
+    private static string BuildTitle(LocaleDefinition locale)
+    {
+        var title = $"{locale.EnglishName} ({locale.Code})";
+        if (locale.IsRightToLeft) title += " - RTL";
+        return title;
+    }
+
+#if DEBUG
+    private const bool IsDebugBuild = true;
+#else
+    private const bool IsDebugBuild = false;
+#endif
+
+    private async Task SetAsync(LocaleDefinition locale)
+    {
+        if (IsActive(locale)) return;
+
+        // Persistieren + Richtung setzen (JS macht beides), dann Reload.
+        await JS.InvokeVoidAsync("letterLoom.setCulture", locale.Code, locale.IsRightToLeft ? "rtl" : "ltr");
+        await JS.InvokeVoidAsync("letterLoom.reload");
+    }
+
+}

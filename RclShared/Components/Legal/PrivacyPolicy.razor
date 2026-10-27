@@ -1,0 +1,191 @@
+@page "/legal/privacy"
+
+<PageTitle>Privacy Policy</PageTitle>
+
+<div class="row justify-content-center">
+    <div class="col-12 col-lg-9 col-xl-8">
+
+        <h1 class="mb-3">Privacy Policy</h1>
+        <p class="text-body-secondary fst-italic mb-4">Last updated: [Date]</p>
+
+        <section>
+            <h2 class="h4 mb-3">1. Controller</h2>
+            <p>The controller within the meaning of the GDPR is:</p>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <address class="mb-0">
+                        Stephan Emmermann<br/>
+                        Trading as NetAi<br/>
+                        Sandfurttrift 59<br/>
+                        19322 Wittenberge<br/>
+                        Germany<br/>
+                        Email: <span>stephan.emmermann[at]gmail.com</span>
+                    </address>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="h4 mb-3">2. Core Principle: Local-First</h2>
+            <p>
+                LetterLoom is a desktop application.
+                <strong>
+                    Your CV, job ads, cover letters, settings and local
+                    database are stored exclusively on your own device
+                </strong> (under
+                <code>%LocalAppData%\NetAi.LetterLoom</code>). We do not operate a server that receives or stores
+                your application documents.
+            </p>
+            <p class="mb-0">
+                There is no telemetry, no analytics, and no usage tracking built into the application.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="h4 mb-3">3. Data Processed on Your Device</h2>
+            <p>The following data remains on your device and is not transmitted to us:</p>
+            <ul>
+                <li>CV content (Markdown text)</li>
+                <li>Job advertisements (URLs and pasted text)</li>
+                <li>Generated prompts, phase outputs, and cover letters</li>
+                <li>Skills table and application settings</li>
+                <li>API keys for third-party LLM endpoints (currently stored in <code>settings.json</code> on your device)</li>
+            </ul>
+            <p class="mb-0">
+                You are responsible for the security of your device and for the confidentiality of any API keys you enter.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="h4 mb-3">4. LLM Processing: Local or Third-Party API</h2>
+            <p>
+                LetterLoom can use either a <strong>local LLM</strong> (running on your machine via
+                <code>llama-server</code>) or an <strong>OpenAI-compatible API endpoint that you configure yourself</strong>.
+            </p>
+            <ul>
+                <li>
+                    <strong>Local mode:</strong> All prompt processing happens on your device. No data leaves your machine.
+                </li>
+                <li>
+                    <strong>API mode:</strong> When you configure an external API endpoint, the content you submit
+                    (CV excerpts, job ad text, prompts) is transmitted to that endpoint. You choose the provider;
+                    their privacy policy and data processing terms apply.
+                    <strong>
+                        We do not control and are not
+                        responsible for the data processing practices of the API provider you select.
+                    </strong>
+                </li>
+            </ul>
+            <p class="mb-0">
+                Please review the privacy policy of your chosen LLM provider before submitting personal data.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="h4 mb-3">5. Payment Processing via Paddle</h2>
+            <p>
+                Purchases of LetterLoom are processed by <strong>Paddle.com Market Ltd</strong> (“Paddle”) as
+                Merchant of Record. Paddle is the legal seller of the product for consumer-law purposes.
+            </p>
+            <p>
+                When you make a purchase, Paddle collects and processes payment data (name, email, billing address,
+                payment method, tax information) as an independent controller. We do not receive your full payment
+                details. We may receive limited transaction metadata (e.g. license status, country, order reference)
+                to provide support and manage licenses.
+            </p>
+            <p class="mb-0">
+                Paddle’s privacy practices are governed by Paddle’s own policies:
+                <a href="https://www.paddle.com/legal/privacy" class="link-primary" target="_blank" rel="noopener noreferrer">paddle.com/legal/privacy</a>.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="h4 mb-3">6. Update Notifications (Future)</h2>
+            <p class="mb-0">
+                The current version contains no automatic update check. If a future version adds an update notification,
+                it will be documented here before the feature is activated. Any such check would transmit only
+                technical version information, not your application content.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="h4 mb-3">7. Legal Bases</h2>
+            <dl class="row">
+                <dt class="col-sm-4">Provision of the software</dt>
+                <dd class="col-sm-8">Art. 6(1)(b) GDPR (contract performance)</dd>
+
+                <dt class="col-sm-4">Payment and tax compliance (via Paddle)</dt>
+                <dd class="col-sm-8">Art. 6(1)(b) and (c) GDPR</dd>
+
+                <dt class="col-sm-4">Support communication</dt>
+                <dd class="col-sm-8">Art. 6(1)(b) or (f) GDPR (legitimate interest)</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2 class="h4 mb-3">8. Recipients</h2>
+            <p class="mb-0">
+                We do not share your application content with third parties. The only external recipient involved in
+                a purchase is <strong>Paddle</strong> (payment processing). If you choose an external LLM API,
+                data is transmitted to that provider at your direction.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="h4 mb-3">9. Retention</h2>
+            <p class="mb-0">
+                Application data on your device remains until you delete it or uninstall the application.
+                Payment-related records held by Paddle are retained by Paddle in accordance with statutory
+                retention obligations.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="h4 mb-3">10. Your Rights</h2>
+            <p>You have the rights under the GDPR, including:</p>
+            <ul>
+                <li>Access (Art. 15 GDPR)</li>
+                <li>Rectification (Art. 16 GDPR)</li>
+                <li>Erasure (Art. 17 GDPR)</li>
+                <li>Restriction of processing (Art. 18 GDPR)</li>
+                <li>Data portability (Art. 20 GDPR)</li>
+                <li>Objection (Art. 21 GDPR)</li>
+                <li>Withdrawal of consent (Art. 7(3) GDPR)</li>
+            </ul>
+            <p>
+                To exercise these rights, contact
+                <span>stephan.emmermann[at]gmail.com</span>.
+                For payment-data requests, please contact Paddle directly.
+            </p>
+            <p class="mb-0">
+                You also have the right to lodge a complaint with a supervisory authority.
+                The competent authority for the provider is:
+            </p>
+            <address class="mt-2 mb-0">
+                Die Landesbeauftragte für den Datenschutz und für das Recht auf Akteneinsicht Brandenburg<br/>
+                Stahnsdorfer Damm 77<br/>
+                14532 Kleinmachnow<br/>
+                Germany<br/>
+                <a href="mailto:Poststelle@LDA.Brandenburg.de" class="link-primary">Poststelle@LDA.Brandenburg.de</a>
+            </address>
+        </section>
+
+        <section>
+            <h2 class="h4 mb-3">11. Accessibility (BFSG)</h2>
+            <p class="mb-0">
+                The German Accessibility Strengthening Act (BFSG) applies to consumer-facing software.
+                We are working to align the application with the applicable accessibility requirements.
+                If you encounter an accessibility barrier, please contact us at the email address above.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="h4 mb-3">12. Changes</h2>
+            <p class="mb-0">
+                We may update this Privacy Policy to reflect changes in the application or legal requirements.
+                The current version is always available at this page.
+            </p>
+        </section>
+
+    </div>
+</div>

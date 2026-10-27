@@ -1,0 +1,43 @@
+﻿@page "/purchase/success"
+
+<PageTitle>@Loc["Thank you for your purchase - LetterLoom"]</PageTitle>
+
+<section class="web-section">
+    <div class="web-container web-narrow">
+        <div class="app-card text-center py-5">
+            <i class="bi bi-check-circle-fill text-success" style="font-size:56px;"></i>
+            <h1 class="mt-3">@Loc["Thank you for your purchase!"]</h1>
+            <p class="web-lead">
+                @Loc["Your license key is on its way. Paddle will send it to the email address you provided during checkout - usually within a few minutes."]
+            </p>
+
+            <div class="d-flex flex-wrap gap-2 justify-content-center mt-4">
+                <a href="downloads/LetterLoom-Setup-1.0.0.exe" class="btn btn-primary btn-icon">
+                    <i class="bi bi-download"></i>
+                    <span>@Loc["Download LetterLoom"]</span>
+                </a>
+                <a href="activate" class="btn btn-outline-secondary btn-icon">
+                    <i class="bi bi-key"></i>
+                    <span>@Loc["How to activate"]</span>
+                </a>
+            </div>
+
+            <hr class="my-5"/>
+
+            <div class="text-start">
+                <h2 class="h5">@Loc["What happens next?"]</h2>
+                <ol class="mt-3">
+                    <li>@Loc["Check your inbox for an email from Paddle with your license key."]</li>
+                    <li>@Loc["Open LetterLoom and go to Help → Enter license."]</li>
+                    <li>@Loc["Paste the key and confirm - all features are unlocked immediately."]</li>
+                </ol>
+
+                <p class="text-muted small mt-4">
+                    <i class="bi bi-info-circle"></i>
+                    @Loc["No email received? Check your spam folder or contact us via"]
+                    <a href="/contact">@Loc["Contact form"]</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

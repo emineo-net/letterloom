@@ -1,0 +1,74 @@
+﻿@page "/activate"
+
+<PageTitle>@Loc["Activate LetterLoom"]</PageTitle>
+
+<section class="web-section">
+    <div class="web-container web-narrow">
+        <h1 class="web-page-title">@Loc["Activate LetterLoom"]</h1>
+        <p class="web-lead">
+            @Loc["You have received a license key? Here is how to unlock the full version."]
+        </p>
+
+        <div class="web-steps" style="grid-template-columns:1fr;">
+            <div class="web-step" style="text-align:left;padding:0;">
+                <div class="d-flex gap-3 align-items-start">
+                    <div class="web-step-num" style="margin:0;flex-shrink:0;">1</div>
+                    <div>
+                        <h3>@Loc["Find your license key"]</h3>
+                        <p>@Loc["After purchase, Paddle sends the key by email. It looks like this:"]</p>
+                        <pre class="web-setup-models">LL-XXXX-XXXX-XXXX-XXXX</pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="web-step" style="text-align:left;padding:0;">
+                <div class="d-flex gap-3 align-items-start">
+                    <div class="web-step-num" style="margin:0;flex-shrink:0;">2</div>
+                    <div>
+                        <h3>@Loc["Open the license dialog"]</h3>
+                        <p>
+                            @Loc["Start LetterLoom and choose"] <strong>@Loc["Help → Enter license"]</strong> @Loc["from the menu."]
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="web-step" style="text-align:left;padding:0;">
+                <div class="d-flex gap-3 align-items-start">
+                    <div class="web-step-num" style="margin:0;flex-shrink:0;">3</div>
+                    <div>
+                        <h3>@Loc["Paste and confirm"]</h3>
+                        <p>@Loc["Paste the key, click 'Activate' - and all features are unlocked immediately. No internet connection required for activation."]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="web-compare-tip mt-4">
+            <i class="bi bi-lightbulb"></i>
+            <p>
+                <strong>@Loc["Tip:"]</strong>
+                @Loc["You can use the license on one PC. If you want to move it to a new computer, contact us via the"]
+                <a href="/contact">@Loc["Contact form"]</a>.
+            </p>
+        </div>
+
+        <div class="web-sysreq mt-4">
+            <div class="web-sysreq-head">
+                <i class="bi bi-question-circle"></i>
+                <h3>@Loc["Troubleshooting"]</h3>
+            </div>
+            <ul class="web-sysreq-col">
+                <li>
+                    <i class="bi bi-x-circle"></i> @Loc["'Invalid license' - check for typos, the key contains no spaces."]
+                </li>
+                <li>
+                    <i class="bi bi-envelope"></i> @Loc["No email received? Check the spam folder or contact us."]
+                </li>
+                <li>
+                    <i class="bi bi-arrow-repeat"></i> @Loc["License lost? Write to us - we'll resend it."]
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

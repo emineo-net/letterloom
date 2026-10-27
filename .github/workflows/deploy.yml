@@ -1,0 +1,55 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ master ]   # ggf. auf 'main' anpassen, falls dein Hauptbranch so heißt
+
+permissions:
+  contents: write          # erlaubt der Action, in den gh-pages-Branch zu pushen
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '10.0.x'
+
+    - name: Publish Project
+      run: dotnet publish NetAi.LetterLoom.Web/NetAi.LetterLoom.Web.csproj -c Release -o release
+
+    # .NET 10 SDK Bug: der fingerprinted Blazor-Loader importiert intern
+    # "./dotnet.js" ohne Hash, obwohl im _framework-Ordner nur
+    # "dotnet.{hash}.js" liegt. Workaround: die fingerprinted Datei
+    # zusätzlich als dotnet.js kopieren.
+    - name: Workaround for .NET 10 dotnet.js fingerprint bug
+      run: |
+        DOTNET_JS=$(ls release/wwwroot/_framework/dotnet.*.js 2>/dev/null | grep -v '\.br$' | grep -v '\.gz$' | head -1)
+        if [ -n "$DOTNET_JS" ]; then
+          cp "$DOTNET_JS" release/wwwroot/_framework/dotnet.js
+          echo "Copied $(basename "$DOTNET_JS") -> dotnet.js"
+        else
+          echo "::warning::No fingerprinted dotnet.js found - skip workaround"
+        fi
+
+    - name: Add .nojekyll
+      run: touch release/wwwroot/.nojekyll
+
+    - name: Change base-tag in index.html to match repository
+      run: |
+        sed -i 's|<base href="[^"]*"|<base href="/LetterLoomWeb/"|g' release/wwwroot/index.html
+        echo "--- base tag after replacement ---"
+        grep -o '<base href="[^"]*"' release/wwwroot/index.html
+
+    - name: Copy index.html to 404.html for SPA routing
+      run: cp release/wwwroot/index.html release/wwwroot/404.html
+
+    - name: Deploy to gh-pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: release/wwwroot
+        branch: gh-pages

@@ -1,0 +1,69 @@
+﻿@page "/pricing"
+@using NetAi.LetterLoom.Web.Services
+@inject PaddleCheckoutService Checkout
+
+<PageTitle>@Loc["Pricing - LetterLoom"]</PageTitle>
+
+<section class="web-section">
+    <div class="web-container">
+        <div class="web-section-head">
+            <h2>@Loc["One-time EUR 39. No subscription."]</h2>
+            <p>@Loc["Unlock LetterLoom forever - including all updates within version 1.x."]</p>
+        </div>
+
+        <div class="web-pricing-card">
+            <div class="web-pricing-badge">@Loc["Full version"]</div>
+            <div class="web-pricing-price">
+                <span class="web-pricing-amount">€39</span>
+                <span class="web-pricing-period">@Loc["one-time"]</span>
+            </div>
+            <p class="web-pricing-desc">@Loc["No subscription. No hidden costs."]</p>
+
+            <ul class="web-pricing-features">
+                <li>@Loc["Unlimited cover letters"]</li>
+                <li>@Loc["All updates within version 1.x"]</li>
+                <li>@Loc["Local AI or your own API"]</li>
+                <li>@Loc["License for one PC"]</li>
+                <li>@Loc["14-day right of withdrawal"]</li>
+            </ul>
+
+            <button type="button"
+                    class="btn btn-primary btn-lg btn-block"
+                    disabled="@(!Checkout.IsConfigured)"
+                    @onclick="BuyAsync">
+                <i class="bi bi-cart-check"></i>
+                @Loc["Buy now for EUR 39"]
+            </button>
+
+            @if (!Checkout.IsConfigured)
+            {
+                <p class="web-pricing-note text-warning mt-3">
+                    <i class="bi bi-exclamation-triangle"></i>
+                    @Loc["Checkout is not configured yet."]
+                </p>
+            }
+
+            <p class="web-pricing-note">
+                <i class="bi bi-shield-check"></i>
+                @Loc["Secure payment via Paddle. The license key is sent by email immediately after purchase."]
+            </p>
+        </div>
+
+        <div class="web-trial-note">
+            <i class="bi bi-gift"></i>
+            <div>
+                @Loc["Not sure yet? Download LetterLoom and create 5 cover letters for free before you decide."]
+                <a href="" class="ms-1">@Loc["Download now"]</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+@code {
+
+    private async Task BuyAsync()
+    {
+        await Checkout.OpenCheckoutAsync();
+    }
+
+}
