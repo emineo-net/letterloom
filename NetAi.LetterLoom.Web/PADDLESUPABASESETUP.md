@@ -12,6 +12,22 @@ region:
 eu-west-1
 
 
+productId:
+Sandbox:
+pro_01m5z0fzem97ged2c9fm1je0hp
+Live:
+
+
+
+supabase edge func call: 
+curl -L -X POST 'https://lvfvnmbigfzpgxsvqlzn.supabase.co/functions/v1/paddle-webhook' \
+  -H 'Authorization: Bearer SUPABASE_PUBLISHABLE_KEY' \
+  -H 'apikey: SUPABASE_PUBLISHABLE_KEY' \
+  -H 'Content-Type: application/json' \
+  --data '{"name":"Functions"}'
+
+
+
 
 
 
@@ -220,7 +236,7 @@ alter table public.licenses enable row level security;
 #      → Warten, bis der Status "Deployed" oder "Active" ist.
 
 # 4.7  Verify: URL ist erreichbar
-$webhookUrl = "https://<PROJECT_REF>.supabase.co/functions/v1/paddle-webhook"
+$webhookUrl = "https://lvfvnmbigfzpgxsvqlzn.supabase.co/functions/v1/paddle-webhook"
 Invoke-WebRequest -Uri $webhookUrl -Method OPTIONS -UseBasicParsing |
   Select-Object StatusCode
 # Erwartet: StatusCode 200 (CORS-Preflight)
