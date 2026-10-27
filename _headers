@@ -1,0 +1,4 @@
+﻿/service-worker.js
+  cache-control: max-age=0, no-cache, no-store, must-revalidate
+/service-worker-assets.js
+  cache-control: max-age=0, no-cache, no-store, must-revalidate

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="color-scheme" content="light dark"/>
+    <title>LetterLoom</title>
+    <base href="/LetterLoomWeb/"/>
+
+    <!-- ============================================================
+    Theme so früh wie möglich anwenden (kein Flackern / FOUC).
+    Reihenfolge: localStorage -> System-Präferenz -> Fallback light.
+    Setzt data-theme (unsere Tokens) UND data-bs-theme (Bootstrap
+    5.3 Dark-Mode für Legal-Seiten mit .card/.alert/.table/.accordion).
+    ============================================================ -->
+    <script>
+                        (function () {
+                            try {
+                                var stored = localStorage.getItem('letterloom-theme');
+                                var theme = stored
+                                    || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+                                document.documentElement.setAttribute('data-theme', theme);
+                                document.documentElement.setAttribute('data-bs-theme', theme);
+                                document.documentElement.style.colorScheme = theme;
+                            } catch (e) {
+                                document.documentElement.setAttribute('data-theme', 'light');
+                                document.documentElement.setAttribute('data-bs-theme', 'light');
+                                document.documentElement.style.colorScheme = 'light';
+                            }
+                        })();
+    </script>
+
+    <link id="bootstrap-css"
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+
+    <!-- RTL-Früherkennung: setzt dir und tauscht Bootstrap-Stylesheet -->
+    <script>
+                (function () {
+                    try {
+                        var stored = localStorage.getItem('letterloom-culture');
+                        if (!stored) return;
+
+                        var lang = stored.split('-')[0].toLowerCase();
+                        var rtl = ['ar', 'he', 'fa', 'ur'].indexOf(lang) >= 0;
+
+                        document.documentElement.lang = stored;
+                        document.documentElement.dir = rtl ? 'rtl' : 'ltr';
+
+                        if (rtl) {
+                            var link = document.getElementById('bootstrap-css');
+                            if (link) {
+                                link.href = link.href.replace('bootstrap.min.css', 'bootstrap.rtl.min.css');
+                            }
+                        }
+                    } catch (e) { }
+                })();
+    </script>
+
+    <!-- geteilte Tokens & Komponenten (RclShared) -->
+    <link rel="stylesheet" href="_content/RclShared/css/app.css"/>
+    <!-- Web-Layout / Marketing / Dark-Theme-Overrides -->
+    <link rel="stylesheet" href="css/app-web.css"/>
+
+    <link rel="icon" type="image/png" href="favicon.png"/>
+</head>
+<body>
+    <div id="app">
+        <div style="display:flex;justify-content:center;align-items:center;height:100vh;">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="blazor-error-ui" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#ffcccc;padding:1rem;z-index:1000;">
+        Ein unerwarteter Fehler ist aufgetreten.
+        <a href="." class="reload">Neu laden</a>
+        <span class="dismiss">🗙</span>
+    </div>
+
+    <!-- Paddle v2 (Checkout) -->
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+
+
+
+    <!-- LetterLoom JS-Interop (Theme-Toggle, Paddle-Checkout, RTL/Culture) -->
+    <script src="js/web-interop.js"></script>
+
+    <script src="_framework/blazor.webassembly.w3qd1tpl0e.js"></script>
+</body>
+</html>
